@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <com.schoofi.utils.CustomTextView
+        android:id="@+id/btn_teacher_homescreen_class"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_margin="10dp"
+        android:background="@drawable/button"
+        android:padding="10dp"
+        android:text="Button"
+        android:textColor="#ee4749"
+        android:textSize="15sp" />
+
+</LinearLayout>

@@ -1,0 +1,125 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.schoofi.activitiess.StudentAnnouncement">
+
+    <LinearLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#EE4749"
+        android:orientation="horizontal"
+        android:weightSum="3" >
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:layout_weight="0.3"
+            android:gravity="center"
+            android:src="@drawable/ic_action_back" />
+
+        <com.schoofi.utils.CustomTextView
+            android:id="@+id/txt_teacherAttendance"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="2.3"
+            android:gravity="center"
+            android:text="Classes"
+            android:textColor="#D7D7D7"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/img_notify"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:layout_weight="0.3"
+            android:gravity="center"
+            android:visibility="gone"
+            android:src="@drawable/ic_action_back" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/headerLayout"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="#e4e4e4"
+                android:orientation="horizontal"
+                android:weightSum="1" >
+
+                <com.schoofi.utils.CustomTextView
+                    android:id="@+id/text_class"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="0.3"
+                    android:layout_gravity="left"
+                    android:textColor="@android:color/black"
+                    android:padding="10dp"
+                    android:gravity="center"
+                    android:text="Class"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <com.schoofi.utils.CustomTextView
+                    android:id="@+id/text_section"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7"
+                    android:padding="10dp"
+                    android:gravity="center_horizontal"
+                    android:textColor="@android:color/black"
+                    android:layout_gravity="right"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:text="Section"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <com.schoofi.utils.CustomTextView
+                android:id="@+id/newView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="You are not a class Teacher"
+                android:textColor="@android:color/black"
+                android:textSize="15sp" />
+
+            <com.orangegangsters.github.swipyrefreshlayout.library.SwipyRefreshLayout
+                android:id="@+id/swipyrefreshlayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srl_direction="top">
+
+                <ListView
+                    android:id="@+id/teacher_class_list_listView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:divider="@drawable/divider"
+                    android:dividerHeight="2dp"
+                    android:padding="10dp" >
+                </ListView>
+            </com.orangegangsters.github.swipyrefreshlayout.library.SwipyRefreshLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

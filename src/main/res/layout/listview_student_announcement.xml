@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:padding="10dp"
+    android:weightSum="1" >
+
+    <RelativeLayout
+        android:id="@+id/relative"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_weight="0.3" >
+
+        <ImageView
+            android:id="@+id/imageViewBaseImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:src="@drawable/ic_launcher" />
+
+        <ImageView
+            android:id="@+id/imageViewUpperImage"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerInParent="true"
+            android:layout_margin="10dp"
+            android:src="@drawable/ic_action_back" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_weight="0.7"
+        android:orientation="vertical" >
+
+        <com.schoofi.utils.CustomTextView
+            android:id="@+id/textView_student_announcement_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:layout_marginTop="10dp"
+            android:text="INDEPENDENCE DAY CELEBRATION"
+            android:textColor="#EE4749"
+            android:textSize="15sp"/>
+        
+
+        <com.schoofi.utils.CustomTextView
+            android:id="@+id/textView_student_announcement_person"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:text="Principal"
+            android:layout_marginTop="5dp"
+            android:textColor="@android:color/black"
+            android:textSize="15sp" >
+        </com.schoofi.utils.CustomTextView>
+
+        <com.schoofi.utils.CustomTextView
+            android:id="@+id/textView_student_announcement_person1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:text="Principal"
+            android:layout_marginTop="5dp"
+            android:textColor="@android:color/black"
+            android:textSize="15sp" >
+        </com.schoofi.utils.CustomTextView>
+
+        <com.schoofi.utils.CustomTextView
+            android:id="@+id/textView_student_announcement_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:layout_marginTop="5dp"
+            android:text="All Student should repoert here...."
+            android:textColor="@android:color/black"
+            android:textSize="15sp" >
+        </com.schoofi.utils.CustomTextView>
+
+        <com.schoofi.utils.CustomTextView
+            android:id="@+id/textView_student_announcement_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:layout_marginTop="5dp"
+            android:text="87-09-8999"
+            android:textColor="@android:color/black"
+            android:textSize="15sp" >
+        </com.schoofi.utils.CustomTextView>
+    </LinearLayout>
+
+</LinearLayout>

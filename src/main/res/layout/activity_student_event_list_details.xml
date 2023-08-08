@@ -1,0 +1,480 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#EE4749"
+        android:orientation="horizontal"
+        android:weightSum="3" >
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:layout_weight="0.3"
+            android:gravity="center"
+            android:src="@drawable/ic_action_back" />
+
+        <com.schoofi.utils.CustomTextView
+            android:id="@+id/txt_LeaveList"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="2.1"
+            android:gravity="center"
+            android:text="Event Details"
+            android:textColor="#D7D7D7"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/subEvents"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:layout_weight="0.2"
+            android:gravity="center"
+            android:tint="@color/white"
+            android:src="@drawable/navevents"/>
+
+        <ImageView
+            android:id="@+id/addgallery"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:layout_weight="0.2"
+            android:gravity="center"
+            android:src="@drawable/plus_new"/>
+
+        <ImageView
+            android:id="@+id/gallery"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:layout_weight="0.2"
+            android:gravity="center"
+            android:src="@drawable/uploadicon"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/headerLayout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+                android:layout_margin="10dp"
+                android:src="@drawable/imagenotavailble"
+                android:scaleType="fitXY"
+                android:id="@+id/imageViewEventDetails" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.2"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <com.schoofi.utils.CustomTextViewRobotto
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/text_eventdate"
+                        android:gravity="center"
+                        android:textSize="20sp"
+                        android:textColor="@android:color/black"
+                        android:text="date" />
+
+                    <com.schoofi.utils.CustomTextViewRobotto
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/text_eventmonth"
+                        android:gravity="center"
+                        android:textSize="20sp"
+                        android:textColor="#EE4749"
+                        android:text="date" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="10dp"
+                    android:layout_weight="0.8">
+
+                    <com.schoofi.utils.CustomTextViewRobotto
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:id="@+id/text_title"
+                        android:padding="10dp"
+                        android:text="Title"
+                        android:textSize="15sp"
+                        android:textColor="@android:color/black"
+                        />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@drawable/divider"></View>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3"
+                android:layout_margin="10dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+
+                    <com.schoofi.utils.CustomTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/text_confirmed"
+                        android:text="Confirmed"
+                        android:textSize="15sp"
+                        android:textColor="@android:color/black"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:padding="5dp"/>
+
+                    <com.schoofi.utils.CustomTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/text_confirmed1"
+                        android:text="5 Days to go"
+                        android:gravity="center"
+                        android:textSize="12sp"
+                        android:textColor="@color/grey"
+                        android:layout_gravity="center"
+                        android:padding="5dp"/>
+
+
+                </LinearLayout>
+
+
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+
+                    <com.schoofi.utils.CustomTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/text_seatsLeft"
+                        android:text="Seats Left"
+                        android:textSize="15sp"
+                        android:gravity="center"
+                        android:textColor="@android:color/black"
+                        android:layout_gravity="center"
+                        android:padding="5dp"/>
+
+                    <com.schoofi.utils.CustomTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/text_seatsLeft1"
+                        android:text="5 Days to go"
+                        android:textSize="12sp"
+                        android:textColor="@color/grey"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:padding="5dp"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <com.schoofi.utils.CustomButton
+                        android:layout_width="match_parent"
+                        android:layout_height="38dp"
+                        android:id="@+id/btn_payNow"
+                        android:gravity="center"
+                        style="@style/Base.Widget.AppCompat.Button.Borderless"
+                        android:text="Pay Now"
+                        android:textAllCaps="false"
+                        android:textSize="12sp"
+                        android:textColor="@color/gray"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@drawable/divider"></View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="10dp">
+
+                <com.schoofi.utils.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/text_parent_event_name"
+                    android:text="Parent Event"
+
+                    android:textSize="15sp"
+                    android:textColor="@android:color/black"
+                    android:layout_gravity="center"
+                    android:padding="5dp"/>
+
+                <com.schoofi.utils.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/text_coordinator1"
+                    android:text="Coordinator"
+
+                    android:textSize="15sp"
+                    android:textColor="@android:color/black"
+                    android:layout_gravity="center"
+                    android:padding="5dp"/>
+
+                <com.schoofi.utils.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/text_coordinator2"
+                    android:text="Coordinator"
+
+                    android:textSize="15sp"
+                    android:textColor="@android:color/black"
+                    android:layout_gravity="center"
+                    android:padding="5dp"/>
+
+                <com.schoofi.utils.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/text_coordinator3"
+                    android:text="Coordinator"
+
+                    android:textSize="15sp"
+                    android:textColor="@android:color/black"
+                    android:layout_gravity="center"
+                    android:padding="5dp"/>
+
+                <com.schoofi.utils.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/text_coordinator4"
+                    android:text="Coordinator"
+
+                    android:textSize="15sp"
+                    android:textColor="@android:color/black"
+                    android:layout_gravity="center"
+                    android:padding="5dp"/>
+
+                <com.schoofi.utils.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/text_coordinator5"
+
+                    android:text="Coordinator"
+                    android:textSize="15sp"
+                    android:textColor="@android:color/black"
+                    android:layout_gravity="center"
+                    android:padding="5dp"/>
+
+
+
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+
+                android:background="@drawable/divider"></View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="10dp">
+
+                <com.schoofi.utils.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/text_eventStartingTime"
+                    android:text="Starting time"
+                    android:textSize="15sp"
+                    android:textColor="@android:color/black"
+                    android:layout_gravity="center"
+                    android:padding="5dp"/>
+
+                <com.schoofi.utils.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/text_eventEndingTime"
+                    android:text="Ending time"
+                    android:textSize="15sp"
+                    android:textColor="@android:color/black"
+                    android:layout_gravity="center"
+                    android:padding="5dp"/>
+
+                <com.schoofi.utils.CustomTextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/text_eventStartingTime1"
+                    android:text="days to go"
+                    android:textSize="12sp"
+                    android:textColor="@color/gray"
+                    android:layout_gravity="center"
+                    android:padding="5dp"/>
+
+            </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@drawable/divider"></View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="5dp"
+
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp">
+
+                <com.schoofi.utils.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/text_venue"
+                    android:text="Ending time"
+                    android:textSize="15sp"
+                    android:textColor="@android:color/black"
+                    android:layout_gravity="center"
+                    android:padding="5dp"/>
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="5dp"
+
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp">
+
+                <com.schoofi.utils.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/text_fees"
+                    android:text="Ending time"
+                    android:textSize="15sp"
+                    android:textColor="@android:color/black"
+                    android:layout_gravity="center"
+                    android:padding="5dp"/>
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="5dp"
+
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp">
+
+                <com.schoofi.utils.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/text_feesSubmissionDate"
+                    android:text="Ending time"
+                    android:textSize="15sp"
+                    android:textColor="@android:color/black"
+                    android:layout_gravity="center"
+                    android:padding="5dp"/>
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="5dp"
+
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp">
+
+                <com.schoofi.utils.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/text_eventDetails"
+                    android:text="Ending time"
+                    android:textSize="15sp"
+                    android:autoLink="web"
+                    android:textColor="@android:color/black"
+                    android:layout_gravity="center"
+                    android:padding="5dp"/>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

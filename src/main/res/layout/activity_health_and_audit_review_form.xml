@@ -1,0 +1,146 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.schoofi.activities.TeacherHomeScreen"
+    android:descendantFocusability="blocksDescendants">
+
+    <LinearLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#EE4749"
+        android:orientation="horizontal"
+        android:weightSum="3" >
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:layout_weight="0.3"
+            android:gravity="center"
+            android:src="@drawable/ic_action_back"/>
+
+        <com.schoofi.utils.CustomTextView
+            android:id="@+id/txt_class"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="2.3"
+            android:gravity="center"
+            android:text="Review"
+            android:textColor="#D7D7D7"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scroll"
+        android:layout_below="@+id/headerLayout">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <com.schoofi.utils.CustomTextView
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:id="@+id/spin_insitutionId"
+        android:background="@drawable/button"
+        android:text="School"
+        android:padding="5dp"
+        android:textSize="15sp"
+        android:layout_margin="10dp"></com.schoofi.utils.CustomTextView>
+
+    <com.schoofi.utils.CustomTextView
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:id="@+id/spin_personName"
+        android:text="Person"
+        android:padding="5dp"
+        android:textSize="15sp"
+        android:background="@drawable/arrowdown"
+        android:layout_below="@+id/spin_insitutionId"
+        android:layout_margin="10dp"></com.schoofi.utils.CustomTextView>
+
+    <com.schoofi.utils.CustomTextView
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:id="@+id/spin_task"
+        android:text="Task"
+        android:padding="5dp"
+        android:textSize="15sp"
+        android:background="@drawable/arrowdown"
+        android:layout_below="@+id/spin_personName"
+        android:layout_margin="10dp"></com.schoofi.utils.CustomTextView>
+
+    <com.schoofi.utils.CustomTextView
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:layout_margin="10dp"
+        android:text="Task Area"
+        android:textSize="15sp"
+        android:id="@+id/text_taskArea"
+        android:background="@drawable/button"
+        android:gravity="center"/>
+
+
+
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+    </ScrollView>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/scroll"
+        android:layout_above="@id/btn_done"
+        android:id="@+id/listView_subtaskList"
+        android:divider="@drawable/divider"
+        android:dividerHeight="2dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"/>
+
+
+
+
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:layout_alignParentBottom="true"
+    android:id="@+id/btn_done">
+
+    <com.schoofi.utils.CustomButton
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:id="@+id/btn_add"
+        android:layout_margin="10dp"
+        android:textColor="@android:color/white"
+        android:background="@drawable/buttons"
+        android:text="Add"
+        android:textAllCaps="false"
+        android:textSize="15sp"/>
+
+</LinearLayout>
+
+
+</RelativeLayout>

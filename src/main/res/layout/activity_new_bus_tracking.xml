@@ -1,0 +1,113 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <devs.mulham.horizontalcalendar.HorizontalCalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="0dp"
+        android:background="@color/red"
+        android:layout_below="@+id/headerLayout"
+        app:textColorSelected="#FFFF"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:orientation="vertical"
+        android:layout_below="@+id/calendarView"
+        android:layout_above="@+id/linear">
+
+    <fragment
+        android:id="@+id/mapFragment"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        class="com.google.android.gms.maps.SupportMapFragment" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1.0"
+       android:layout_alignParentBottom="true"
+        android:id="@+id/linear"
+        android:background="@android:color/white"
+        android:layout_margin="10dp">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:orientation="vertical">
+
+    <com.schoofi.utils.CustomTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textColor="@android:color/black"
+        android:layout_margin="5dp"
+        android:id="@+id/text_total_questions"
+        android:gravity="center"/>
+
+    <com.schoofi.utils.CustomTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textColor="@color/graay"
+        android:text="Distance Travelled"
+        android:layout_margin="5dp"
+        android:id="@+id/text_total_questions1"
+        android:gravity="center"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:orientation="vertical">
+
+        <com.schoofi.utils.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="@android:color/black"
+            android:layout_margin="5dp"
+            android:id="@+id/text_total_time_taken"
+            android:gravity="center"/>
+
+        <com.schoofi.utils.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="@color/graay"
+            android:text="Time Taken"
+            android:layout_margin="5dp"
+            android:id="@+id/text_total_time_taken1"
+            android:gravity="center"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <com.schoofi.utils.CustomButton
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:id="@+id/btn_refresh"
+        android:background="@drawable/buttons"
+        android:layout_alignParentBottom="true"
+        android:text="Refresh"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:layout_margin="10dp"
+        android:visibility="gone"/>
+
+
+
+
+    </RelativeLayout>

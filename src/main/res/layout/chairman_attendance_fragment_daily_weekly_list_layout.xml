@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <com.schoofi.utils.CustomTextView
+        android:id="@+id/text_ch_daily_school_wise"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:background="@drawable/button"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:text="Reset"
+        android:textColor="@android:color/black"
+        android:textSize="15sp" />
+
+
+
+        <LinearLayout
+            android:id="@+id/linear_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="10dp"
+            android:layout_below="@+id/text_ch_daily_school_wise"
+            android:layout_above="@+id/linear">
+
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:dividerHeight="2dp"
+                android:divider="@drawable/divider"
+
+                android:id="@+id/chairman_attendance_listView">
+
+            </ListView>
+
+            </LinearLayout>
+
+
+
+
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+
+        android:orientation="vertical" >
+
+        <com.schoofi.utils.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textSize="15sp"
+            android:textColor="@android:color/black"
+            android:id="@+id/text_no_of_students"
+            android:gravity="center"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+        <com.schoofi.utils.CustomTextView
+            android:id="@+id/text_ch_daily_class_wise"
+            android:layout_width="0dp"
+            android:layout_height="38dp"
+            android:layout_weight="0.5"
+            android:layout_margin="10dp"
+            android:background="@drawable/button"
+            android:gravity="center"
+            android:text="Select Class"
+            android:textColor="@android:color/black"
+            android:textSize="15sp" />
+
+        <com.schoofi.utils.CustomTextView
+            android:id="@+id/text_ch_daily_section_wise"
+            android:layout_width="0dp"
+            android:layout_height="38dp"
+            android:layout_weight="0.5"
+            android:background="@drawable/button"
+            android:gravity="center"
+            android:text="Select Section"
+            android:layout_margin="10dp"
+            android:textColor="@android:color/black"
+            android:textSize="15sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

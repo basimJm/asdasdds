@@ -1,0 +1,244 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.schoofi.activities.TeacherHomeScreen" >
+
+    <LinearLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#EE4749"
+        android:orientation="horizontal"
+        android:weightSum="3" >
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:layout_weight="0.3"
+            android:gravity="center"
+            android:src="@drawable/ic_action_back" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/headerLayout"
+        android:orientation="vertical" >
+
+        <com.schoofi.utils.CustomButton
+            android:id="@+id/btn_profile"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="-4dp"
+            android:layout_marginRight="-4dp"
+            android:drawableLeft="@drawable/newprofile"
+            android:drawablePadding="20dp"
+            android:drawableRight="@drawable/ic_action_next_item"
+            android:gravity="left|center_vertical"
+            android:padding="10dp"
+            android:text="Profile"
+            android:textAllCaps="false"
+            android:textColor="@android:color/black"
+            android:textSize="15sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@drawable/divider" />
+
+        <com.schoofi.utils.CustomButton
+            android:id="@+id/btn_mark_location"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="-4dp"
+            android:layout_marginRight="-4dp"
+            android:drawableLeft="@drawable/newprofile"
+            android:drawablePadding="20dp"
+            android:drawableRight="@drawable/ic_action_next_item"
+            android:gravity="left|center_vertical"
+            android:padding="10dp"
+            android:text="Edit Profile"
+            android:textAllCaps="false"
+            android:textColor="@android:color/black"
+            android:textSize="15sp" />
+
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@drawable/divider" />
+
+        <com.schoofi.utils.CustomButton
+            android:id="@+id/btn_qrcode"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="-4dp"
+            android:layout_marginRight="-4dp"
+            android:drawableLeft="@drawable/newprofile"
+            android:drawablePadding="20dp"
+            android:drawableRight="@drawable/ic_action_next_item"
+            android:gravity="left|center_vertical"
+            android:padding="10dp"
+            android:text="Qrcode"
+            android:textAllCaps="false"
+            android:textColor="@android:color/black"
+            android:textSize="15sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@drawable/divider" />
+
+        <com.schoofi.utils.CustomButton
+            android:id="@+id/btn_aboutUs"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="-4dp"
+            android:layout_marginRight="-4dp"
+            android:drawableLeft="@drawable/aboutus"
+            android:drawablePadding="20dp"
+            android:drawableRight="@drawable/ic_action_next_item"
+            android:gravity="left|center_vertical"
+            android:padding="10dp"
+            android:text="About Us"
+            android:textAllCaps="false"
+            android:textColor="@android:color/black"
+            android:textSize="15sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@drawable/divider" />
+
+        <com.schoofi.utils.CustomButton
+            android:id="@+id/btn_aboutSchool"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="-4dp"
+            android:layout_marginRight="-4dp"
+            android:drawableLeft="@drawable/aboutschool"
+            android:drawablePadding="20dp"
+            android:drawableRight="@drawable/ic_action_next_item"
+            android:gravity="left|center_vertical"
+            android:padding="10dp"
+            android:text="About School"
+            android:textAllCaps="false"
+            android:textColor="@android:color/black"
+            android:textSize="15sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@drawable/divider" />
+
+        <com.schoofi.utils.CustomButton
+            android:id="@+id/btn_changePassword"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="-4dp"
+            android:layout_marginRight="-4dp"
+            android:drawableLeft="@drawable/changepassword"
+            android:drawablePadding="20dp"
+            android:drawableRight="@drawable/ic_action_next_item"
+            android:gravity="left|center_vertical"
+            android:padding="10dp"
+            android:text="Change Password"
+            android:textAllCaps="false"
+            android:textColor="@android:color/black"
+            android:textSize="15sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@drawable/divider" />
+
+        <com.schoofi.utils.CustomButton
+            android:id="@+id/btn_linked_accounts"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="-4dp"
+            android:layout_marginRight="-4dp"
+            android:drawableLeft="@drawable/linkedaccount"
+            android:drawablePadding="20dp"
+            android:drawableRight="@drawable/ic_action_next_item"
+            android:gravity="left|center_vertical"
+            android:padding="10dp"
+            android:text="Linked Accounts"
+            android:textAllCaps="false"
+            android:textColor="@android:color/black"
+            android:textSize="15sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@drawable/divider" />
+
+
+
+        <com.schoofi.utils.CustomButton
+            android:id="@+id/btn_help"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="-4dp"
+            android:layout_marginRight="-4dp"
+            android:drawableLeft="@drawable/help"
+            android:drawablePadding="20dp"
+            android:drawableRight="@drawable/ic_action_next_item"
+            android:gravity="left|center_vertical"
+            android:padding="10dp"
+            android:text="Help"
+            android:textAllCaps="false"
+            android:textColor="@android:color/black"
+            android:textSize="15sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@drawable/divider" />
+
+        <com.schoofi.utils.CustomButton
+            android:id="@+id/btn_Logout"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="-4dp"
+            android:layout_marginRight="-4dp"
+            android:drawableLeft="@drawable/logout"
+            android:drawablePadding="20dp"
+            android:drawableRight="@drawable/ic_action_next_item"
+            android:gravity="left|center_vertical"
+            android:padding="10dp"
+            android:text="Logout"
+            android:textAllCaps="false"
+            android:textColor="@android:color/black"
+            android:textSize="15sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@drawable/divider" />
+    </LinearLayout>
+
+</RelativeLayout>

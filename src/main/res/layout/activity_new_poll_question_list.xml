@@ -1,0 +1,569 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:ProgressWheel="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_sign_up"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#EE4749"
+        android:orientation="horizontal"
+        android:weightSum="3" >
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:layout_weight="0.3"
+            android:gravity="center"
+            android:src="@drawable/ic_action_back"/>
+
+        <com.schoofi.utils.CustomTextView
+            android:id="@+id/txt_poll"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.3"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Poll"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+
+    </LinearLayout>
+
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/headerLayout"
+        android:layout_above="@+id/linear_bottom">
+
+
+
+
+
+        <ScrollView
+            android:id="@+id/scrollPollDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/headerLayout"
+            android:layout_margin="10dp" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/question"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/button"
+                    android:orientation="vertical" >
+
+                    <com.schoofi.utils.CustomTextView
+                        android:id="@+id/text_question"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="question"
+                        android:textColor="@android:color/black"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/button"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="20dp"
+                        android:orientation="horizontal"
+                        android:weightSum="1" >
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.8"
+                            android:orientation="horizontal" >
+
+                            <com.schoofi.utils.CustomButton
+                                android:id="@+id/btn_pollOption1"
+                                android:layout_width="match_parent"
+                                android:layout_height="45dp"
+                                android:background="@android:color/transparent"
+                                android:drawableLeft="@drawable/redpoll"
+                                android:text="bbbbbb"
+                                android:drawablePadding="20dp"
+                                android:gravity="left|center_vertical"
+                                android:textSize="15sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.2"
+                            android:orientation="horizontal" >
+
+                            <ImageView
+                                android:id="@+id/image_poll1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/green_tick" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:orientation="horizontal"
+                        android:weightSum="1" >
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.8"
+                            android:orientation="horizontal" >
+
+                            <com.schoofi.utils.CustomButton
+                                android:id="@+id/btn_pollOption2"
+                                android:layout_width="match_parent"
+                                android:layout_height="45dp"
+                                android:background="@android:color/transparent"
+                                android:drawableLeft="@drawable/redpoll"
+                                android:text="bbbbbb"
+                                android:drawablePadding="20dp"
+                                android:gravity="left|center_vertical"
+                                android:textSize="15sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.2"
+                            android:orientation="horizontal" >
+
+                            <ImageView
+                                android:id="@+id/image_poll2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/green_tick" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:orientation="horizontal"
+                        android:weightSum="1" >
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.8"
+                            android:orientation="horizontal" >
+
+                            <com.schoofi.utils.CustomButton
+                                android:id="@+id/btn_pollOption3"
+                                android:layout_width="match_parent"
+                                android:layout_height="45dp"
+                                android:background="@android:color/transparent"
+                                android:drawableLeft="@drawable/redpoll"
+                                android:text="bbbbbb"
+                                android:drawablePadding="20dp"
+                                android:gravity="left|center_vertical"
+                                android:textSize="15sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.2"
+                            android:orientation="horizontal" >
+
+                            <ImageView
+                                android:id="@+id/image_poll3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/green_tick" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:orientation="horizontal"
+                        android:weightSum="1" >
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.8"
+                            android:orientation="horizontal" >
+
+                            <com.schoofi.utils.CustomButton
+                                android:id="@+id/btn_pollOption4"
+                                android:layout_width="match_parent"
+                                android:layout_height="45dp"
+                                android:background="@android:color/transparent"
+                                android:drawableLeft="@drawable/redpoll"
+                                android:text="bbbbbb"
+                                android:drawablePadding="20dp"
+                                android:gravity="left|center_vertical"
+                                android:textSize="15sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.2"
+                            android:orientation="horizontal" >
+
+                            <ImageView
+                                android:id="@+id/image_poll4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/green_tick" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:orientation="horizontal"
+                        android:weightSum="1" >
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.8"
+                            android:orientation="horizontal" >
+
+                            <com.schoofi.utils.CustomButton
+                                android:id="@+id/btn_pollOption5"
+                                android:layout_width="match_parent"
+                                android:layout_height="45dp"
+                                android:background="@android:color/transparent"
+                                android:drawableLeft="@drawable/redpoll"
+                                android:text="bbbbbb"
+                                android:drawablePadding="20dp"
+                                android:gravity="left|center_vertical"
+                                android:textSize="15sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.2"
+                            android:orientation="horizontal" >
+
+                            <ImageView
+                                android:id="@+id/image_poll5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/green_tick" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:orientation="horizontal"
+                        android:weightSum="1" >
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.8"
+                            android:orientation="horizontal" >
+
+                            <com.schoofi.utils.CustomButton
+                                android:id="@+id/btn_pollOption6"
+                                android:layout_width="match_parent"
+                                android:layout_height="45dp"
+                                android:background="@android:color/transparent"
+                                android:drawableLeft="@drawable/redpoll"
+                                android:text="bbbbbb"
+                                android:drawablePadding="20dp"
+                                android:gravity="left|center_vertical"
+                                android:textSize="15sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.2"
+                            android:orientation="horizontal" >
+
+                            <ImageView
+                                android:id="@+id/image_poll6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/green_tick" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:orientation="horizontal"
+                        android:weightSum="1" >
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.8"
+                            android:orientation="horizontal" >
+
+                            <com.schoofi.utils.CustomButton
+                                android:id="@+id/btn_pollOption7"
+                                android:layout_width="match_parent"
+                                android:layout_height="45dp"
+                                android:background="@android:color/transparent"
+                                android:drawableLeft="@drawable/redpoll"
+                                android:text="bbbbbb"
+                                android:drawablePadding="20dp"
+                                android:gravity="left|center_vertical"
+                                android:textSize="15sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.2"
+                            android:orientation="horizontal" >
+
+                            <ImageView
+                                android:id="@+id/image_poll7"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/green_tick" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:orientation="horizontal"
+                        android:weightSum="1" >
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.8"
+                            android:orientation="horizontal" >
+
+                            <com.schoofi.utils.CustomButton
+                                android:id="@+id/btn_pollOption8"
+                                android:layout_width="match_parent"
+                                android:layout_height="45dp"
+                                android:background="@android:color/transparent"
+                                android:drawableLeft="@drawable/redpoll"
+                                android:text="bbbbbb"
+                                android:drawablePadding="20dp"
+                                android:gravity="left|center_vertical"
+                                android:textSize="15sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.2"
+                            android:orientation="horizontal" >
+
+                            <ImageView
+                                android:id="@+id/image_poll8"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/green_tick" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:orientation="horizontal"
+                        android:weightSum="1" >
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.8"
+                            android:orientation="horizontal" >
+
+                            <com.schoofi.utils.CustomButton
+                                android:id="@+id/btn_pollOption9"
+                                android:layout_width="match_parent"
+                                android:layout_height="45dp"
+                                android:background="@android:color/transparent"
+                                android:drawableLeft="@drawable/redpoll"
+                                android:text="bbbbbb"
+                                android:drawablePadding="20dp"
+                                android:gravity="left|center_vertical"
+                                android:textSize="15sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.2"
+                            android:orientation="horizontal" >
+
+                            <ImageView
+                                android:id="@+id/image_poll9"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/green_tick" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:orientation="horizontal"
+                        android:weightSum="1" >
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.8"
+                            android:orientation="horizontal" >
+
+                            <com.schoofi.utils.CustomButton
+                                android:id="@+id/btn_pollOption10"
+                                android:layout_width="match_parent"
+                                android:layout_height="45dp"
+                                android:background="@android:color/transparent"
+                                android:drawableLeft="@drawable/redpoll"
+                                android:text="bbbbbb"
+                                android:drawablePadding="20dp"
+                                android:gravity="left|center_vertical"
+                                android:textSize="15sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.2"
+                            android:orientation="horizontal" >
+
+                            <ImageView
+                                android:id="@+id/image_poll10"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/green_tick" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </ScrollView>
+
+        <!--<View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/overall_list_divider_margin"
+            android:background="@drawable/divider"
+            android:layout_margin="0dp"></View>-->
+
+
+
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        android:gravity="right"
+        android:foregroundGravity="center"
+
+        android:layout_alignParentBottom="true"
+        android:id="@+id/linear_bottom">
+
+
+        <com.schoofi.utils.CustomButton
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="Next"
+            android:background="@drawable/buttons"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:id="@+id/btn_skip"
+            android:layout_gravity="right"
+            android:gravity="center"
+            android:layout_margin="10dp" />
+
+    </LinearLayout>
+
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,216 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.schoofi.activities.TeacherHomeScreen" >
+
+    <LinearLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#EE4749"
+        android:orientation="horizontal"
+        android:weightSum="3" >
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:layout_weight="0.3"
+            android:gravity="center"
+            android:src="@drawable/ic_action_back" />
+
+        <com.schoofi.utils.CustomTextView
+            android:id="@+id/txt_class"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="2.3"
+            android:gravity="center"
+            android:text="Previous School Details"
+            android:textColor="#D7D7D7"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView1"
+        android:scrollbars="none"
+        android:layout_below="@+id/headerLayout"
+        android:layout_above="@+id/linear_bottom">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="10dp">
+
+
+
+            <com.schoofi.utils.CustomEditText
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/button"
+                android:hint="Previous School Name*"
+                android:singleLine="true"
+                android:imeOptions="actionNext"
+                android:textColor="@android:color/black"
+
+                android:textSize="15sp"
+                android:id="@+id/edit_school_name"/>
+
+            <com.schoofi.utils.CustomEditText
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/button"
+                android:gravity="top"
+                android:hint="Previous School Address*"
+                android:imeOptions="actionNext"
+                android:singleLine="true"
+                android:textColor="@android:color/black"
+                android:textSize="15sp"
+                android:id="@+id/edit_school_address"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+            <com.schoofi.utils.CustomEditText
+                android:layout_width="0dp"
+                android:layout_height="38dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/button"
+                android:hint="Last Class Attended*"
+                android:imeOptions="actionNext"
+                android:singleLine="true"
+                android:textColor="@android:color/black"
+                android:layout_weight="0.5"
+                android:textSize="15sp"
+                android:id="@+id/edit_last_class_attended"/>
+
+
+
+            <com.schoofi.utils.CustomEditText
+                android:layout_width="0dp"
+                android:layout_height="38dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/button"
+                android:hint="Previous Stream(If Any)"
+                android:singleLine="true"
+                android:imeOptions="actionNext"
+                android:layout_weight="0.5"
+                android:textSize="15sp"
+                android:id="@+id/edit_last_stream"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+            <com.schoofi.utils.CustomEditText
+                android:layout_width="0dp"
+                android:layout_height="38dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/button"
+                android:hint="Total Percentage*"
+                android:singleLine="true"
+                android:imeOptions="actionNext"
+                android:textColor="@android:color/black"
+                android:layout_weight="0.5"
+                android:textSize="15sp"
+                android:id="@+id/edit_percentage"/>
+
+
+
+
+
+
+            <com.schoofi.utils.CustomEditText
+                android:layout_width="0dp"
+                android:layout_height="38dp"
+                android:layout_margin="10dp"
+                android:imeOptions="actionDone"
+                android:background="@drawable/button"
+                android:singleLine="true"
+                android:hint="CGPA"
+                android:textColor="@android:color/black"
+                android:layout_weight="0.5"
+                android:textSize="15sp"
+                android:id="@+id/edit_grade"/>
+
+                </LinearLayout>
+
+            <com.schoofi.utils.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textSize="15sp"
+                android:text="Previous Class Subject Wise Details"
+                android:textColor="@android:color/black"/>
+
+            <com.schoofi.utils.CustomButton
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:textColor="@android:color/white"
+                android:textSize="15sp"
+                android:text="Add Subject"
+                android:textAllCaps="false"
+                android:background="@drawable/buttons"
+                android:id="@+id/btn_add_subject"/>
+
+            <ScrollView
+                android:id="@+id/scrollView2"
+                android:layout_width="match_parent"
+                android:scrollbars="none"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/linearLayoutForm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+                </LinearLayout>
+            </ScrollView>
+
+
+
+
+
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        android:id="@+id/linear_bottom"
+        android:orientation="vertical">
+
+        <com.schoofi.utils.CustomButton
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:background="@drawable/buttons"
+            android:id="@+id/btn_register"
+            android:layout_margin="10dp"
+            android:text="Submit Form"
+            android:textColor="@android:color/white"
+            android:textSize="15sp"/>
+    </LinearLayout>
+
+</RelativeLayout>

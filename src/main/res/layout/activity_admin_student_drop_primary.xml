@@ -1,0 +1,66 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.schoofi.activities.TeacherHomeScreen" >
+
+    <LinearLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#EE4749"
+        android:orientation="horizontal"
+        android:weightSum="3" >
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:layout_weight="0.3"
+            android:gravity="center"
+            android:src="@drawable/ic_action_back" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/headerLayout"
+        android:orientation="vertical">
+
+        <smtchahal.materialspinner.MaterialSpinner
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/grey_button"
+            android:id="@+id/spinner_route_number"
+            app:ms_hint="Select Class Section"
+            android:gravity="center"
+            app:ms_hintColor="@color/black"
+            app:ms_baseColor="@color/black"
+            app:ms_arrowColor="@color/black"
+            app:ms_enableFloatingLabel="false"
+            android:layout_margin="10dp"
+            app:ms_enableErrorLabel="false"
+            app:ms_arrowSize="10dp"
+            app:ms_multiline="false"
+            android:padding="0dp"
+            app:ms_floatingLabelText=""
+            app:ms_thickness="0dp"
+            ></smtchahal.materialspinner.MaterialSpinner>
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/listView_students"
+            android:layout_margin="10dp"
+            android:divider="@drawable/divider"
+            android:dividerHeight="2dp"
+            android:scrollbars="none">
+
+        </ListView>
+
+    </LinearLayout>
+
+    </RelativeLayout>

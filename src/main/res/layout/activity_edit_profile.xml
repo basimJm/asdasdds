@@ -1,0 +1,519 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#EE4749"
+        android:orientation="horizontal"
+        android:weightSum="3" >
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:layout_weight="0.3"
+            android:gravity="center"
+            android:src="@drawable/ic_action_back"/>
+
+        <com.schoofi.utils.CustomTextView
+            android:id="@+id/txt_newLeave"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="2.3"
+            android:gravity="center"
+            android:text="Edit"
+            android:textColor="#D7D7D7"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <com.schoofi.utils.CustomButton
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/headerLayout"
+        android:background="@drawable/buttons"
+        android:text="Change Pickup Location"
+        android:textAllCaps="false"
+        android:id="@+id/btn_done"
+        android:gravity="center"
+        android:textSize="15sp"
+        android:textColor="@color/white"
+        android:layout_margin="10dp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:layout_below="@+id/btn_done"
+        android:layout_above="@+id/btn_next">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="10dp"
+            >
+
+
+
+            <com.schoofi.utils.CustomTextView
+                android:id="@+id/text_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="Address"
+                android:textColor="@android:color/black"
+                android:textSize="15sp" />
+
+            <com.schoofi.utils.CustomEditText
+                android:id="@+id/edit_address"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:background="@drawable/button"
+                android:textColor="@android:color/black"
+                android:ems="10"
+                android:hint="Address"
+                android:inputType="textAutoComplete"
+                android:paddingBottom="5dp"
+                android:paddingEnd="12dp"
+                android:paddingLeft="14dp"
+                android:paddingRight="12dp"
+                android:paddingStart="12dp"
+                android:paddingTop="5dp"
+                android:textSize="15sp" >
+
+                <requestFocus />
+            </com.schoofi.utils.CustomEditText>
+
+            <com.schoofi.utils.CustomTextView
+                android:id="@+id/text_landmark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="Landmark"
+                android:textColor="@android:color/black"
+                android:textSize="15sp" />
+
+            <com.schoofi.utils.CustomEditText
+                android:id="@+id/edit_landmark"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:background="@drawable/button"
+                android:textColor="@android:color/black"
+                android:ems="10"
+                android:hint="Landmark"
+                android:inputType="textAutoComplete"
+                android:paddingBottom="5dp"
+                android:paddingEnd="12dp"
+                android:paddingLeft="14dp"
+                android:paddingRight="12dp"
+                android:paddingStart="12dp"
+                android:paddingTop="5dp"
+                android:textSize="15sp" >
+
+                <requestFocus />
+            </com.schoofi.utils.CustomEditText>
+
+            <com.schoofi.utils.CustomTextView
+                android:id="@+id/text_state"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="State"
+                android:textColor="@android:color/black"
+                android:textSize="15sp" />
+
+            <com.schoofi.utils.CustomEditText
+                android:id="@+id/edit_state"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:background="@drawable/button"
+                android:textColor="@android:color/black"
+                android:ems="10"
+                android:hint="State"
+                android:inputType="textAutoComplete"
+                android:paddingBottom="5dp"
+                android:paddingEnd="12dp"
+                android:paddingLeft="14dp"
+                android:paddingRight="12dp"
+                android:paddingStart="12dp"
+                android:paddingTop="5dp"
+                android:textSize="15sp" >
+
+                <requestFocus />
+            </com.schoofi.utils.CustomEditText>
+
+            <com.schoofi.utils.CustomTextView
+                android:id="@+id/text_district"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="District"
+                android:textColor="@android:color/black"
+                android:textSize="15sp" />
+
+            <com.schoofi.utils.CustomEditText
+                android:id="@+id/edit_district"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:background="@drawable/button"
+                android:textColor="@android:color/black"
+                android:ems="10"
+                android:hint="District"
+                android:inputType="textAutoComplete"
+                android:paddingBottom="5dp"
+                android:paddingEnd="12dp"
+                android:paddingLeft="14dp"
+                android:paddingRight="12dp"
+                android:paddingStart="12dp"
+                android:paddingTop="5dp"
+                android:textSize="15sp" >
+
+                <requestFocus />
+            </com.schoofi.utils.CustomEditText>
+
+            <com.schoofi.utils.CustomTextView
+                android:id="@+id/text_city"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="City"
+                android:textColor="@android:color/black"
+                android:textSize="15sp" />
+
+            <com.schoofi.utils.CustomEditText
+                android:id="@+id/edit_city"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:background="@drawable/button"
+                android:textColor="@android:color/black"
+                android:ems="10"
+                android:hint="City"
+                android:inputType="textAutoComplete"
+                android:paddingBottom="5dp"
+                android:paddingEnd="12dp"
+                android:paddingLeft="14dp"
+                android:paddingRight="12dp"
+                android:paddingStart="12dp"
+                android:paddingTop="5dp"
+                android:textSize="15sp" >
+
+                <requestFocus />
+            </com.schoofi.utils.CustomEditText>
+
+            <com.schoofi.utils.CustomTextView
+                android:id="@+id/text_pincode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="Pincode"
+                android:textColor="@android:color/black"
+                android:textSize="15sp" />
+
+            <com.schoofi.utils.CustomEditText
+                android:id="@+id/edit_pincode"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:background="@drawable/button"
+                android:textColor="@android:color/black"
+                android:ems="10"
+                android:hint="Pincode"
+                android:inputType="textAutoComplete"
+                android:paddingBottom="5dp"
+                android:paddingEnd="12dp"
+                android:paddingLeft="14dp"
+                android:paddingRight="12dp"
+                android:paddingStart="12dp"
+                android:paddingTop="5dp"
+                android:textSize="15sp" >
+
+                <requestFocus />
+            </com.schoofi.utils.CustomEditText>
+
+            <com.schoofi.utils.CustomTextView
+                android:id="@+id/text_religion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="Religion"
+                android:textColor="@android:color/black"
+                android:textSize="15sp" />
+
+            <com.schoofi.utils.CustomEditText
+                android:id="@+id/edit_religion"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:background="@drawable/button"
+                android:textColor="@android:color/black"
+                android:ems="10"
+                android:hint="Religion"
+                android:inputType="textAutoComplete"
+                android:paddingBottom="5dp"
+                android:paddingEnd="12dp"
+                android:paddingLeft="14dp"
+                android:paddingRight="12dp"
+                android:paddingStart="12dp"
+                android:paddingTop="5dp"
+                android:textSize="15sp" >
+
+                <requestFocus />
+            </com.schoofi.utils.CustomEditText>
+
+
+
+            <com.schoofi.utils.CustomTextView
+                android:id="@+id/text_ews"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:layout_marginTop="12dp"
+                android:text="EWS"
+                android:textSize="15sp" />
+
+            <com.schoofi.utils.CustomEditText
+                android:id="@+id/edit_ews"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:background="@drawable/button"
+                android:textColor="@android:color/black"
+                android:ems="10"
+                android:hint="EWS(YES/NO)"
+                android:gravity="top"
+                android:maxLines="5"
+                android:paddingBottom="5dp"
+                android:paddingEnd="12dp"
+                android:paddingLeft="14dp"
+                android:paddingRight="12dp"
+                android:paddingStart="12dp"
+                android:paddingTop="5dp"
+                android:textSize="15sp" >
+
+
+            </com.schoofi.utils.CustomEditText>
+
+            <com.schoofi.utils.CustomTextView
+                android:id="@+id/text_student_disability"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:layout_marginTop="12dp"
+                android:text="Disability"
+                android:textSize="15sp" />
+
+            <com.schoofi.utils.CustomEditText
+                android:id="@+id/edit_disability"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="top"
+                android:gravity="top"
+                android:background="@drawable/button"
+                android:textColor="@android:color/black"
+                android:ems="10"
+                android:hint="Disability"
+                android:maxLines="5"
+                android:paddingBottom="5dp"
+                android:paddingEnd="12dp"
+                android:paddingLeft="14dp"
+                android:paddingRight="12dp"
+                android:paddingStart="12dp"
+                android:paddingTop="5dp"
+                android:textSize="15sp" >
+
+
+            </com.schoofi.utils.CustomEditText>
+
+            <com.schoofi.utils.CustomTextView
+                android:id="@+id/text_student_birth_mark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:layout_marginTop="12dp"
+                android:text="Birth-Mark"
+                android:textSize="15sp" />
+
+            <com.schoofi.utils.CustomEditText
+                android:id="@+id/edit_birth_mark"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="top"
+                android:gravity="top"
+                android:background="@drawable/button"
+                android:textColor="@android:color/black"
+                android:ems="10"
+                android:hint="Birth Mark"
+                android:maxLines="5"
+                android:paddingBottom="5dp"
+                android:paddingEnd="12dp"
+                android:paddingLeft="14dp"
+                android:paddingRight="12dp"
+                android:paddingStart="12dp"
+                android:paddingTop="5dp"
+                android:textSize="15sp" >
+
+
+            </com.schoofi.utils.CustomEditText>
+
+
+
+
+
+            <com.schoofi.utils.CustomTextView
+                android:id="@+id/text_height"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:layout_marginTop="12dp"
+                android:text="Height"
+                android:textSize="15sp" />
+
+            <com.schoofi.utils.CustomEditText
+                android:id="@+id/edit_height"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="top"
+                android:gravity="top"
+                android:background="@drawable/button"
+                android:textColor="@android:color/black"
+                android:ems="10"
+                android:hint="Height"
+                android:maxLines="5"
+                android:paddingBottom="5dp"
+                android:paddingEnd="12dp"
+                android:paddingLeft="14dp"
+                android:paddingRight="12dp"
+                android:paddingStart="12dp"
+                android:paddingTop="5dp"
+                android:textSize="15sp" >
+
+
+            </com.schoofi.utils.CustomEditText>
+
+            <com.schoofi.utils.CustomTextView
+                android:id="@+id/text_weight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:layout_marginTop="12dp"
+                android:text="Weight"
+                android:textSize="15sp" />
+
+            <com.schoofi.utils.CustomEditText
+                android:id="@+id/edit_weight"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="top"
+                android:gravity="top"
+                android:background="@drawable/button"
+                android:textColor="@android:color/black"
+                android:ems="10"
+                android:hint="Weight"
+                android:maxLines="5"
+                android:paddingBottom="5dp"
+                android:paddingEnd="12dp"
+                android:paddingLeft="14dp"
+                android:paddingRight="12dp"
+                android:paddingStart="12dp"
+                android:paddingTop="5dp"
+                android:textSize="15sp" >
+
+
+            </com.schoofi.utils.CustomEditText>
+
+
+            <com.schoofi.utils.CustomTextView
+                android:id="@+id/text_blood_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:layout_marginTop="12dp"
+                android:text="Blood Group"
+                android:textSize="15sp" />
+
+            <com.schoofi.utils.CustomEditText
+                android:id="@+id/edit_blood_group"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="top"
+                android:gravity="top"
+                android:background="@drawable/button"
+                android:textColor="@android:color/black"
+                android:ems="10"
+                android:hint="Blood Group"
+                android:maxLines="5"
+                android:paddingBottom="5dp"
+                android:paddingEnd="12dp"
+                android:paddingLeft="14dp"
+                android:paddingRight="12dp"
+                android:paddingStart="12dp"
+                android:paddingTop="5dp"
+                android:textSize="15sp" >
+
+
+            </com.schoofi.utils.CustomEditText>
+
+            <com.schoofi.utils.CustomTextView
+                android:id="@+id/text_student_allergies"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:layout_marginTop="12dp"
+                android:text="Allergies"
+                android:textSize="15sp" />
+
+            <com.schoofi.utils.CustomEditText
+                android:id="@+id/edit_student_allergies"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_gravity="top"
+                android:gravity="top"
+                android:background="@drawable/button"
+                android:textColor="@android:color/black"
+                android:ems="10"
+                android:hint="Allergies"
+                android:maxLines="5"
+                android:paddingBottom="5dp"
+                android:paddingEnd="12dp"
+                android:paddingLeft="14dp"
+                android:paddingRight="12dp"
+                android:paddingStart="12dp"
+                android:paddingTop="5dp"
+                android:textSize="15sp" >
+
+
+            </com.schoofi.utils.CustomEditText>
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <com.schoofi.utils.CustomButton
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="10dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/buttons"
+        android:text="Update Profile"
+        android:textSize="15sp"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:id="@+id/btn_edit"/>
+
+</RelativeLayout>

@@ -1,0 +1,115 @@
+<?xml version="1.0"?>
+<RelativeLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    <library.SliderLayout
+        android:id="@+id/slider"
+        android:layout_width="match_parent"
+        custom:pager_animation="Accordion"
+        custom:auto_cycle="true"
+        custom:indicator_visibility="visible"
+        custom:pager_animation_span="1100"
+        android:layout_height="175dp"/>
+
+    <library.Indicators.PagerIndicator
+        android:id="@+id/custom_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        custom:selected_color="#0095BF"
+        custom:unselected_color="#55333333"
+        custom:selected_drawable="@drawable/bird"
+        custom:shape="oval"
+        custom:selected_padding_left="6dp"
+        custom:selected_padding_right="6dp"
+        custom:unselected_padding_left="2dp"
+        custom:unselected_padding_right="2dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        custom:selected_width="6dp"
+        custom:selected_height="6dp"
+        custom:unselected_width="6dp"
+        custom:unselected_height="6dp"
+        android:layout_marginBottom="20dp"
+        />
+    <library.Indicators.PagerIndicator
+        android:id="@+id/custom_indicator2"
+        style="@style/AndroidImageSlider_Corner_Oval_Orange"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        />
+
+    <com.schoofi.utils.CustomTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_10dp"
+        android:layout_below="@+id/slider"
+        android:id="@+id/text_hots"
+        android:text="Hots"
+        android:textSize="@dimen/text_size_15sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/text_hots"
+        android:padding="5dp"
+        android:layout_height="wrap_content" />
+
+    <com.schoofi.utils.CustomTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_10dp"
+        android:layout_below="@+id/recycler_view"
+        android:id="@+id/text_hots1"
+        android:text="Hots"
+        android:textSize="@dimen/text_size_15sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view1"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/text_hots1"
+        android:padding="5dp"
+        android:layout_height="wrap_content" />
+
+    <com.schoofi.utils.CustomTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_10dp"
+        android:layout_below="@+id/recycler_view1"
+        android:id="@+id/text_hots2"
+        android:text="Hots"
+        android:textSize="@dimen/text_size_15sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view2"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/text_hots2"
+        android:padding="5dp"
+        android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+
+</RelativeLayout>

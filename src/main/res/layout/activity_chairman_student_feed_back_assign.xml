@@ -1,0 +1,90 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.schoofi.activities.TeacherHomeScreen" >
+
+    <LinearLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#EE4749"
+        android:orientation="horizontal"
+        android:weightSum="3" >
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:layout_weight="0.3"
+            android:gravity="center"
+            android:src="@drawable/ic_action_back" />
+
+        <com.schoofi.utils.CustomTextView
+            android:id="@+id/txt_class"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="25dp"
+            android:layout_weight="2.3"
+            android:gravity="center"
+            android:text="Details"
+            android:textColor="#D7D7D7"
+            android:textSize="20sp" />
+
+        
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/headerLayout">
+        
+        <com.schoofi.utils.CustomEditText 
+            android:id="@+id/ch_feedback_msg"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/button"
+            android:layout_margin="10dp"
+            android:hint="Write your message"
+            android:textSize="15sp"
+            android:textColor="@android:color/black"/>
+        
+        <com.schoofi.utils.CustomTextView 
+            android:id="@+id/ch_dateTextView"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:background="@drawable/button"
+            android:text="Target date"
+            android:layout_margin="10dp"
+            android:textSize="15sp"
+            android:textColor="#808080"/>
+        
+        <Spinner 
+            android:id="@+id/spinner_assign"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/arrowdown"/>
+        
+        <ListView 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:id="@+id/listView_member_assign"></ListView>
+    </LinearLayout>
+
+    <com.schoofi.utils.CustomButton 
+        android:id="@+id/btn_ch_assign_done"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:background="@drawable/buttons"
+        android:textColor="@android:color/white"
+        android:textSize="15sp"
+        android:text="Done"
+        android:layout_margin="10dp"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>

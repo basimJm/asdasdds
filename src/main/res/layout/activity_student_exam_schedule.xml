@@ -1,0 +1,165 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.schoofi.activitiess.StudentAnnouncement" >
+
+    <LinearLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#EE4749"
+        android:orientation="horizontal"
+        android:weightSum="3" >
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:layout_weight="0.3"
+            android:gravity="center"
+            android:src="@drawable/ic_action_back" />
+
+        <com.schoofi.utils.CustomTextView
+            android:id="@+id/txt_examSchedule"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="2.3"
+            android:gravity="center"
+            android:text="Exam Schedule"
+            android:textColor="#D7D7D7"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/headerLayout"
+        android:orientation="vertical" >
+
+        <!--<Spinner
+            android:id="@+id/spinExamNames"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/arrowdown"
+            android:padding="10dp" />-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:layout_margin="10dp">
+
+            <com.schoofi.utils.CustomTextView
+                android:id="@+id/textNewExam"
+                android:layout_width="0dp"
+                android:layout_height="38dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/button"
+                android:gravity="center"
+                android:text="Select Term"
+                android:layout_weight="0.5"
+                android:textColor="@android:color/darker_gray" />
+
+            <com.schoofi.utils.CustomTextView
+                android:id="@+id/textReset"
+                android:layout_width="0dp"
+                android:layout_height="38dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/button"
+                android:gravity="center"
+                android:layout_weight="0.5"
+                android:text="Select Exam"
+                android:textColor="@android:color/darker_gray" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_exam_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#e4e4e4"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="horizontal"
+                    android:weightSum="1" >
+
+                    <com.schoofi.utils.CustomTextView
+                        android:id="@+id/text_period"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="left"
+                      
+                        android:padding="10dp"
+                        android:layout_weight="0.5"
+                        android:gravity="center_horizontal"
+                        android:text="Date"
+                        android:textColor="@android:color/black"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <com.schoofi.utils.CustomTextView
+                        android:id="@+id/text_subject"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="right"
+                        android:layout_weight="0.5"
+                        android:padding="10dp"
+                        android:gravity="center_horizontal"
+                        android:text="Subject"
+                        android:textColor="@android:color/black"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <com.schoofi.utils.CustomTextView
+                        android:id="@+id/newView1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+                        android:text="No Records Found"
+                        android:textColor="@android:color/black"
+                        android:textSize="15sp" />
+
+                    <com.orangegangsters.github.swipyrefreshlayout.library.SwipyRefreshLayout
+                        android:id="@+id/swipyrefreshlayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/headerLayout"
+                        app:srl_direction="top">
+
+                    <ListView
+                        android:id="@+id/student_exam_schedule_listView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:divider="@drawable/divider"
+                        android:dividerHeight="2dp"
+                        android:padding="10dp" >
+                    </ListView>
+                    </com.orangegangsters.github.swipyrefreshlayout.library.SwipyRefreshLayout>
+                </FrameLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

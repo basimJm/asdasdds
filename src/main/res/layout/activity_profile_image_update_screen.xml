@@ -1,0 +1,117 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.schoofi.activitiess.StudentExamSchedule"
+    android:descendantFocusability="blocksDescendants">
+
+    <LinearLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#EE4749"
+        android:orientation="horizontal"
+        android:weightSum="3" >
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:layout_weight="0.3"
+            android:src="@drawable/ic_action_back"
+            android:gravity="center"
+            android:scaleType="fitXY" />
+
+        <com.schoofi.utils.CustomTextView
+            android:id="@+id/txt_class"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="25dp"
+            android:layout_weight="2.3"
+            android:gravity="center"
+            android:text=""
+            android:textColor="#D7D7D7"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/headerLayout"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <com.schoofi.utils.CustomButton
+            android:id="@+id/btn_student_leave_choose"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/button"
+            android:paddingBottom="5dp"
+            android:layout_marginBottom="10dp"
+            android:textAllCaps="false"
+            android:paddingEnd="12dp"
+            android:paddingLeft="14dp"
+            android:paddingRight="12dp"
+            android:paddingStart="12dp"
+            android:paddingTop="5dp"
+            android:text="Choose Image"
+            android:textColor="@android:color/black"
+            android:textSize="15sp" />
+
+
+
+
+
+        <ImageView
+            android:id="@+id/imageLeave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"/>
+
+        <com.schoofi.utils.CustomButton
+            android:id="@+id/btn_student_leave_submit"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/buttongreen"
+            android:paddingBottom="5dp"
+            android:layout_marginBottom="10dp"
+            android:textAllCaps="false"
+            android:paddingEnd="12dp"
+            android:paddingLeft="14dp"
+            android:paddingRight="12dp"
+            android:paddingStart="12dp"
+            android:paddingTop="5dp"
+            android:text="Submit"
+            android:textColor="@android:color/white"
+            android:textSize="15sp" />
+
+        <com.schoofi.utils.CustomButton
+            android:id="@+id/btn_student_leave_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/buttons"
+            android:paddingBottom="5dp"
+            android:layout_marginBottom="10dp"
+            android:textAllCaps="false"
+            android:paddingEnd="12dp"
+            android:paddingLeft="14dp"
+            android:paddingRight="12dp"
+            android:paddingStart="12dp"
+            android:paddingTop="5dp"
+            android:text="Cancel"
+            android:textColor="@android:color/white"
+            android:textSize="15sp" />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

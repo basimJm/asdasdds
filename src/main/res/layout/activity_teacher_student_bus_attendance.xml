@@ -1,0 +1,104 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+    <devs.mulham.horizontalcalendar.HorizontalCalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="0dp"
+        android:background="@color/red"
+        app:textColorSelected="#FFFF"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#DCDBDB"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/calendarView"
+        android:id="@+id/linear_top">
+
+        <com.schoofi.utils.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/attendance_date"
+            android:textSize="15sp"
+            android:textColor="@android:color/black"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:background="@android:color/white"/>
+
+        <com.schoofi.utils.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_no_of_students"
+            android:textSize="15sp"
+            android:textColor="@android:color/black"
+            android:layout_margin="10dp"
+            android:gravity="center"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_above="@+id/hhh"
+        android:layout_below="@+id/linear_top">
+
+
+
+
+
+        <ListView
+            android:id="@+id/listViewTeacherStudentAttendanceDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:padding="20dp" >
+        </ListView>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/hhh"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#d3d3d3"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:padding="20dp" >
+
+        <com.schoofi.utils.CustomButton
+            android:id="@+id/btn_submitAttendanceList1"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:background="@drawable/buttongreen"
+            android:layout_weight="0.5"
+            android:padding="10dp"
+            android:layout_margin="5dp"
+            android:textAllCaps="true"
+            android:text="Save"
+            android:textColor="@android:color/white"
+            android:textSize="15sp" />
+
+        <com.schoofi.utils.CustomButton
+            android:id="@+id/btn_submitAttendanceList"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/buttons"
+            android:padding="10dp"
+            android:layout_weight="0.5"
+            android:textAllCaps="true"
+            android:text="Submit"
+            android:textColor="@android:color/white"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+</RelativeLayout>

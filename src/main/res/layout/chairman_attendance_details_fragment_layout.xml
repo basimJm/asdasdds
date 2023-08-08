@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+
+
+    <com.schoofi.utils.CustomTextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/text_calender"
+        android:background="@drawable/button"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:drawableRight="@drawable/calandar"
+        android:visibility="visible"
+        android:textSize="15sp"
+        android:textColor="@android:color/black"/>
+
+    <devs.mulham.horizontalcalendar.HorizontalCalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="0dp"
+        android:background="@color/red"
+        app:textColorSelected="#FFFF"/>
+
+
+
+
+
+    <com.orangegangsters.github.swipyrefreshlayout.library.SwipyRefreshLayout
+        android:id="@+id/swipyrefreshlayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srl_direction="top">
+
+        <ListView
+            android:id="@+id/listView_teacher_feedback"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@drawable/divider"
+            android:dividerHeight="2dp"
+            android:padding="10dp">
+
+        </ListView>
+
+    </com.orangegangsters.github.swipyrefreshlayout.library.SwipyRefreshLayout>
+
+
+</LinearLayout>

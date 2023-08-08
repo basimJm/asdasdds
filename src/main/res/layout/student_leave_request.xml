@@ -1,0 +1,227 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#EE4749"
+        android:orientation="horizontal"
+        android:weightSum="3" >
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:layout_weight="0.3"
+            android:gravity="center"
+            android:src="@drawable/ic_action_back"/>
+
+        <com.schoofi.utils.CustomTextView
+            android:id="@+id/txt_newLeave"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="2.3"
+            android:gravity="center"
+            android:text="New Application"
+            android:textColor="#D7D7D7"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollview_student_leave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/headerLayout" >
+
+        <LinearLayout
+            android:id="@+id/linear_student_leave_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical"
+            android:padding="10dp" >
+
+            <com.schoofi.utils.CustomTextView
+                android:id="@+id/text_student_leave_subject"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:text="Subject"
+                android:textSize="15sp" />
+
+            <com.schoofi.utils.CustomEditText
+                android:id="@+id/edit_leave_subject"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:background="@drawable/button"
+                android:textColor="@android:color/black"
+                android:ems="10"
+                android:hint="Leave Subject"
+                android:inputType="textAutoComplete"
+                android:paddingBottom="5dp"
+                android:paddingEnd="12dp"
+                android:paddingLeft="14dp"
+                android:paddingRight="12dp"
+                android:paddingStart="12dp"
+                android:paddingTop="5dp"
+                android:textSize="15sp" >
+
+                <requestFocus />
+            </com.schoofi.utils.CustomEditText>
+
+            <com.schoofi.utils.CustomTextView
+                android:id="@+id/text_student_leave_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:textColor="@android:color/black"
+                android:text="Leave Details"
+                android:textSize="15sp" />
+
+
+
+            <com.schoofi.utils.CustomEditText
+                android:id="@+id/edit_student_leave_details"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:textColor="@android:color/black"
+                android:background="@drawable/button"
+                android:ems="10"
+                android:gravity="fill_horizontal"
+                android:hint="Write your message here"
+                android:inputType="textAutoComplete"
+                android:paddingBottom="5dp"
+                android:paddingEnd="12dp"
+                android:paddingLeft="14dp"
+                android:paddingRight="12dp"
+                android:paddingStart="12dp"
+                android:paddingTop="5dp"
+                android:textSize="15sp" />
+
+
+
+            <com.schoofi.utils.CustomTextView
+                android:id="@+id/text_student_leave_words_limit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="500 words max!"
+                android:textColor="@android:color/black"
+                android:textSize="12sp" />
+
+            <Switch
+                android:id="@+id/mySwitch1"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:textColor="@color/black"
+                android:layout_margin="5dp"
+                android:textSize="15sp"
+                android:text="Hostel Leave" />
+
+            <Switch
+                android:id="@+id/mySwitch2"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:textColor="@color/black"
+                android:layout_margin="5dp"
+                android:textSize="15sp"
+                android:text="Notify Hostel Wardon" />
+
+            <com.schoofi.utils.CustomTextView
+                android:id="@+id/text_student_leave_start_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="Start Date"
+                android:textColor="@android:color/black"
+                android:textSize="15sp" />
+
+            <com.schoofi.utils.CustomButton
+                android:id="@+id/btn_student_leave_starting_date"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/button"
+                android:drawableRight="@drawable/calander_icon"
+                android:paddingBottom="5dp"
+                android:paddingEnd="12dp"
+                android:paddingLeft="14dp"
+                android:paddingRight="12dp"
+                android:paddingStart="12dp"
+                android:paddingTop="5dp"
+                android:textSize="15sp" />
+
+            <com.schoofi.utils.CustomTextView
+                android:id="@+id/text_student_leave_end_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="End Date"
+                android:textColor="@android:color/black"
+                android:textSize="15sp" />
+
+            <com.schoofi.utils.CustomButton
+                android:id="@+id/btn_student_leave_ending_date"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/button"
+                android:drawableRight="@drawable/calander_icon"
+                android:paddingBottom="5dp"
+                android:paddingEnd="12dp"
+                android:paddingLeft="14dp"
+                android:paddingRight="12dp"
+                android:paddingStart="12dp"
+                android:paddingTop="5dp"
+                android:textSize="15sp" />
+
+            <com.schoofi.utils.CustomButton
+                android:id="@+id/btn_student_leave_upload_file"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/buttongreen"
+                android:paddingBottom="5dp"
+                android:paddingEnd="12dp"
+                android:paddingLeft="14dp"
+                android:textAllCaps="false"
+                android:paddingRight="12dp"
+                android:paddingStart="12dp"
+                android:paddingTop="5dp"
+                android:text="Upload File"
+                android:textColor="@android:color/white"
+                android:textSize="15sp" />
+            
+            <ImageView 
+                android:id="@+id/imageLeave"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"/>
+
+            <com.schoofi.utils.CustomButton
+                android:id="@+id/btn_student_leave_submit"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/buttons"
+                android:paddingBottom="5dp"
+                android:layout_marginBottom="10dp"
+                android:textAllCaps="false"
+                android:paddingEnd="12dp"
+                android:paddingLeft="14dp"
+                android:paddingRight="12dp"
+                android:paddingStart="12dp"
+                android:paddingTop="5dp"
+                android:text="Submit"
+                android:textColor="@android:color/white"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

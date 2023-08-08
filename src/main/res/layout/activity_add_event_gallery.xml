@@ -1,0 +1,122 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.schoofi.activitiess.StudentAssignments"
+    tools:ignore="MergeRootFrame" >
+
+    <LinearLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#EE4749"
+        android:orientation="horizontal"
+        android:weightSum="3" >
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:layout_weight="0.3"
+            android:gravity="center"
+            android:src="@drawable/ic_action_back" />
+
+        <com.schoofi.utils.CustomTextView
+            android:id="@+id/txt_feedbackList"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="2.3"
+            android:gravity="center"
+            android:text="Add Photos"
+            android:textColor="#D7D7D7"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+
+
+            <com.schoofi.utils.CustomButton
+                android:id="@+id/get_images"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:layout_below="@+id/edit_feedback"
+                android:layout_margin="10dp"
+                android:textSize="15sp"
+                android:background="@drawable/buttongreen"
+                android:text="Upload Photos"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white" />
+
+            <HorizontalScrollView
+                android:id="@+id/hori_scroll_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/get_images"
+                android:fillViewport="false"
+                android:foregroundGravity="left"
+                android:paddingBottom="1dp"
+                android:paddingTop="1dp" >
+
+                <LinearLayout
+                    android:id="@+id/selected_photos_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:animateLayoutChanges="true"
+                    android:gravity="left"
+                    android:orientation="horizontal"
+                    android:visibility="visible" >
+
+                    <!-- images will be added dynamicall to this layout -->
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <com.schoofi.utils.CustomButton
+                android:id="@+id/btn_submit"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+
+                android:layout_margin="10dp"
+                android:textSize="15sp"
+                android:background="@drawable/buttons"
+                android:text="Submit"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:layout_below="@+id/hori_scroll_view" />
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <!--
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+
+       <Button
+            android:id="@+id/get_n_images"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:text="Pick/Capture only 3 images"
+            android:textColor="#000000" />
+   </RelativeLayout>
+    -->
+
+</LinearLayout>

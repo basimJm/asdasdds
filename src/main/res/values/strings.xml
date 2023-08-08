@@ -1,0 +1,262 @@
+<resources>
+    <string name="app_name">Schoofi</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="select">Select</string>
+    <string name="title_activity_login_screen">LoginScreen</string>
+    <string name="title_activity_student_home_screen">StudentHomeScreen</string>
+    <string name="title_activity_teacher_home_screen">TeacherHomeScreen</string>
+    <string name="title_activity_sign_up_screen">SignUpScreen</string>
+    <string name="title_activity_student_attendance">StudentAttendance</string>
+    <string name="title_activity_student_leave_request">StudentLeaveRequest</string>
+    <string name="title_activity_student_schedule">StudentSchedule</string>
+    <string name="title_activity_student_assignments">StudentAssignments</string>
+    <string name="title_activity_student_announcement">StudentAnnouncement</string>
+    <string name="title_activity_student_feed_back">StudentFeedBack</string>
+    <string name="title_activity_student_exam_schedule">StudentExamSchedule</string>
+    <string name="title_activity_student_result">StudentResult</string>
+    <string name="title_activity_student_poll">StudentPoll</string>
+    <string name="title_activity_student_settings">StudentSettings</string>
+    <string name="title_activity_student_leave_detail">StudentLeaveDetail</string>
+    <string name="title_activity_chairman_home_screen">ChairmanHomeScreen</string>
+    <string name="title_activity_parent_home_screen">ParentHomeScreen</string>
+    <string name="title_activity_student_time_table_details">StudentTimeTableDetails</string>
+    <string name="title_activity_student_announcement_image_result">StudentAnnouncementImageResult</string>
+    <string name="title_activity_student_video_view_announcement">StudentVideoViewAnnouncement</string>
+    <string name="title_activity_web_view">WebViewActivity</string>
+    <string name="title_activity_student_announcement_audio_result">StudentAnnouncementAudioResult</string>
+    <string name="title_activity_student_video_view">StudentVideoView</string>
+    <string name="title_activity_student_new_feedback">StudentNewFeedback</string>
+    <string name="title_activity_student_feedback_details">StudentFeedbackDetails</string>
+    <string name="title_activity_student_exam_schedule_detail">StudentExamScheduleDetail</string>
+    <string name="title_activity_student_submitted_polls">StudentSubmittedPolls</string>
+    <string name="title_activity_student_polls_detail">StudentPollsDetail</string>
+    <string name="title_activity_user_profile">UserProfile</string>
+    <string name="title_activity_about_us">AboutUs</string>
+    <string name="title_activity_credentials_screen">CredentialsScreen</string>
+    <string name="title_activity_credentials_screen1">CredentialsScreen1</string>
+    <string name="title_activity_add_child">AddChild</string>
+    <string name="title_activity_teacher_inner_home_screen">TeacherInnerHomeScreen</string>
+    <string name="title_activity_teacher_announcement">TeacherAnnouncement</string>
+    <string name="title_activity_teacher_student_leave">TeacherStudentLeave</string>
+    <string name="title_activity_teacher_leave_details">TeacherLeaveDetails</string>
+    <string name="title_activity_teacher_student_image_details">TeacherStudentImageDetails</string>
+    <string name="title_activity_teacher_student_attendance">TeacherStudentAttendance</string>
+    <string name="title_activity_teacher_student_attendance_details">TeacherStudentAttendanceDetails</string>
+    <string name="title_activity_splash_screen">SplashScreen</string>
+    <string name="title_activity_teacher_student_result">TeacherStudentResult</string>
+    <string name="title_activity_teacher_student_result_details">TeacherStudentResultDetails</string>
+    <string name="title_activity_forgot_password">ForgotPassword</string>
+    <string name="title_activity_password_reset">PasswordReset</string>
+    <string name="title_activity_chairman_school_attendance">ChairmanSchoolAttendance</string>
+
+    <string name="drawer_open">Open Navigation Drawer</string>
+    <string name="drawer_close">Close Navigation Drawer</string>
+
+    <string name="title_activity_chairman_student_leaves">ChairmanStudentLeaves</string>
+    <string name="title_activity_chairman_student_leave_details">ChairmanStudentLeaveDetails</string>
+    <string name="title_activity_chairman_student_poll">ChairmanStudentPoll</string>
+    <string name="title_activity_chairman_student_poll_details">ChairmanStudentPollDetails</string>
+    <string name="title_activity_chairman_student_result">ChairmanStudentResult</string>
+    <string name="title_activity_chairman_student_announcement">ChairmanStudentAnnouncement</string>
+    <string name="title_activity_student_feed_back_detailss">StudentFeedBackDetailss</string>
+    <string name="title_activity_student_feed_back_images">StudentFeedBackImages</string>
+    <string name="title_activity_student_image_feed_back_slider">StudentImageFeedBackSlider</string>
+    <string name="title_activity_chairman_student_feed_back">ChairmanStudentFeedBack</string>
+    <string name="title_activity_chairman_student_feed_back_details">ChairmanStudentFeedBackDetails</string>
+    <string name="title_activity_chairman_student_feed_back_assign">ChairmanStudentFeedBackAssign</string>
+    <string name="title_activity_teacher_student_feedback">TeacherStudentFeedback</string>
+    <string name="title_activity_teacher_feedback_details">TeacherFeedbackDetails</string>
+    <string name="title_activity_multipart">Multipart</string>
+    <string name="title_activity_teacher_assignment">TeacherAssignment</string>
+    <string name="title_activity_teacher_new_assignment">TeacherNewAssignment</string>
+    <string name="type">Select Type</string>
+    <string name="title_activity_new_assignment_teacher">NewAssignmentTeacher</string>
+    <string name="title_activity_assignment_details">AssignmentDetails</string>
+
+    <string name="error_config">Please set the %1$s constant and recompile the app.</string>
+
+    <string name="already_registered">Device is already registered on server.</string>
+    <string name="gcm_registered">From GCM: device successfully registered!</string>
+    <string name="gcm_unregistered">From GCM: device successfully unregistered!</string>
+    <string name="gcm_message">From GCM: you got message!</string>
+    <string name="gcm_error">From GCM: error (%1$s).</string>
+    <string name="gcm_recoverable_error">From GCM: recoverable error (%1$s).</string>
+    <string name="gcm_deleted">From GCM: server deleted %1$d pending messages!</string>
+    <string name="server_registering">Trying (attempt %1$d/%2$d) to register device on Demo Server.</string>
+    <string name="server_registered">From Demo Server: successfully added device!</string>
+    <string name="server_unregistered">From Demo Server: successfully removed device!</string>
+    <string name="server_register_error">Could not register device on Demo Server after %1$d attempts.</string>
+    <string name="server_unregister_error">Could not unregister device on Demo Server (%1$s).</string>
+    <string name="options_register">Register</string>
+    <string name="options_unregister">Unregister</string>
+    <string name="options_clear">Clear</string>
+    <string name="options_exit">Exit</string>
+    <string name="title_activity_register">RegisterActivity</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_about_school">AboutSchool</string>
+    <string name="title_activity_about_school_contact_us">AboutSchoolContactUs</string>
+    <string name="done">Done</string>
+    <string name="cancel">Cancel</string>
+    <string name="take_photo">Take a photo</string>
+    <string name="gallery">"Gallery"</string>
+    <string name="title_activity_fragment">FragmentActivity</string>
+    <string name="title_activity_health_and_audit_home_screen">HealthAndAuditHomeScreen</string>
+    <string name="title_activity_health_and_audit_manage_user">HealthAndAuditManageUser</string>
+    <string name="title_activity_health_and_audit_user_add_user">HealthAndAuditUserAddUser</string>
+    <string name="title_activity_health_and_audit_task_list">HealthAndAuditTaskList</string>
+    <string name="title_activity_health_and_audit_add_task">HealthAndAuditAddTask</string>
+    <string name="title_activity_health_and_audit_subtask">HealthAndAuditSubtask</string>
+    <string name="title_activity_health_and_audit_add_subtask">HealthAndAuditAddSubtask</string>
+    <string name="title_activity_health_and_audit_audits_list">HealthAndAuditAuditsList</string>
+    <string name="title_activity_health_and_audit_audits_form">HealthAndAuditAuditsForm</string>
+    <string name="title_activity_student_submit_assignment_and_homework">StudentSubmitAssignmentAndHomework</string>
+    <string name="title_activity_teacher_assigned_feed_back_details">TeacherAssignedFeedBackDetails</string>
+    <string name="title_activity_assignment_teacher_details">AssignmentTeacherDetails</string>
+    <string name="title_activity_contact_us">ContactUs</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="welcome_txt">GCM App</string>
+    <string name="email">Email Address</string>
+    <string name="login">Register Me</string>
+    <string name="defaultmsg">Message sent by server will appear here.</string>
+    <string name="msg_title">Message</string>
+    <string name="user_title">Hello User</string>
+    <string name="title_activity_teacher_assignment_home_work_details">TeacherAssignmentHomeWorkDetails</string>
+    <string name="title_activity_grid_image_details">GridImageDetails</string>
+    <string name="title_activity_stock_management_home">StockManagementHome</string>
+    <string name="action_clear">Clear</string>
+    <string name="action_circle">Draw Circle</string>
+    <!-- <string name="google_app_id">1037499257230</string>-->
+    <string name="action_overlay">Draw Overlay</string>
+    <!--  <string name="google_api_key">AIzaSyB_1WTXmxOqh_U2_6u_SKFEDo0Mnd6uED4</string>-->
+    <string name="action_polygon">Draw Polygon</string>
+    <string name="action_traffic">Toggle Traffic</string>
+    <string name="action_cycle_map_type">Cycle Map Type</string>
+    <string name="title_activity_chairman_student_announcements">ChairmanStudentAnnouncements</string>
+    <string name="Rs">\u20B9</string>
+    <string name="btnTakePicture">Capture Image</string>
+    <string name="btnRecordVideo">Record Video</string>
+    <string name="or">(or)</string>
+    <string name="btnUploadToServer">Upload to Server</string>
+    <string name="time_set">Set time</string>
+    <string name="time">Time : </string>
+    <string name="order_id">Order Id : </string>
+    <string name="customer_id">Customer Id : </string>
+    <string name="transaction_amount">Transaction Amount : </string>
+
+    <string name="channel_id">Channel Id : </string>
+    <string name="industry_type_id">Industry Type Id : </string>
+    <string name="website">Website : </string>
+    <string name="theme">Theme : </string>
+    <string name="cust_email_id">Email Id : </string>
+    <string name="cust_mobile_no">Mobile Number : </string>
+    <string name="merchant_id">Merchant Id : </string>
+    <string name="checksum_generation_url">Checksum Generation URL : </string>
+    <string name="checksum_verification_url">Checksum Verification URL : </string>
+    <string name="start_transaction">Start Transaction</string>
+    <string name="sample_order_id">ORDER</string>
+    <string name="sample_customer_id">1234567890</string>
+    <string name="sample_transaction_amount">1</string>
+    <string name="sample_channel_id">WAP</string>
+    <string name="sample_industry_type_id">Retail</string>
+    <string name="sample_website">AppURL</string>
+    <string name="sample_theme">merchant</string>
+    <string name="sample_cust_email_id">abc@gmail.com</string>
+    <string name="sample_cust_mobile_no">123</string>
+    <string name="sample_merchant_id_staging">Schoof23231232963213</string>
+    <string name="sample_checksum_generation_url">http://schoofi.com/generateChecksum.php</string>
+    <string name="sample_checksum_verification_url">http://schoofi.com/verifyChecksum.php</string>
+    <string name="ok">OK</string>
+    <string name="title_activity_initial">CCAvenueMobile</string>
+    <string name="pay_button">Pay</string>
+
+    <string name="currency">Currency</string>
+
+    <string name="amount">Amount</string>
+    <string name="redirect_url">Redirect Url</string>
+
+    <string name="cancel_url">Cancel Url</string>
+
+    <string name="rsa_url">RSA Key Url</string>
+    <string name="access_code">Access Code</string>
+    <string name="title_activity_status">CCAvenueMobile</string>
+    <string name="facebook_app_id" translatable="false">1241382732580581</string>
+    <string name="view" translatable="false">View</string>
+    <string name="sample_title_default" translatable="false">Default view</string>
+    <string name="sample_subtitle_default" translatable="false">Dialogs and messages with default style</string>
+
+    <string name="sample_title_attrs">Styled view</string>
+
+
+    <string name="sample_subtitle_attrs">Styled components using embedded attributes</string>
+
+    <string name="sample_title_layout">Custom layout</string>
+
+    <string name="sample_subtitle_layout">Custom layouts to change default views position</string>
+    <string name="sample_title_holder">Custom view holder</string>
+    <string name="sample_subtitle_holder">Custom view holder to extend default behaviour for a new features</string>
+    <string name="sample_title_custom_content">Custom content type</string>
+    <string name="sample_subtitle_custom_content">Custom message content on the example of voice message</string>
+    <string name="hint_enter_a_message">Type a message…</string>
+    <string name="on_log_click_message">Your custom long click handler</string>
+    <string name="action_delete">Delete</string>
+    <string name="action_copy">Copy</string>
+    <string name="copied_message">Message copied!</string>
+
+    <string name="date_header_today">Today</string>
+    <string name="date_header_yesterday">Yesterday</string>
+    <string name="start_typing_status">Start typing</string>
+    <string name="stop_typing_status">Stop typing</string>
+    <string name="interstitial_full_screen">ca-app-pub-5071805018249593/4929751378</string>
+    <string-array name="menu">
+        <item>Switch School</item>
+        <item>Attendance</item>
+        <item>Announcements</item>
+        <item>Results</item>
+        <item>FeedBack</item>
+        <item>Leave Request</item>
+        <item>Fees</item>
+        <item>Poll</item>
+        <item>Profile</item>
+        <item>About Us</item>
+        <item>Help</item>
+        <item>About School</item>
+        <item>Change Password</item>
+        <item>Logout</item>
+    </string-array>
+
+    <string-array name="menu1">
+        <item>Attendance</item>
+        <item>Announcements</item>
+        <item>Results</item>
+        <item>FeedBack</item>
+        <item>Leave Request</item>
+        <item>Fees</item>
+        <item>Poll</item>
+        <item>Profile</item>
+        <item>About Us</item>
+        <item>Help</item>
+        <item>About School</item>
+        <item>Change Password</item>
+        <item>Logout</item>
+    </string-array>
+    <string-array name="type">
+        <item>HomeWork</item>
+        <item>Assignment</item>
+    </string-array>
+
+    <string-array name="selectAction">
+        <item>Resend OTP</item>
+        <item>Enter OTP Manually</item>
+    </string-array>
+
+    <string-array name="colors">
+        <item>#ffffff</item>
+        <item>#ffffff</item>
+        <item>#ffffff</item>
+    </string-array>
+    <string-array name="view_types_dialog">
+        <item name="image">Image (default)</item>
+        <item name="voice">Voice message (custom)</item>
+    </string-array>
+</resources>

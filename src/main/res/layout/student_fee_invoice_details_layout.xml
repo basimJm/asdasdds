@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+
+
+        <com.schoofi.utils.CustomTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.6"
+            android:layout_margin="10dp"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:id="@+id/text_fee_type_name"/>
+
+        <com.schoofi.utils.CustomTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.4"
+            android:layout_margin="10dp"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:id="@+id/text_fee_type_name_fees"
+        />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,96 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.schoofi.activities.TeacherHomeScreen" >
+
+    <LinearLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#EE4749"
+        android:orientation="horizontal"
+        android:weightSum="3" >
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:src="@drawable/ic_action_back"
+            android:layout_weight="0.3"
+            android:gravity="center"
+            android:scaleType="fitXY"/>
+
+        <com.schoofi.utils.CustomTextView
+            android:id="@+id/txt_class"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="2.3"
+            android:gravity="center"
+            android:text="Subject"
+            android:textColor="#D7D7D7"
+            android:textSize="20sp" />
+
+        <com.schoofi.utils.CustomTextView
+            android:id="@+id/txt_teacherLogout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.3"
+            android:gravity="center"
+            android:visibility="gone"
+            android:text="Logout"
+            android:textColor="#D7D7D7"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <devs.mulham.horizontalcalendar.HorizontalCalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/headerLayout"
+        android:layout_margin="0dp"
+        android:background="@color/red"
+        app:textColorSelected="#FFFF"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/calendarView">
+
+        <com.schoofi.utils.CustomButton
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:background="@drawable/buttons"
+            android:layout_margin="10dp"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:text="View Analysis"
+            android:visibility="gone"
+            android:textAllCaps="false"
+            android:id="@+id/btn_analysis"/>
+
+
+
+
+
+        <ListView
+            android:id="@+id/teacher_homescreen_listview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:divider="@null"
+            android:dividerHeight="0dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:padding="10dp" >
+        </ListView>
+        ></LinearLayout>
+
+</RelativeLayout>

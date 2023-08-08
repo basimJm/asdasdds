@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_recents"
+
+        android:icon="@drawable/message"
+        android:title="Messages"
+         />
+    <item
+        android:id="@+id/action_favorites"
+
+        android:icon="@drawable/celebration"
+        android:title="Celebration"
+         />
+    <item
+        android:id="@+id/action_nearby"
+
+        android:icon="@drawable/achievment"
+        android:title="Achievment"
+         />
+
+
+
+    <!--<item
+        android:id="@+id/action_nearby2"
+
+        android:icon="@drawable/ic_assessment_black_24dp"
+        android:title="Assignment"
+
+         />-->
+</menu>

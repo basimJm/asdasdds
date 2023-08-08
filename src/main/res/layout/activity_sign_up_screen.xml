@@ -1,0 +1,228 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.schoofi.activities.SignUpScreen" >
+
+    <LinearLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#EE4749"
+        android:orientation="horizontal"
+        android:weightSum="3" >
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:layout_weight="0.3"
+            android:gravity="center"
+            android:scaleType="fitXY"/>
+
+        <com.schoofi.utils.CustomTextView
+            android:id="@+id/txt_credentials"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="2.3"
+            android:gravity="center"
+            android:text="Credentials"
+            android:textColor="#D7D7D7"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/headerLayout"
+        android:orientation="horizontal"
+        android:padding="20dp" >
+
+        <com.schoofi.utils.CustomTextView
+            android:id="@+id/txt_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Enter Details"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:textStyle="normal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear_title"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="20dp" 
+        >
+
+        <com.schoofi.utils.CustomEditText
+            android:id="@+id/edit_userMobile"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:background="@drawable/button"
+            android:gravity="center"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textSize="15sp"
+            android:hint="Mobile" 
+            android:textColor="@android:color/black"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_details1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear_details"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="20dp"
+         >
+
+        <com.schoofi.utils.CustomEditText
+            android:id="@+id/edit_userEmail"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:background="@drawable/button"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:gravity="center"
+            android:hint="Email" 
+            android:textSize="15sp"
+            android:textColor="@android:color/black"/>
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:id="@+id/linear_terms_and_conditions"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:paddingLeft="25dp"
+        android:paddingRight="2sp"
+        android:orientation="vertical"
+        android:layout_below="@+id/linear_details1"
+        android:weightSum="1">
+        
+        <LinearLayout 
+            android:id="@+id/linear_firstLine"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="0.5">
+            
+            <LinearLayout
+                android:id="@+id/linear_checkbox"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:orientation="horizontal" >
+            
+            <CheckBox 
+                android:id="@+id/checkbox_credentilas"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                />
+            
+            </LinearLayout>
+            <LinearLayout 
+                android:id="@+id/linear_textBox1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                
+                <com.schoofi.utils.CustomTextView
+                    android:id="@+id/txt_line1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="I agree to the"
+                    android:textSize="15sp"
+                    android:padding="5dp"
+                    android:textColor="@android:color/black"/>
+            </LinearLayout>
+            
+             <LinearLayout 
+                android:id="@+id/linear_textBox2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                
+                <com.schoofi.utils.CustomTextView
+                    android:id="@+id/txt_line2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="terms of use "
+                    android:textSize="15sp"
+                    android:textColor="#000080"
+                    android:paddingTop="5dp"/>
+            </LinearLayout>
+            
+              <LinearLayout 
+                android:id="@+id/linear_textBox3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                
+                <com.schoofi.utils.CustomTextView 
+                    android:id="@+id/txt_line3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="and"
+                    android:textSize="15sp"
+                    android:textColor="@android:color/black"
+                    android:paddingTop="5dp"/>
+            </LinearLayout>
+        </LinearLayout>
+        
+        <LinearLayout 
+            android:id="@+id/linear_line2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:orientation="horizontal"
+            >
+       </LinearLayout>
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:paddingLeft="40dp" >
+       <com.schoofi.utils.CustomTextView
+           android:id="@+id/text_line4"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="privacy policy"
+           android:textColor="#000080"
+           />
+       </LinearLayout>
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/linaer_button"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:padding="20dp" 
+        android:orientation="horizontal"
+      
+        android:layout_alignParentBottom="true">
+    
+    <com.schoofi.utils.CustomButton
+        android:id="@+id/btn_done"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:textColor="@android:color/white"
+        android:textAllCaps="false"
+        android:text="Done"
+        android:textSize="20sp"
+        android:background="@drawable/buttons"/>
+    
+    </LinearLayout>
+
+</RelativeLayout>

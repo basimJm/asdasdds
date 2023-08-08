@@ -1,0 +1,725 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#EE4749"
+        android:orientation="horizontal"
+        android:weightSum="3" >
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:layout_weight="0.3"
+            android:gravity="center"
+            android:src="@drawable/ic_action_back" />
+        
+        <com.schoofi.utils.CustomTextView 
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Details"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:textColor="@android:color/white"
+            android:layout_weight="2.3"/>
+        
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/headerLayout"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/headerLayout"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/button"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <com.schoofi.utils.CustomTextView
+                android:id="@+id/text_teacherName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:textColor="@android:color/black"
+                android:text="Name: "
+                android:textSize="15sp" />
+
+            <com.schoofi.utils.CustomTextView
+                android:id="@+id/text_teacherName1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+
+                android:textColor="#EE4749"
+                android:text="Harsh malhotra"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:orientation="horizontal" >
+
+            <com.schoofi.utils.CustomTextView
+                android:id="@+id/text_lectureStartingTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:gravity="left"
+                android:text="Start Time: "
+                android:textSize="15sp" />
+
+            <com.schoofi.utils.CustomTextView
+                android:id="@+id/text_lectureStartingTime1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:text="9:00"
+                android:textColor="#EE4749"
+
+                android:textSize="15sp" />
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:orientation="horizontal" >
+
+            <com.schoofi.utils.CustomTextView
+                android:id="@+id/text_lectureEndingTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="End Time: "
+                android:textColor="@android:color/black"
+                android:textSize="15sp" />
+
+            <com.schoofi.utils.CustomTextView
+                android:id="@+id/text_lectureEndingTime1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:textColor="#EE4749"
+                android:text="9:00"
+
+                android:textSize="15sp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/button"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <com.schoofi.utils.CustomTextView
+                android:id="@+id/text_teacherName2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:textColor="@android:color/black"
+                android:text="Name: "
+                android:textSize="15sp" />
+
+            <com.schoofi.utils.CustomTextView
+                android:id="@+id/text_teacherName10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+
+                android:textColor="#EE4749"
+                android:text="Harsh malhotra"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:orientation="horizontal" >
+
+            <com.schoofi.utils.CustomTextView
+                android:id="@+id/text_lectureStartingTime2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:gravity="left"
+                android:text="Start Time: "
+                android:textSize="15sp" />
+
+            <com.schoofi.utils.CustomTextView
+                android:id="@+id/text_lectureStartingTime3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:text="9:00"
+                android:textColor="#EE4749"
+
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:orientation="horizontal" >
+
+            <com.schoofi.utils.CustomTextView
+                android:id="@+id/text_lectureEndingTime2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="End Time: "
+                android:textColor="@android:color/black"
+                android:textSize="15sp" />
+
+            <com.schoofi.utils.CustomTextView
+                android:id="@+id/text_lectureEndingTime3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:textColor="#EE4749"
+                android:text="9:00"
+
+                android:textSize="15sp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:orientation="horizontal" >
+
+            <com.schoofi.utils.CustomTextView
+                android:id="@+id/text_group1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:gravity="left"
+                android:text="Group Name: "
+                android:textSize="15sp" />
+
+            <com.schoofi.utils.CustomTextView
+                android:id="@+id/text_group2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:text="9:00"
+                android:textColor="#EE4749"
+
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:orientation="horizontal" >
+
+            <com.schoofi.utils.CustomTextView
+                android:id="@+id/text_subject1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="Subject Name: "
+                android:textColor="@android:color/black"
+                android:textSize="15sp" />
+
+            <com.schoofi.utils.CustomTextView
+                android:id="@+id/text_subject2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:textColor="#EE4749"
+                android:text="9:00"
+
+                android:textSize="15sp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linear2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/button"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <com.schoofi.utils.CustomTextView
+                android:id="@+id/text_teacherName3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:textColor="@android:color/black"
+                android:text="Name: "
+                android:textSize="15sp" />
+
+            <com.schoofi.utils.CustomTextView
+                android:id="@+id/text_teacherName4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+
+                android:textColor="#EE4749"
+                android:text="Harsh malhotra"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:orientation="horizontal" >
+
+            <com.schoofi.utils.CustomTextView
+                android:id="@+id/text_lectureStartingTime4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:gravity="left"
+                android:text="Start Time: "
+                android:textSize="15sp" />
+
+            <com.schoofi.utils.CustomTextView
+                android:id="@+id/text_lectureStartingTime5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:text="9:00"
+                android:textColor="#EE4749"
+
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:orientation="horizontal" >
+
+            <com.schoofi.utils.CustomTextView
+                android:id="@+id/text_lectureEndingTime4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="End Time: "
+                android:textColor="@android:color/black"
+                android:textSize="15sp" />
+
+            <com.schoofi.utils.CustomTextView
+                android:id="@+id/text_lectureEndingTime5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:textColor="#EE4749"
+                android:text="9:00"
+
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:orientation="horizontal" >
+
+            <com.schoofi.utils.CustomTextView
+                android:id="@+id/text_group3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:gravity="left"
+                android:text="Group Name: "
+                android:textSize="15sp" />
+
+            <com.schoofi.utils.CustomTextView
+                android:id="@+id/text_group4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:text="9:00"
+                android:textColor="#EE4749"
+
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:orientation="horizontal" >
+
+            <com.schoofi.utils.CustomTextView
+                android:id="@+id/text_subject3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="Subject Name: "
+                android:textColor="@android:color/black"
+                android:textSize="15sp" />
+
+            <com.schoofi.utils.CustomTextView
+                android:id="@+id/text_subject4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:textColor="#EE4749"
+                android:text="9:00"
+
+                android:textSize="15sp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linear3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear2"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/button"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <com.schoofi.utils.CustomTextView
+                android:id="@+id/text_teacherName6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:textColor="@android:color/black"
+                android:text="Name: "
+                android:textSize="15sp" />
+
+            <com.schoofi.utils.CustomTextView
+                android:id="@+id/text_teacherName7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+
+                android:textColor="#EE4749"
+                android:text="Harsh malhotra"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:orientation="horizontal" >
+
+            <com.schoofi.utils.CustomTextView
+                android:id="@+id/text_lectureStartingTime6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:gravity="left"
+                android:text="Start Time: "
+                android:textSize="15sp" />
+
+            <com.schoofi.utils.CustomTextView
+                android:id="@+id/text_lectureStartingTime7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:text="9:00"
+                android:textColor="#EE4749"
+
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:orientation="horizontal" >
+
+            <com.schoofi.utils.CustomTextView
+                android:id="@+id/text_lectureEndingTime6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="End Time: "
+                android:textColor="@android:color/black"
+                android:textSize="15sp" />
+
+            <com.schoofi.utils.CustomTextView
+                android:id="@+id/text_lectureEndingTime7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:textColor="#EE4749"
+                android:text="9:00"
+
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:orientation="horizontal" >
+
+            <com.schoofi.utils.CustomTextView
+                android:id="@+id/text_group5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:gravity="left"
+                android:text="Group Name: "
+                android:textSize="15sp" />
+
+            <com.schoofi.utils.CustomTextView
+                android:id="@+id/text_group6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:text="9:00"
+                android:textColor="#EE4749"
+
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:orientation="horizontal" >
+
+            <com.schoofi.utils.CustomTextView
+                android:id="@+id/text_subject5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="Subject Name: "
+                android:textColor="@android:color/black"
+                android:textSize="15sp" />
+
+            <com.schoofi.utils.CustomTextView
+                android:id="@+id/text_subject6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:textColor="#EE4749"
+                android:text="9:00"
+
+                android:textSize="15sp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear3"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/button"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <com.schoofi.utils.CustomTextView
+                android:id="@+id/text_teacherName8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:textColor="@android:color/black"
+                android:text="Name: "
+                android:textSize="15sp" />
+
+            <com.schoofi.utils.CustomTextView
+                android:id="@+id/text_teacherName9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+
+                android:textColor="#EE4749"
+                android:text="Harsh malhotra"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:orientation="horizontal" >
+
+            <com.schoofi.utils.CustomTextView
+                android:id="@+id/text_lectureStartingTime8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:gravity="left"
+                android:text="Start Time: "
+                android:textSize="15sp" />
+
+            <com.schoofi.utils.CustomTextView
+                android:id="@+id/text_lectureStartingTime9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:text="9:00"
+                android:textColor="#EE4749"
+
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:orientation="horizontal" >
+
+            <com.schoofi.utils.CustomTextView
+                android:id="@+id/text_lectureEndingTime8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="End Time: "
+                android:textColor="@android:color/black"
+                android:textSize="15sp" />
+
+            <com.schoofi.utils.CustomTextView
+                android:id="@+id/text_lectureEndingTime9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:textColor="#EE4749"
+                android:text="9:00"
+
+                android:textSize="15sp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:orientation="horizontal" >
+
+            <com.schoofi.utils.CustomTextView
+                android:id="@+id/text_group7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:gravity="left"
+                android:text="Group Name: "
+                android:textSize="15sp" />
+
+            <com.schoofi.utils.CustomTextView
+                android:id="@+id/text_group8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:text="9:00"
+                android:textColor="#EE4749"
+
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:orientation="horizontal" >
+
+            <com.schoofi.utils.CustomTextView
+                android:id="@+id/text_subject7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="Subject Name: "
+                android:textColor="@android:color/black"
+                android:textSize="15sp" />
+
+            <com.schoofi.utils.CustomTextView
+                android:id="@+id/text_subject8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:textColor="#EE4749"
+                android:text="9:00"
+
+                android:textSize="15sp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

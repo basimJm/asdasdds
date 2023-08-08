@@ -1,0 +1,370 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#EE4749"
+        android:orientation="horizontal"
+        android:weightSum="3" >
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:layout_weight="0.3"
+            android:gravity="center"
+            android:src="@drawable/ic_action_back"/>
+
+        <com.schoofi.utils.CustomTextView
+            android:id="@+id/txt_newLeave"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="2.3"
+            android:gravity="center"
+            android:text="Knowledge Resource"
+            android:textColor="#D7D7D7"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:layout_below="@+id/headerLayout"
+        android:layout_above="@+id/btn_next">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="10dp"
+            >
+
+            <com.schoofi.utils.CustomTextView
+                android:id="@+id/text_student_leave_start_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="Class"
+                android:textColor="@android:color/black"
+                android:textSize="15sp" />
+
+            <smtchahal.materialspinner.MaterialSpinner
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/grey_button"
+                android:id="@+id/spinner_class"
+                app:ms_hint="Select Class"
+                android:gravity="center"
+                app:ms_hintColor="@color/black"
+                app:ms_baseColor="@color/black"
+                app:ms_arrowColor="@color/black"
+                app:ms_enableFloatingLabel="false"
+                android:layout_margin="10dp"
+                app:ms_enableErrorLabel="false"
+                app:ms_arrowSize="10dp"
+                app:ms_multiline="false"
+                android:padding="0dp"
+                app:ms_floatingLabelText=""
+                app:ms_thickness="0dp"
+                ></smtchahal.materialspinner.MaterialSpinner>
+
+
+
+            <com.schoofi.utils.CustomTextView
+                android:id="@+id/text_student_leave_subject"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:layout_marginTop="12dp"
+                android:text="Subject"
+                android:textSize="15sp" />
+
+            <smtchahal.materialspinner.MaterialSpinner
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/grey_button"
+                android:id="@+id/spinner_subject"
+                app:ms_hint="Select Subject"
+                android:gravity="center"
+                app:ms_hintColor="@color/black"
+                app:ms_baseColor="@color/black"
+                app:ms_arrowColor="@color/black"
+                app:ms_enableFloatingLabel="false"
+                android:layout_margin="10dp"
+                app:ms_enableErrorLabel="false"
+                app:ms_arrowSize="10dp"
+                app:ms_multiline="false"
+                android:padding="0dp"
+                app:ms_floatingLabelText=""
+                app:ms_thickness="0dp"
+                ></smtchahal.materialspinner.MaterialSpinner>
+
+            <com.schoofi.utils.CustomTextView
+                android:id="@+id/text_student_topic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:layout_marginTop="12dp"
+                android:text="Topic"
+                android:textSize="15sp" />
+
+            <smtchahal.materialspinner.MaterialSpinner
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/grey_button"
+                android:id="@+id/spinner_topic"
+                app:ms_hint="Select Topic"
+                android:gravity="center"
+                app:ms_hintColor="@color/black"
+                app:ms_baseColor="@color/black"
+                app:ms_arrowColor="@color/black"
+                app:ms_enableFloatingLabel="false"
+                android:layout_margin="10dp"
+                app:ms_enableErrorLabel="false"
+                app:ms_arrowSize="10dp"
+                app:ms_multiline="false"
+                android:padding="0dp"
+                app:ms_floatingLabelText=""
+                app:ms_thickness="0dp"
+                ></smtchahal.materialspinner.MaterialSpinner>
+
+            <com.schoofi.utils.CustomEditText
+                android:id="@+id/edit_topic"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/overall_height_40dp"
+                android:layout_gravity="top"
+                android:gravity="top"
+                android:background="@drawable/button"
+                android:textColor="@android:color/black"
+                android:ems="10"
+                android:hint="Enter Topic"
+                android:maxLines="5"
+                android:paddingBottom="5dp"
+                android:layout_margin="@dimen/margin_10dp"
+                android:paddingEnd="12dp"
+                android:paddingLeft="14dp"
+                android:paddingRight="12dp"
+                android:paddingStart="12dp"
+                android:paddingTop="5dp"
+                android:textSize="15sp" >
+
+
+            </com.schoofi.utils.CustomEditText>
+
+            <com.schoofi.utils.CustomTextView
+                android:id="@+id/text_student_sub_topic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:layout_marginTop="12dp"
+                android:text="Sub Topic"
+                android:textSize="15sp" />
+
+            <smtchahal.materialspinner.MaterialSpinner
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/grey_button"
+                android:id="@+id/spinner_subTopic"
+                app:ms_hint="Select Sub Topic"
+                android:gravity="center"
+                app:ms_hintColor="@color/black"
+                app:ms_baseColor="@color/black"
+                app:ms_arrowColor="@color/black"
+                app:ms_enableFloatingLabel="false"
+                android:layout_margin="10dp"
+                app:ms_enableErrorLabel="false"
+                app:ms_arrowSize="10dp"
+                app:ms_multiline="false"
+                android:padding="0dp"
+                app:ms_floatingLabelText=""
+                app:ms_thickness="0dp"
+                ></smtchahal.materialspinner.MaterialSpinner>
+
+            <com.schoofi.utils.CustomEditText
+                android:id="@+id/edit_sub_topic"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/overall_height_40dp"
+                android:layout_gravity="top"
+                android:gravity="top"
+                android:background="@drawable/button"
+                android:textColor="@android:color/black"
+                android:ems="10"
+                android:hint="Enter Sub-Topic"
+                android:maxLines="5"
+                android:paddingBottom="5dp"
+                android:layout_margin="@dimen/margin_10dp"
+                android:paddingEnd="12dp"
+                android:paddingLeft="14dp"
+                android:paddingRight="12dp"
+                android:paddingStart="12dp"
+                android:paddingTop="5dp"
+                android:textSize="15sp" >
+
+
+            </com.schoofi.utils.CustomEditText>
+
+            <com.schoofi.utils.CustomTextView
+                android:id="@+id/text_diagonisis"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:layout_marginTop="12dp"
+                android:text="Title"
+                android:textSize="15sp" />
+
+            <com.schoofi.utils.CustomEditText
+                android:id="@+id/edit_diagnosis"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/overall_height_40dp"
+                android:layout_gravity="top"
+                android:gravity="top"
+                android:background="@drawable/button"
+                android:textColor="@android:color/black"
+                android:ems="10"
+                android:hint="Enter Title"
+                android:maxLines="5"
+                android:paddingBottom="5dp"
+                android:layout_margin="@dimen/margin_10dp"
+                android:paddingEnd="12dp"
+                android:paddingLeft="14dp"
+                android:paddingRight="12dp"
+                android:paddingStart="12dp"
+                android:paddingTop="5dp"
+                android:textSize="15sp" >
+
+
+            </com.schoofi.utils.CustomEditText>
+
+            <com.schoofi.utils.CustomTextView
+                android:id="@+id/text_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:layout_marginTop="12dp"
+                android:text="Description"
+                android:textSize="15sp" />
+
+            <com.schoofi.utils.CustomEditText
+                android:id="@+id/edit_description"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_gravity="top"
+                android:gravity="top"
+                android:background="@drawable/button"
+                android:textColor="@android:color/black"
+                android:ems="10"
+                android:hint="Enter Description"
+                android:layout_margin="@dimen/margin_10dp"
+                android:maxLines="5"
+                android:paddingBottom="5dp"
+                android:paddingEnd="12dp"
+                android:paddingLeft="14dp"
+                android:paddingRight="12dp"
+                android:paddingStart="12dp"
+                android:paddingTop="5dp"
+                android:textSize="15sp" >
+
+
+            </com.schoofi.utils.CustomEditText>
+
+
+
+            <com.schoofi.utils.CustomTextView
+                android:id="@+id/text_surgical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:layout_marginTop="12dp"
+                android:text="Resourse Type"
+                android:textSize="15sp" />
+
+            <smtchahal.materialspinner.MaterialSpinner
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/grey_button"
+                android:id="@+id/resourse_type"
+                app:ms_hint="Select Resourse Type"
+                android:gravity="center"
+                app:ms_hintColor="@color/black"
+                app:ms_baseColor="@color/black"
+                app:ms_arrowColor="@color/black"
+                app:ms_enableFloatingLabel="false"
+                android:layout_margin="10dp"
+                app:ms_enableErrorLabel="false"
+                app:ms_arrowSize="10dp"
+                app:ms_multiline="false"
+                android:padding="0dp"
+                app:ms_floatingLabelText=""
+                app:ms_thickness="0dp"
+                ></smtchahal.materialspinner.MaterialSpinner>
+
+
+            <com.schoofi.utils.CustomTextView
+                android:id="@+id/text_document"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:layout_marginTop="12dp"
+                android:text="Document Type"
+                android:textSize="15sp" />
+
+            <smtchahal.materialspinner.MaterialSpinner
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/grey_button"
+                android:id="@+id/document_type"
+                app:ms_hint="Select Document Type"
+                android:gravity="center"
+                app:ms_hintColor="@color/black"
+                app:ms_baseColor="@color/black"
+                app:ms_arrowColor="@color/black"
+                app:ms_enableFloatingLabel="false"
+                android:layout_margin="10dp"
+                app:ms_enableErrorLabel="false"
+                app:ms_arrowSize="10dp"
+                app:ms_multiline="false"
+                android:padding="0dp"
+                app:ms_floatingLabelText=""
+                app:ms_thickness="0dp"
+                ></smtchahal.materialspinner.MaterialSpinner>
+
+            <com.schoofi.utils.CustomButton
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:id="@+id/btn_upload"
+                android:background="@drawable/buttongreen"
+                android:textColor="@android:color/white"
+                android:textSize="15sp"
+                android:layout_margin="10dp"
+                android:text="Upload Document"
+                android:gravity="center"
+                android:textAllCaps="false"/>
+        </LinearLayout>
+
+
+
+
+    </ScrollView>
+
+    <com.schoofi.utils.CustomButton
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="20dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/buttons"
+        android:text="Add"
+        android:textSize="15sp"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:id="@+id/btn_next"/>
+
+</RelativeLayout>

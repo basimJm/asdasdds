@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    
+    android:orientation="horizontal"
+   
+    android:weightSum="1" >
+
+    <com.schoofi.utils.CustomTextView
+        android:id="@+id/text_student_period"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_gravity="left"
+        android:layout_marginLeft="10dp"
+        android:textColor="@android:color/black"
+        android:padding="10dp"
+        android:layout_weight="0.19"
+        android:gravity="left"
+        android:text="21-10-2015"
+        android:textSize="15sp" />
+    
+    <View 
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:background="#DCDBDB"
+        android:layout_weight="0.0045"/>
+
+    
+    <com.schoofi.utils.CustomTextView
+        android:id="@+id/text_student_subject"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_gravity="right"
+        android:padding="10dp"
+        android:layout_weight="0.8"
+        android:textColor="@android:color/black"
+        android:gravity="center_horizontal"
+        android:text="21-10-2015"
+        android:textSize="15sp" />
+
+</LinearLayout>

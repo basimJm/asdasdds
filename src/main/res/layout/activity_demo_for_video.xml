@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.schoofi.activitiess.DemoActivityForVideo">
+
+
+    <com.schoofi.utils.CustomButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/video1"
+        android:layout_margin="@dimen/margin_10dp"
+        android:text="video1"></com.schoofi.utils.CustomButton>
+
+    <com.schoofi.utils.CustomButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/video2"
+        android:layout_margin="@dimen/margin_10dp"
+        android:text="video2"></com.schoofi.utils.CustomButton>
+
+    <com.schoofi.utils.CustomButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/submit"
+        android:layout_margin="@dimen/margin_10dp"
+        android:text="submit"></com.schoofi.utils.CustomButton>
+
+</LinearLayout>

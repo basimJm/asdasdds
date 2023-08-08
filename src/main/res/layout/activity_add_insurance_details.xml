@@ -1,0 +1,388 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#EE4749"
+        android:orientation="horizontal"
+        android:weightSum="3" >
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:layout_weight="0.3"
+            android:gravity="center"
+            android:src="@drawable/ic_action_back"/>
+
+        <com.schoofi.utils.CustomTextView
+            android:id="@+id/txt_newLeave"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="2.3"
+            android:gravity="center"
+            android:text="Insurance Details"
+            android:textColor="#D7D7D7"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:layout_below="@+id/headerLayout"
+        android:layout_above="@+id/btn_next">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+       >
+
+        <com.schoofi.utils.CustomTextView
+            android:id="@+id/text_student_leave_start_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="Insurance Company"
+            android:textColor="@android:color/black"
+            android:textSize="15sp" />
+
+        <com.schoofi.utils.CustomEditText
+            android:id="@+id/edit_insurance_company"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:background="@drawable/button"
+            android:textColor="@android:color/black"
+            android:ems="10"
+            android:hint="Insurance Company Name"
+            android:inputType="textAutoComplete"
+            android:paddingBottom="5dp"
+            android:paddingEnd="12dp"
+            android:paddingLeft="14dp"
+            android:paddingRight="12dp"
+            android:paddingStart="12dp"
+            android:paddingTop="5dp"
+            android:textSize="15sp" >
+
+            <requestFocus />
+        </com.schoofi.utils.CustomEditText>
+
+
+
+        <com.schoofi.utils.CustomTextView
+            android:id="@+id/text_student_leave_subject"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="12dp"
+            android:text="Policy Number"
+            android:textSize="15sp" />
+
+        <com.schoofi.utils.CustomEditText
+            android:id="@+id/edit_policy_number"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:background="@drawable/button"
+            android:textColor="@android:color/black"
+            android:ems="10"
+            android:hint="Policy Number"
+            android:inputType="textAutoComplete"
+            android:paddingBottom="5dp"
+            android:paddingEnd="12dp"
+            android:paddingLeft="14dp"
+            android:paddingRight="12dp"
+            android:paddingStart="12dp"
+            android:paddingTop="5dp"
+            android:textSize="15sp" >
+
+
+        </com.schoofi.utils.CustomEditText>
+
+        <com.schoofi.utils.CustomTextView
+            android:id="@+id/text_student_policy_holder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="12dp"
+            android:text="Policy Holder Name"
+            android:textSize="15sp" />
+
+        <com.schoofi.utils.CustomEditText
+            android:id="@+id/edit_policy_holder"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:background="@drawable/button"
+            android:textColor="@android:color/black"
+            android:ems="10"
+            android:hint="Policy Holder Name"
+            android:inputType="textAutoComplete"
+            android:paddingBottom="5dp"
+            android:paddingEnd="12dp"
+            android:paddingLeft="14dp"
+            android:paddingRight="12dp"
+            android:paddingStart="12dp"
+            android:paddingTop="5dp"
+            android:textSize="15sp" >
+
+
+        </com.schoofi.utils.CustomEditText>
+
+        <com.schoofi.utils.CustomTextView
+            android:id="@+id/text_insurance_company_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="12dp"
+            android:text="Insurance Company Address"
+            android:textSize="15sp" />
+
+        <com.schoofi.utils.CustomEditText
+            android:id="@+id/edit_insurance_company_address"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_gravity="top"
+            android:gravity="top"
+            android:background="@drawable/button"
+            android:textColor="@android:color/black"
+            android:ems="10"
+            android:hint="Insurance Company Address"
+            android:inputType="textAutoComplete"
+            android:paddingBottom="5dp"
+            android:paddingEnd="12dp"
+            android:paddingLeft="14dp"
+            android:paddingRight="12dp"
+            android:paddingStart="12dp"
+            android:paddingTop="5dp"
+            android:textSize="15sp" >
+
+
+        </com.schoofi.utils.CustomEditText>
+
+        <com.schoofi.utils.CustomTextView
+            android:id="@+id/text_insurance_company_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="12dp"
+            android:text="Insurance Company Number"
+            android:textSize="15sp" />
+
+        <com.schoofi.utils.CustomEditText
+            android:id="@+id/edit_insurance_company_number"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="top"
+            android:gravity=""
+            android:background="@drawable/button"
+            android:textColor="@android:color/black"
+            android:ems="10"
+            android:hint="Insurance Company Number"
+            android:inputType="textAutoComplete"
+            android:paddingBottom="5dp"
+            android:paddingEnd="12dp"
+            android:paddingLeft="14dp"
+            android:paddingRight="12dp"
+            android:paddingStart="12dp"
+            android:paddingTop="5dp"
+            android:textSize="15sp" >
+
+
+        </com.schoofi.utils.CustomEditText>
+
+        <com.schoofi.utils.CustomTextView
+            android:id="@+id/text_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="12dp"
+            android:text="Insurance Type"
+            android:textSize="15sp" />
+
+        <smtchahal.materialspinner.MaterialSpinner
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/grey_button"
+            android:id="@+id/spinner_type"
+            app:ms_hint="Select Type"
+            android:gravity="center"
+            app:ms_hintColor="@color/black"
+            app:ms_baseColor="@color/black"
+            app:ms_arrowColor="@color/black"
+            app:ms_enableFloatingLabel="false"
+            android:layout_margin="10dp"
+            app:ms_enableErrorLabel="false"
+            app:ms_arrowSize="10dp"
+            app:ms_multiline="false"
+            android:padding="0dp"
+            app:ms_floatingLabelText=""
+            app:ms_thickness="0dp"
+            ></smtchahal.materialspinner.MaterialSpinner>
+
+        <com.schoofi.utils.CustomTextView
+            android:id="@+id/text_from_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="12dp"
+            android:text="Valid From"
+            android:textSize="15sp" />
+
+        <com.schoofi.utils.CustomButton
+            android:id="@+id/btn_from_date"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/button"
+            android:drawableRight="@drawable/calander_icon"
+            android:paddingBottom="5dp"
+            android:paddingEnd="12dp"
+            android:paddingLeft="14dp"
+            android:paddingRight="12dp"
+            android:paddingStart="12dp"
+            android:paddingTop="5dp"
+            android:textSize="15sp" />
+
+        <com.schoofi.utils.CustomTextView
+            android:id="@+id/text_to_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="12dp"
+            android:text="Valid To"
+            android:textSize="15sp" />
+
+        <com.schoofi.utils.CustomButton
+            android:id="@+id/btn_to_date"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/button"
+            android:drawableRight="@drawable/calander_icon"
+            android:paddingBottom="5dp"
+            android:paddingEnd="12dp"
+            android:paddingLeft="14dp"
+            android:paddingRight="12dp"
+            android:paddingStart="12dp"
+            android:paddingTop="5dp"
+            android:textSize="15sp" />
+
+        <com.schoofi.utils.CustomTextView
+            android:id="@+id/text_insurance_amount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="12dp"
+            android:text="Insurance Amount"
+            android:textSize="15sp" />
+
+        <com.schoofi.utils.CustomEditText
+            android:id="@+id/edit_amount"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="top"
+            android:gravity="top"
+            android:background="@drawable/button"
+            android:textColor="@android:color/black"
+            android:ems="10"
+            android:hint="Insurance Ammount"
+            android:inputType="numberDecimal"
+            android:paddingBottom="5dp"
+            android:paddingEnd="12dp"
+            android:paddingLeft="14dp"
+            android:paddingRight="12dp"
+            android:paddingStart="12dp"
+            android:paddingTop="5dp"
+            android:textSize="15sp" >
+
+
+        </com.schoofi.utils.CustomEditText>
+
+        <com.schoofi.utils.CustomTextView
+            android:id="@+id/text_insurance_coverage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="12dp"
+            android:text="Insurance Coverage"
+            android:textSize="15sp" />
+
+        <com.schoofi.utils.CustomEditText
+            android:id="@+id/edit_coverage"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="top"
+            android:gravity="top"
+            android:background="@drawable/button"
+            android:textColor="@android:color/black"
+            android:ems="10"
+            android:hint="Insurance Coverage"
+
+            android:paddingBottom="5dp"
+            android:paddingEnd="12dp"
+            android:paddingLeft="14dp"
+            android:paddingRight="12dp"
+            android:paddingStart="12dp"
+            android:paddingTop="5dp"
+            android:textSize="15sp" >
+
+
+        </com.schoofi.utils.CustomEditText>
+
+        <com.schoofi.utils.CustomTextView
+            android:id="@+id/text_insurance_group_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="12dp"
+            android:text="Group Number"
+            android:textSize="15sp" />
+
+        <com.schoofi.utils.CustomEditText
+            android:id="@+id/edit_group"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="top"
+            android:gravity="top"
+            android:background="@drawable/button"
+            android:textColor="@android:color/black"
+            android:ems="10"
+            android:hint="Group Number"
+
+            android:paddingBottom="5dp"
+            android:paddingEnd="12dp"
+            android:paddingLeft="14dp"
+            android:paddingRight="12dp"
+            android:paddingStart="12dp"
+            android:paddingTop="5dp"
+            android:textSize="15sp" >
+
+
+        </com.schoofi.utils.CustomEditText>
+    </LinearLayout>
+
+    </ScrollView>
+
+    <com.schoofi.utils.CustomButton
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="10dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/buttons"
+        android:text="Add"
+        android:textSize="15sp"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:id="@+id/btn_next"/>
+
+</RelativeLayout>

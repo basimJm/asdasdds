@@ -1,0 +1,110 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#EE4749"
+        android:orientation="horizontal"
+        android:weightSum="3" >
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:layout_weight="0.3"
+            android:gravity="center"
+            android:src="@drawable/ic_action_back" />
+
+        <com.schoofi.utils.CustomTextView
+            android:id="@+id/txt_teacherStudentResult"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="2.3"
+            android:gravity="center"
+            android:text="Result"
+            android:textColor="#D7D7D7"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <!--<Spinner
+        android:layout_below="@+id/headerLayout"
+        android:id="@+id/spinTeacherStudentResult"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/arrowdown" />-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/linear_layout"
+        android:layout_below="@+id/headerLayout">
+
+    <LinearLayout
+        android:id="@+id/result_linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+
+        <com.schoofi.utils.CustomTextView
+            android:id="@+id/textNewExam"
+            android:layout_width="0dp"
+            android:layout_height="38dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/button"
+            android:gravity="center"
+            android:text="Select Term"
+            android:layout_weight="0.5"
+            android:textColor="@android:color/darker_gray" />
+
+        <com.schoofi.utils.CustomTextView
+            android:id="@+id/textReset"
+            android:layout_width="0dp"
+            android:layout_height="38dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/button"
+            android:gravity="center"
+            android:layout_weight="0.5"
+            android:text="Select Exam"
+            android:textColor="@android:color/darker_gray" />
+    </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear_layout"
+        android:layout_marginTop="40dp" 
+        android:id="@+id/relativePieChart">
+
+        <com.github.mikephil.charting.charts.BarChart
+            android:id="@+id/chart1"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+    
+    <com.schoofi.utils.CustomTextView 
+        android:id="@+id/textNoOfStudents"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#EE4749"
+        android:gravity="center"
+        android:textSize="15sp"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/relativePieChart"
+        />
+
+</RelativeLayout>

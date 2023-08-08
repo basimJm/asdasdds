@@ -1,0 +1,199 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.schoofi.activitiess.NewAssignmentTeacher"
+    tools:ignore="MergeRootFrame" >
+
+    <LinearLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#EE4749"
+        android:orientation="horizontal"
+        android:weightSum="3" >
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:layout_weight="0.3"
+            android:gravity="center"
+            android:src="@drawable/ic_action_back" />
+
+        <com.schoofi.utils.CustomTextView
+            android:id="@+id/txt_class"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="2.0"
+            android:gravity="center"
+            android:text="Upload"
+            android:layout_marginLeft="10dp"
+            android:textColor="#D7D7D7"
+            android:textSize="20sp" />
+
+        <com.schoofi.utils.CustomTextView
+            android:id="@+id/btn_submit_assignment"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.7"
+            android:gravity="center"
+            android:text="Submit"
+            android:textColor="#D7D7D7"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:id="@+id/linear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp" >
+
+                <Spinner
+                    android:id="@+id/spinner_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/arrowdown" />
+
+                <com.schoofi.utils.CustomTextView
+                    android:id="@+id/txt_class1"
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/button"
+                    android:padding="10dp"
+                    android:text="Class-Name"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp" />
+
+                <Spinner
+                    android:id="@+id/spinner_subject"
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/arrowdown"
+                    android:prompt="@string/type" />
+
+                <com.schoofi.utils.CustomEditText
+                    android:id="@+id/edit_title_assignment"
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/button"
+                    android:hint="Title"
+                    android:maxLines="1"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp" />
+
+                <com.schoofi.utils.CustomTextView
+                    android:id="@+id/edit_title_last_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/button"
+                    android:text="Last date"
+                    android:maxLines="1"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:textColor="#808080"
+                    android:textSize="15sp" />
+
+                <com.schoofi.utils.CustomEditText
+                    android:id="@+id/edit_optional"
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/button"
+                    android:hint="Main Subject/Topic(If Any)"
+                    android:textColor="@android:color/black"
+                    android:maxLines="1"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:textSize="15sp" />
+
+                <com.schoofi.utils.CustomEditText
+                    android:id="@+id/edit_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/button"
+                    android:hint="Description"
+                    android:textColor="@android:color/black"
+
+                    android:padding="10dp"
+                    android:imeOptions="actionNext"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <com.schoofi.utils.CustomButton
+                android:id="@+id/get_images"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:layout_below="@+id/linear"
+                android:layout_margin="10dp"
+                android:background="@drawable/buttongreen"
+                android:text="Upload Images"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="15sp" />
+
+            <HorizontalScrollView
+                android:id="@+id/hori_scroll_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/get_images"
+                android:fillViewport="false"
+                android:foregroundGravity="left"
+                android:paddingBottom="1dp"
+                android:paddingTop="1dp" >
+
+                <LinearLayout
+                    android:id="@+id/selected_photos_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:animateLayoutChanges="true"
+                    android:gravity="left"
+                    android:orientation="horizontal"
+                    android:visibility="visible" >
+
+                    <!-- images will be added dynamicall to this layout -->
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <com.schoofi.utils.CustomButton
+                android:id="@+id/get_doc"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:layout_below="@+id/hori_scroll_view"
+                android:layout_margin="10dp"
+                android:background="@drawable/buttongreen"
+                android:text="Upload Document"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="15sp" />
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout>

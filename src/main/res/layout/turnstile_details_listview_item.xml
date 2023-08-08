@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:weightSum="1"
+    >
+
+
+
+    <com.schoofi.utils.CustomTextView
+        android:id="@+id/text_student_daily_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_weight="0.29"
+        android:layout_gravity="center"
+
+        android:textSize="12sp"
+        android:textColor="@android:color/black"
+        android:gravity="center"/>
+
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:background="#DCDBDB"
+        android:layout_weight="0.0045"/>
+
+    <com.schoofi.utils.CustomTextView
+        android:id="@+id/text_student_daily_zone_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_weight="0.24"
+        android:layout_gravity="center"
+
+        android:textSize="12sp"
+        android:textColor="@android:color/black"
+        android:gravity="center"/>
+
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:background="#DCDBDB"
+        android:layout_gravity="center"
+        android:layout_weight="0.0045"/>
+
+    <com.schoofi.utils.CustomTextView
+        android:id="@+id/text_student_daily_in_time"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_weight="0.14"
+        android:layout_gravity="center"
+
+        android:textSize="12sp"
+        android:textColor="@android:color/black"
+        android:gravity="center"/>
+
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:background="#DCDBDB"
+        android:layout_gravity="center"
+        android:layout_weight="0.0045"/>
+
+    <com.schoofi.utils.CustomTextView
+        android:id="@+id/text_student_out_time"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_weight="0.29"
+        android:layout_gravity="center"
+
+        android:textSize="12sp"
+        android:textColor="@android:color/black"
+        android:gravity="center"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>

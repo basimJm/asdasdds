@@ -1,0 +1,265 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.schoofi.activitiess.StudentAnnouncement" >
+
+    <LinearLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#EE4749"
+        android:orientation="horizontal"
+        android:weightSum="3" >
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:layout_weight="0.3"
+            android:gravity="center"
+            android:src="@drawable/ic_action_back" />
+
+        <com.schoofi.utils.CustomTextView
+            android:id="@+id/txt_profile"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="2.3"
+            android:gravity="center"
+            android:text="Details"
+            android:textColor="#D7D7D7"
+            android:textSize="20sp" />
+
+        <com.schoofi.utils.CustomTextView
+            android:id="@+id/txt_invoice"
+            android:layout_width="0dp"
+            android:layout_weight="0.4"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Invoice"
+            android:textColor="#D7D7D7"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical"
+        android:layout_below="@+id/headerLayout">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.schoofi.utils.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:id="@+id/text_student_name"
+                android:gravity="center"
+                />
+
+            <com.schoofi.utils.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:id="@+id/text_student_class_name"
+                android:gravity="center"
+                />
+
+            <com.schoofi.utils.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+
+                android:id="@+id/text_student_admissionNo"
+                android:gravity="center"
+                />
+
+            <com.schoofi.utils.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+
+                android:id="@+id/text_student_invoice_number"
+                android:gravity="center"
+                />
+
+            <com.schoofi.utils.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+
+                android:id="@+id/text_student_invoice_date"
+                android:gravity="center"
+                />
+
+            <com.schoofi.utils.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:id="@+id/text_student_payment_date"
+                android:gravity="center"
+                />
+
+            <com.schoofi.utils.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="@color/green"
+                android:textStyle="bold"
+
+                android:layout_margin="10dp"
+                android:id="@+id/text_student_payment_status"
+                android:gravity="center"
+                />
+
+            <com.schoofi.utils.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/text_student_payment_messsage"
+                android:gravity="center"
+                />
+
+
+            <com.schoofi.utils.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/graay"
+                android:textSize="20sp"
+                android:textColor="@android:color/black"
+                android:text="Fee Details"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"/>
+
+
+
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/listview_fee"
+                android:layout_marginTop="10dp"></ListView>
+
+            <com.schoofi.utils.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:id="@+id/text_student_payment_fine"
+                android:gravity="center"
+                />
+
+            <com.schoofi.utils.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:id="@+id/text_student_payment_interest"
+                android:gravity="center"
+                />
+
+            <com.schoofi.utils.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:id="@+id/text_student_payment_handling_charges"
+                android:gravity="center"
+                />
+
+            <com.schoofi.utils.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:id="@+id/text_student_payment_service_tax"
+                android:gravity="center"
+                />
+
+            <com.schoofi.utils.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:id="@+id/text_student_payment_total_paid"
+                android:gravity="center"
+                />
+
+            <com.schoofi.utils.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:id="@+id/text_student_payment_payment_type"
+                android:gravity="center"
+                />
+
+            <com.schoofi.utils.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:id="@+id/text_student_payment_txn_id"
+                android:gravity="center"
+                />
+
+            <com.schoofi.utils.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:id="@+id/text_student_payment_confirmation_status"
+                android:gravity="center"
+                />
+
+
+        </LinearLayout>
+
+
+
+        </ScrollView>
+
+
+
+
+
+
+    </LinearLayout>
+
+    </RelativeLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linear_custom_dialog"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.schoofi.utils.CustomTextView
+        android:id="@+id/text_level_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_margin="5dp"
+        android:textColor="@android:color/black"
+        android:textSize="15sp" />
+
+    <com.schoofi.utils.CustomTextView
+        android:id="@+id/text_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_margin="5dp"
+        android:textColor="@android:color/black"
+        android:textSize="15sp" />
+
+    <com.schoofi.utils.CustomTextView
+        android:id="@+id/text_reason"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_margin="5dp"
+        android:textColor="@android:color/black"
+        android:textSize="15sp" />
+
+</LinearLayout>

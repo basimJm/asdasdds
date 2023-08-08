@@ -1,0 +1,115 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants"
+    tools:context="com.schoofi.activities.TeacherHomeScreen" >
+
+    <LinearLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#EE4749"
+        android:orientation="horizontal"
+        android:weightSum="3" >
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:layout_weight="0.3"
+            android:gravity="center"
+            android:src="@drawable/ic_action_back"/>
+
+        <com.schoofi.utils.CustomTextView
+            android:id="@+id/txt_class"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="2.3"
+            android:gravity="center"
+            android:text="Mark"
+            android:textColor="#D7D7D7"
+            android:textSize="20sp" />
+
+        <com.schoofi.utils.CustomTextView
+            android:id="@+id/txt_teacherLogout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.3"
+            android:gravity="center"
+            android:textColor="#D7D7D7"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:padding="15dp"
+        android:orientation="vertical"
+        android:id="@+id/linear"
+        android:layout_below="@+id/headerLayout"
+        android:layout_above="@+id/btn_done">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="right"
+            android:gravity="right"
+            android:weightSum="1">
+
+            <com.schoofi.utils.CircularTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mark All"
+                android:textSize="15sp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_margin="10dp"
+                android:textColor="@android:color/black"
+                />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/checkbox"
+                android:checked="false"
+                android:layout_gravity="center"
+                android:gravity="right"/>
+
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/teacher_homescreen_listview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/headerLayout"
+            android:divider="@null"
+            android:dividerHeight="0dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_above="@+id/btn_done"
+            android:padding="10dp" >
+        </ListView>
+    </LinearLayout>
+
+
+
+    <com.schoofi.utils.CustomButton
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/btn_done"
+        android:background="@drawable/buttons"
+        android:text="Done"
+        android:textSize="15sp"
+        android:textColor="@android:color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        android:textAllCaps="false"/>
+
+</RelativeLayout>

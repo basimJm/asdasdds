@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/text_field"
+    android:layout_margin="@dimen/margin_5dp"
+    android:orientation="vertical">
+
+
+
+    <com.schoofi.utils.CustomTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:textColor="@color/darker_gray"
+        android:layout_marginLeft="@dimen/margin_10dp"
+        android:layout_marginTop="5dp"
+
+        android:id="@+id/text_description">
+
+    </com.schoofi.utils.CustomTextView>
+
+
+    <com.schoofi.utils.CustomTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:layout_gravity="right"
+        android:gravity="right"
+        android:layout_marginLeft="@dimen/margin_10dp"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/darker_gray"
+        android:id="@+id/text_date">
+
+    </com.schoofi.utils.CustomTextView>
+
+</LinearLayout>

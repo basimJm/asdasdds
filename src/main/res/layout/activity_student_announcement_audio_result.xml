@@ -1,0 +1,115 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.schoofi.activities.TeacherHomeScreen" >
+
+    <LinearLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#EE4749"
+        android:orientation="horizontal"
+        android:weightSum="3" >
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:layout_weight="0.3"
+            android:gravity="center"
+            android:src="@drawable/ic_action_back" />
+
+        <com.schoofi.utils.CustomTextView
+            android:id="@+id/txt_class"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="25dp"
+            android:layout_weight="2.3"
+            android:gravity="center"
+            android:text="Announcement"
+            android:textColor="#D7D7D7"
+            android:textSize="20sp" />
+
+        
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_below="@+id/headerLayout"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:padding="10dp">
+        
+        <SeekBar 
+            android:id="@+id/seekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        
+        <com.schoofi.utils.CustomButton 
+            android:id="@+id/audioStart"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/button"
+            android:text="Play"
+            />
+        
+        
+         <com.schoofi.utils.CustomButton
+            android:id="@+id/audioStop"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/button"
+            android:layout_marginTop="5dp"
+            android:text="Stop"
+            />
+         
+         <com.schoofi.utils.CustomTextView
+            android:id="@+id/text_studentAudioViewScreenTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:text="INDEPENDENCE DAY CELEBRATION"
+            android:textColor="#EE4749"
+            android:textSize="15sp" />
+
+        <com.schoofi.utils.CustomTextView
+            android:id="@+id/text_studentAudioViewScreenSenderName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="10dp"
+            android:text="Principal"
+            android:textColor="@android:color/black"
+            android:textSize="15sp" />
+
+        <com.schoofi.utils.CustomTextView
+            android:id="@+id/text_studentAudioViewScreenDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="report at freinds fhfggfgfgfgfggf"
+            android:textColor="@android:color/black"
+            android:autoLink="web"
+            android:textSize="15sp" />
+
+        <com.schoofi.utils.CustomTextView
+            android:id="@+id/text_studentAudioViewScreenDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="date"
+            android:textColor="@android:color/black"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+</RelativeLayout>

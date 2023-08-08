@@ -1,0 +1,119 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#EE4749"
+        android:orientation="horizontal"
+        android:weightSum="3" >
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:layout_weight="0.3"
+            android:gravity="center"
+            android:src="@drawable/ic_action_back"/>
+
+        <com.schoofi.utils.CustomTextView
+            android:id="@+id/txt_LeaveDetail"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="2.3"
+            android:gravity="center"
+            android:text="Details"
+            android:textColor="#D7D7D7"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/headerLayout"
+        android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/secondLayout"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+
+
+
+
+
+
+            <com.schoofi.utils.CustomTextView
+                android:id="@+id/text_leave_detail_leave_starting_date1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginTop="14dp"
+
+                android:padding="10dp"
+                android:text="From: ghhh hhhhh hhhhhh hhhhh hhh"
+                android:textColor="@android:color/black"
+                android:textSize="15sp" />
+
+
+
+
+            <com.schoofi.utils.CustomTextView
+                android:id="@+id/text_leave_detail_leave_description1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:singleLine="false"
+                android:text="Pending hfhfhhfhf hfhfhf   hfhfhf"
+                android:textColor="@android:color/black"
+                android:textSize="15sp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2" >
+
+            <com.schoofi.utils.CustomTextView
+                android:id="@+id/text_leave_detail_leave_image"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:padding="10dp"
+                android:text="File:"
+                android:textColor="@android:color/black"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:src="@drawable/ic_action_back"
+                android:id="@+id/image_icon"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+
+</RelativeLayout>

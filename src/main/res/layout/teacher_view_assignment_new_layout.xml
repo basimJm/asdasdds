@@ -1,0 +1,174 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.schoofi.activities.TeacherHomeScreen"
+    tools:ignore="MergeRootFrame" >
+
+    <LinearLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#EE4749"
+        android:orientation="horizontal"
+        android:weightSum="3" >
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:layout_weight="0.3"
+            android:gravity="center"
+            android:src="@drawable/ic_action_back" />
+
+        <com.schoofi.utils.CustomTextView
+            android:id="@+id/txt_class"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="2.3"
+            android:gravity="center"
+            android:text="Details"
+            android:textColor="#D7D7D7"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/txt_teacherLogout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.4"
+            android:gravity="center" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/headerLayout" >
+
+        <RelativeLayout
+            android:id="@+id/assignment_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/scroll1"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.schoofi.utils.CustomTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:id="@+id/text_title"
+                        android:layout_margin="10dp"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:textColor="@color/red"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:background="#f3f3f3"
+                        android:layout_marginRight="15dp"
+                        android:id="@+id/view1"
+                        android:layout_marginLeft="15dp"></View>
+
+                    <com.schoofi.utils.CustomTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:id="@+id/text_subject_name"
+                        android:layout_margin="10dp"
+                        android:textColor="@color/gray"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:background="#f3f3f3"
+                        android:layout_marginRight="15dp"
+                        android:id="@+id/view2"
+                        android:layout_marginLeft="15dp"></View>
+
+                    <com.schoofi.utils.CustomTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:id="@+id/text_submit_by"
+                        android:layout_margin="10dp"
+                        android:textColor="@color/gray"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:background="#f3f3f3"
+                        android:layout_marginRight="15dp"
+                        android:id="@+id/view3"
+                        android:layout_marginLeft="15dp"></View>
+
+                    <com.schoofi.utils.CustomTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/text_description"
+                        android:textColor="@color/gray"
+                        android:textSize="15sp"
+                        android:layout_margin="10dp"/>
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:background="#f3f3f3"
+                        android:id="@+id/view4"
+                        android:layout_margin="5dp"></View>
+
+                    <com.schoofi.utils.CustomTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="@color/gray"
+                        android:textSize="15sp"
+                        android:text="Files"
+                        android:layout_margin="10dp"/>
+
+                </LinearLayout>
+
+            </ScrollView>
+
+
+        </RelativeLayout>
+
+        <GridView
+            android:id="@+id/studentHomeGridView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:adjustViewBounds="true"
+            android:columnWidth="100dp"
+            android:gravity="center"
+            android:horizontalSpacing="10dp"
+            android:layout_below="@+id/assignment_view"
+            android:numColumns="2"
+            android:padding="0dp"
+            android:scrollbars="none"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="10dp" >
+        </GridView>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

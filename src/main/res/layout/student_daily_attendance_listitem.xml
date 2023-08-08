@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:weightSum="2" 
+   >
+    
+   
+        
+        <com.schoofi.utils.CustomTextView
+            android:id="@+id/text_student_daily_attendance_date"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:text="21-10-2015"
+            android:layout_weight="0.99"
+            android:layout_gravity="left"
+            
+            android:textSize="15sp"
+            android:textColor="@android:color/black"
+            android:gravity="center"/>
+   
+    
+    <View 
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:background="#DCDBDB"
+        android:layout_weight="0.0045"/>
+    
+     
+        
+        <ImageView
+            android:id="@+id/img_student_daily_attendance"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:layout_gravity="right"
+            
+            android:src="@drawable/ic_action_back" 
+            android:padding="10dp"      
+            android:gravity="center"/>
+        
+       
+    
+    
+    
+    
+
+</LinearLayout>

@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:ProgressWheel="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_sign_up"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:background="#d8d8d8"
+        android:id="@+id/linear_above">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:orientation="vertical"
+            android:gravity="right">
+            <com.schoofi.utils.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textSize="15sp"
+                android:textColor="@android:color/black"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:layout_margin="10dp"
+                android:id="@+id/text_no_of_questions"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:orientation="vertical"
+            android:gravity="right">
+
+
+            <com.schoofi.utils.CircularCounter
+                xmlns:meter="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/meter"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                meter:textSize="@dimen/text_size_15sp"
+                meter:textColor="@android:color/black"
+                meter:metricSize="@dimen/text_size_20sp"
+                meter:metricText="s"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/linear_above"
+        android:layout_above="@+id/linear_bottom">
+
+
+
+        <!-- <View
+             android:layout_width="match_parent"
+             android:layout_height="@dimen/overall_list_divider_margin"
+             android:background="@drawable/divider"
+             android:layout_marginTop="@dimen/margin_5dp"
+             android:layout_marginLeft="0dp"
+             android:layout_marginRight="0dp"></View>-->
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:id="@+id/linear_only_image">
+
+                    <ImageView
+                        android:layout_width="200dp"
+                        android:layout_height="150dp"
+                        android:layout_gravity="center"
+                        android:id="@+id/img_question"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:id="@+id/linear_edit_text">
+
+                    <com.schoofi.utils.CustomTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:id="@+id/text_question"
+                        android:textColor="@android:color/black"
+                        android:background="@drawable/text_field"
+                        android:gravity="center"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:orientation="vertical"
+                    android:id="@+id/linear_edit_text_with_image">
+
+                    <com.schoofi.utils.CustomTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/text_question1"
+                        android:textColor="@android:color/black"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="75dp"
+                        android:layout_margin="10dp"
+                        android:layout_gravity="center"
+                        android:id="@+id/img_question1"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <!--<View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/overall_list_divider_margin"
+            android:background="@drawable/divider"
+            android:layout_margin="0dp"></View>-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="50dp">
+
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/list_view_answer"></ListView>
+
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#d8d8d8"
+        android:gravity="right"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/linear_bottom">
+
+
+        <com.schoofi.utils.CustomButton
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="Skip"
+            android:background="?android:attr/selectableItemBackground"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:textAllCaps="false"
+            android:id="@+id/btn_skip"
+            android:layout_gravity="right"
+            android:gravity="center"
+            android:layout_margin="10dp" />
+
+    </LinearLayout>
+
+
+
+
+
+
+</RelativeLayout>

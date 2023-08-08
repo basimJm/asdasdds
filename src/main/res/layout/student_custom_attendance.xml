@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="15dp">
+
+    <com.schoofi.utils.CustomEditText
+        android:id="@+id/edit_fromDatePicker"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/button"
+        android:editable="false"
+        android:hint="From          dd-mm-yyyy"
+        android:padding="10dp"
+        android:clickable="true"
+        android:focusableInTouchMode="false"
+        android:textColor="@android:color/black"
+        android:textSize="15sp" >
+    </com.schoofi.utils.CustomEditText>
+
+    <com.schoofi.utils.CustomEditText
+        android:id="@+id/edit_toDatePicker"
+        android:layout_width="match_parent"
+        android:editable="false"
+        android:layout_height="38dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/button"
+        android:hint="To               dd-mm-yyyy"
+        android:padding="10dp"
+        android:textColor="@android:color/black"
+        android:focusableInTouchMode="false"
+        android:clickable="true"
+        android:textSize="15sp" >
+        
+    </com.schoofi.utils.CustomEditText>
+
+    <com.schoofi.utils.CustomButton
+        android:id="@+id/btn_student_custom_date_picker"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:layout_margin="10dp"
+        android:textColor="@android:color/white"
+        android:textSize="15sp"
+        android:background="@drawable/buttons"
+        android:textAllCaps="false"
+        android:padding="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#e4e4e4"
+            android:orientation="horizontal"
+            android:weightSum="1" >
+
+            <com.schoofi.utils.CustomTextView
+                android:id="@+id/text_period"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_gravity="left"
+                android:layout_weight="0.5"
+                android:gravity="center_horizontal"
+                android:padding="10dp"
+                android:text="Date"
+                android:textColor="@android:color/black"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <com.schoofi.utils.CustomTextView
+                android:id="@+id/text_subject"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_gravity="right"
+                android:layout_weight="0.5"
+                android:gravity="center_horizontal"
+                android:padding="10dp"
+                android:text="Attendance"
+                android:textColor="@android:color/black"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <com.schoofi.utils.CustomTextView
+                android:id="@+id/newView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="No Records Found"
+                android:textColor="@android:color/black"
+                android:textSize="15sp" />
+
+            <com.orangegangsters.github.swipyrefreshlayout.library.SwipyRefreshLayout
+                android:id="@+id/swipyrefreshlayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srl_direction="top">
+
+            <ListView
+                android:id="@+id/student_custom_attendance_replace_listview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@drawable/divider"
+                android:dividerHeight="2dp"
+                android:padding="10dp" >
+            </ListView>
+            </com.orangegangsters.github.swipyrefreshlayout.library.SwipyRefreshLayout>
+        </FrameLayout>
+    </LinearLayout>
+
+</LinearLayout>

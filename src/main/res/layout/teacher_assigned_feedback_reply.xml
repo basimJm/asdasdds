@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="10dp" 
+    android:padding="10dp">
+    
+    <ScrollView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+    <com.schoofi.utils.CustomEditText
+        android:id="@+id/edit_msg"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/button"
+        android:gravity="top"
+        android:textColor="@android:color/black"
+        android:hint="Write your message here"
+        android:textSize="15sp"
+        android:windowSoftInputMode="adjustPan|adjustResize"
+        android:imeOptions="flagNoFullscreen" />
+    
+    <com.schoofi.utils.CustomButton
+        android:id="@+id/btn_upload"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:background="@drawable/button"
+        android:textColor="@android:color/black"
+        android:text="Upload Images"
+        android:textAllCaps="false"
+        android:textSize="15sp"
+        android:layout_marginTop="10dp" />
+    
+    
+    <HorizontalScrollView
+        android:id="@+id/hori_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="false"
+        android:foregroundGravity="left"
+        android:paddingBottom="1dp"
+        android:paddingTop="1dp" >
+
+        <LinearLayout
+            android:id="@+id/selected_photos_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:animateLayoutChanges="true"
+            android:gravity="left"
+            android:orientation="horizontal"
+            android:visibility="visible" >
+
+            <!-- images will be added dynamicall to this layout -->
+        </LinearLayout>
+    </HorizontalScrollView>
+
+
+    <com.schoofi.utils.CustomButton
+        android:id="@+id/btn_submit"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:background="@drawable/buttongreen"
+        android:textColor="@android:color/white"
+        android:text="Submit"
+        android:textAllCaps="false"
+        android:textSize="15sp"
+        android:layout_marginTop="10dp" />
+
+    <com.schoofi.utils.CustomButton
+        android:id="@+id/btn_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:background="@drawable/buttons"
+        android:textColor="@android:color/white"
+        android:text="Cancel"
+        android:textAllCaps="false"
+        android:textSize="15sp"
+        android:layout_marginTop="10dp" />
+    
+    </LinearLayout>
+    
+    </ScrollView>
+
+</LinearLayout>

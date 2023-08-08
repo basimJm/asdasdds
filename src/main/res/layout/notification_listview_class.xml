@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:padding="10dp"
+    android:weightSum="1" >
+
+    <RelativeLayout
+        android:id="@+id/relative"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_weight="0.2" >
+
+        <ImageView
+            android:id="@+id/imageViewBaseImage"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/ic_launcher" />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_weight="0.8"
+        android:orientation="vertical" >
+
+        <com.schoofi.utils.CustomTextView
+            android:id="@+id/textView_student_announcement_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="INDEPENDENCE DAY CELEBRATION"
+            android:textColor="@android:color/black"
+            android:textSize="15sp"/>
+
+
+        <com.schoofi.utils.CustomTextView
+            android:id="@+id/textView_student_announcement_person"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Principal"
+            android:layout_marginTop="5dp"
+            android:textColor="@android:color/black"
+            android:textSize="15sp" >
+        </com.schoofi.utils.CustomTextView>
+
+        </LinearLayout>
+
+
+    </LinearLayout>

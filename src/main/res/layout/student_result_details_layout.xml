@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.schoofi.utils.CustomTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_termName"
+        android:layout_margin="10dp"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="15sp"
+        android:gravity="center"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@drawable/divider"
+        android:layout_margin="10dp"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1"
+        android:orientation="horizontal">
+
+        <com.schoofi.utils.CustomTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_examName"
+            android:layout_margin="10dp"
+            android:textColor="@android:color/black"
+            android:textSize="15sp"
+            android:layout_weight="0.5"
+            android:gravity="left"/>
+
+        <com.schoofi.utils.CustomTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_examMarks"
+            android:layout_margin="10dp"
+            android:textColor="@android:color/black"
+            android:textSize="15sp"
+            android:layout_weight="0.5"
+            android:gravity="right"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,466 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <integer name="ga_sessionTimeout">300</integer>
+
+    <!-- Enable automatic Activity measurement -->
+    <bool name="ga_autoActivityTracking">true</bool>
+
+    <!-- The screen names that will appear in reports -->
+    <screenName name="com.schoofi.activities.LoginScreen">
+        Login Screen
+    </screenName>
+    <screenName name="com.schoofi.activities.TeacherHomeScreen">
+        Teacher HomeScreen
+    </screenName>
+    <screenName name="com.schoofi.activitiess.TeacherStudentAttendanceDetails">
+        TeacherStudent Attendance Details
+    </screenName>
+    <screenName name="com.schoofi.activities.SignUpScreen">
+        SignUp Screen
+    </screenName>
+    <screenName name="com.schoofi.activities.StudentHomeScreen">
+        Student HomeScreen
+    </screenName>
+    <screenName name="com.schoofi.activities.StudentAttendance">
+        Student Attendance
+    </screenName>
+    <screenName name="com.schoofi.activitiess.AboutUs">
+        About Us
+    </screenName>
+    <screenName name="com.schoofi.activitiess.AddChild">
+        Add Child
+    </screenName>
+    <screenName name="com.schoofi.activitiess.ChairmanHomeScreen">
+        Chairman HomeScreen
+    </screenName>
+    <screenName name="com.schoofi.activitiess.CredentialsScreen">
+        Credentials Screen
+    </screenName>
+    <screenName name="com.schoofi.activitiess.CredentialsScreen1">
+        Credentials Screen1
+    </screenName>
+    <screenName name="com.schoofi.activitiess.ParentHomeScreen">
+        Parent HomeScreen
+    </screenName>
+    <screenName name="com.schoofi.activitiess.SplashScreen">
+        Splash Screen
+    </screenName>
+
+    <screenName name="com.schoofi.activitiess.StudentAnnouncement">
+        Student Announcement
+    </screenName>
+
+    <screenName name="com.schoofi.activitiess.StudentAnnouncementAudioResult">
+        Student Announcement AudioResult
+    </screenName>
+
+    <screenName name="com.schoofi.activitiess.StudentAnnouncementImageResult">
+        Student Announcement ImageResult
+    </screenName>
+
+    <screenName name="com.schoofi.activitiess.StudentExamSchedule">
+        Student ExamSchedule
+    </screenName>
+
+    <screenName name="com.schoofi.activitiess.StudentAssignments">
+        Student Assignments
+    </screenName>
+
+    <screenName name="com.schoofi.activitiess.StudentExamScheduleDetail">
+        Student ExamSchedule Detail
+    </screenName>
+
+    <screenName name="com.schoofi.activitiess.StudentFeedBack">
+        Student FeedBack
+    </screenName>
+
+    <screenName name="com.schoofi.activitiess.StudentFeedBackDetails">
+        Student FeedBackDetails
+    </screenName>
+
+    <screenName name="com.schoofi.activitiess.StudentLeaveDetail">
+        Student LeaveDetail
+    </screenName>
+
+    <screenName name="com.schoofi.activitiess.StudentLeaveRequest">
+        Student LeaveRequest
+    </screenName>
+
+    <screenName name="com.schoofi.activitiess.StudentNewFeedBack">
+        Student NewFeedBack
+    </screenName>
+
+    <screenName name="com.schoofi.activitiess.StudentNewLeave">
+        Student NewLeave
+    </screenName>
+
+    <screenName name="com.schoofi.activitiess.StudentPoll">
+        Student Poll
+    </screenName>
+
+    <screenName name="com.schoofi.activitiess.StudentPollDetail">
+        Student PollDetail
+    </screenName>
+
+    <screenName name="com.schoofi.activitiess.StudentResult">
+        Student Result
+    </screenName>
+
+    <screenName name="com.schoofi.activitiess.StudentSchedule">
+        Student Schedule
+    </screenName>
+
+    <screenName name="com.schoofi.activitiess.StudentSettings">
+        Student Settings
+    </screenName>
+
+    <screenName name="com.schoofi.activitiess.StudentSubmittedPolls">
+        Student SubmittedPolls
+    </screenName>
+
+    <screenName name="com.schoofi.activitiess.StudentSubmittedPolls">
+        Student SubmittedPolls
+    </screenName>
+
+    <screenName name="com.schoofi.activitiess.StudentTimeTableDetails">
+        Student TimeTable Details
+    </screenName>
+
+    <screenName name="com.schoofi.activitiess.StudentVideoView">
+        Student VideoView
+    </screenName>
+
+    <screenName name="com.schoofi.activitiess.StudentVideoViewAnnouncement">
+        Student VideoView Announcement
+    </screenName>
+
+    <screenName name="com.schoofi.activitiess.TeacherAnnouncement">
+        Teacher Announcement
+    </screenName>
+
+    <screenName name="com.schoofi.activitiess.TeacherAnnouncementAudioResult">
+        Teacher Announcement AudioResult
+    </screenName>
+
+    <screenName name="com.schoofi.activitiess.TeacherAnnouncementImageResult">
+        Teacher Announcement ImageResult
+    </screenName>
+
+    <screenName name="com.schoofi.activitiess.TeacherInnerHomeScreen">
+        Teacher Inner HomeScreen
+    </screenName>
+
+    <screenName name="com.schoofi.activitiess.TeacherLeaveDetails">
+        Teacher Leave Details
+    </screenName>
+
+    <screenName name="com.schoofi.activitiess.TeacherSchedule">
+        Teacher Schedule
+    </screenName>
+
+    <screenName name="com.schoofi.activitiess.TeacherStudentAttendance">
+        Teacher StudentAttendance
+    </screenName>
+
+    <screenName name="com.schoofi.activitiess.TeacherStudentImageDetails">
+        Teacher Student ImageDetails
+    </screenName>
+
+    <screenName name="com.schoofi.activitiess.TeacherStudentLeave">
+        Teacher StudentLeave
+    </screenName>
+
+    <screenName name="com.schoofi.activitiess.TeacherStudentSubmittedAtendanceList">
+        Teacher Student SubmittedAtendance List
+    </screenName>
+
+    <screenName name="com.schoofi.activitiess.TeacherTimeTableDetails">
+        Teacher TimeTable Details
+    </screenName>
+
+    <screenName name="com.schoofi.activitiess.TeacherVideoAnnouncementVideoResult">
+        Teacher Video AnnouncementResult
+    </screenName>
+
+    <screenName name="com.schoofi.activitiess.UserProfile">
+        User Profile
+    </screenName>
+
+    <screenName name="com.schoofi.activitiess.ChairmanSchoolAttendance">
+        Chairman SchoolAttendane
+    </screenName>
+
+    <screenName name="com.schoofi.activitiess.ChairmanStudentAnnouncement">
+        Chairman SchoolAnnouncement
+    </screenName>
+    <screenName name="com.schoofi.activitiess.ChairmanStudentAnnouncementAudioResult">
+        Chairman StudentAnnouncement AudioResult
+    </screenName>
+
+    <screenName name="com.schoofi.activitiess.ChairmanStudentAnnouncementImageResult">
+        Chairman StudentAnnouncement ImageResult
+    </screenName>
+
+    <screenName name="com.schoofi.activitiess.ChairmanStudentAnnouncementVideoResult">
+        Chairman StudentAnnouncement VideoResult
+    </screenName>
+
+    <screenName name="com.schoofi.activitiess.ChairmanStudentFeedBack">
+        Chairman StudentFeedBack
+    </screenName>
+
+    <screenName name="com.schoofi.activitiess.ChairmanStudentFeedBackAssign">
+        Chairman StudentFeedBackAssign
+    </screenName>
+
+    <screenName name="com.schoofi.activitiess.ChairmanStudentFeedBackDetails">
+        Chairman StudentFeedBackDetails
+    </screenName>
+
+    <screenName name="com.schoofi.activitiess.ChairmanStudentLeaveDetails">
+        Chairman StudentLeaveDetails
+    </screenName>
+
+    <screenName name="com.schoofi.activitiess.ChairmanStudentLeaves">
+        Chairman StudentLeaves
+    </screenName>
+
+    <screenName name="com.schoofi.activitiess.ChairmanStudentPoll">
+        Chairman StudentPoll
+    </screenName>
+
+    <screenName name="com.schoofi.activitiess.ChairmanStudentPollDetails">
+        Chairman StudentPollDetails
+    </screenName>
+    <screenName name="com.schoofi.activitiess.ChairmanStudentResult">
+        Chairman StudentResult
+    </screenName>
+
+    <screenName name="com.schoofi.activitiess.StudentFeedBackDetailss">
+        Student FeedbackDetails
+    </screenName>
+
+    <screenName name="com.schoofi.activitiess.StudentFeedBackImages">
+        Student FeedbackImages
+    </screenName>
+
+    <screenName name="com.schoofi.activitiess.StudentFeedBackSlider">
+        Student FeedbackSlider
+    </screenName>
+
+    <screenName name="com.schoofi.activities.PaymentActivity">
+        Payment Activity
+    </screenName>
+
+    <screenName name="com.schoofi.activities.PaymentSuccess">
+        Payment Success
+    </screenName>
+
+    <screenName name="com.schoofi.activitiess.AboutSchool">
+        About School
+    </screenName>
+
+    <screenName name="com.schoofi.activitiess.AboutSchoolContactUs">
+        About School ContactUs
+    </screenName>
+
+    <screenName name="com.schoofi.activitiess.AboutSchoolContactUss">
+        About School ContactUss
+    </screenName>
+
+    <screenName name="com.schoofi.activitiess.AdminBusListScreen">
+        Admin Bus List Screen
+    </screenName>
+
+    <screenName name="com.schoofi.activitiess.AdminHomeScreen">
+        Admin Home Screen
+    </screenName>
+
+    <screenName name="com.schoofi.activitiess.AdmissionEnquiry">
+        Admission Enquiry
+    </screenName>
+
+    <screenName name="com.schoofi.activitiess.AdmissionEnquiryFinalScreen">
+        Admission Enquiry Final Screen
+    </screenName>
+
+    <screenName name="com.schoofi.activitiess.AdmissionEnquiryMain">
+        Admission Enquiry Main
+    </screenName>
+
+    <screenName name="com.schoofi.activitiess.AdmissionEnquiryStatus">
+        Admission Enquiry Status
+    </screenName>
+
+    <screenName name="com.schoofi.activitiess.AdmissionFormPage1">
+        Admission FormPage1
+    </screenName>
+
+    <screenName name="com.schoofi.activitiess.AdmissionFormPage2">
+        Admission FormPage2
+    </screenName>
+
+    <screenName name="com.schoofi.activitiess.AdmissionFormPage3">
+        Admission FormPage3
+    </screenName>
+
+    <screenName name="com.schoofi.activitiess.AdmissionStatusDetailScreen">
+        Admission Status Detail Screen
+    </screenName>
+
+    <screenName name="com.schoofi.activitiess.AssignmentDetails">
+        Assignment Details
+    </screenName>
+
+    <screenName name="com.schoofi.activitiess.AssignmentTeacherDetails">
+        Assignment Teacher Details
+    </screenName>
+
+    <screenName name="com.schoofi.activitiess.AuditUserHomeScreen">
+        Audit User HomeScreen
+    </screenName>
+
+    <screenName name="com.schoofi.activitiess.ContactUs">
+        Contact Us
+    </screenName>
+
+    <screenName name="com.schoofi.activitiess.EventAdminUpload">
+        Event Admin Upload
+    </screenName>
+
+    <screenName name="com.schoofi.activitiess.ForgotPassword">
+        Forgot Password
+    </screenName>
+
+    <screenName name="com.schoofi.activitiess.FragmentsActivity">
+        Fragments Activity
+    </screenName>
+
+    <screenName name="com.schoofi.activitiess.HealthAndAuditAddSubtask">
+        Health And Audit AddSubtask
+    </screenName>
+
+    <screenName name="com.schoofi.activitiess.HealthAndAuditAddTask">
+        Health And Audit AddTask
+    </screenName>
+
+    <screenName name="com.schoofi.activitiess.HealthAndAuditAuditsForm">
+        Health And Audit AuditsForm
+    </screenName>
+
+    <screenName name="com.schoofi.activitiess.HealthAndAuditAuditsList">
+        Health And Audit AuditsList
+    </screenName>
+
+    <screenName name="com.schoofi.activitiess.HealthAndAuditHomeScreen">
+        Health And Audit HomeScreen
+    </screenName>
+
+    <screenName name="com.schoofi.activitiess.HealthAndAuditManageUser">
+        Health And Audit ManageUser
+    </screenName>
+
+    <screenName name="com.schoofi.activitiess.HealthAndAuditReviewForm">
+        Health And Audit ReviewForm
+    </screenName>
+
+    <screenName name="com.schoofi.activitiess.HealthAndAuditSubtask">
+        Health And Audit Subtask
+    </screenName>
+
+    <screenName name="com.schoofi.activitiess.HealthAndAuditTaskList">
+        Health And Audit TaskList
+    </screenName>
+
+    <screenName name="com.schoofi.activitiess.HealthAndAuditUserAddUser">
+        Health And Audit User AddUser
+    </screenName>
+
+    <screenName name="com.schoofi.activitiess.HealthAndAuditUserSubtaskList">
+        Health And Audit User SubtaskList
+    </screenName>
+
+    <screenName name="com.schoofi.activitiess.HealthAndAuditUserSubTaskListDetails">
+        Health And Audit User SubtaskListDetails
+    </screenName>
+
+    <screenName name="com.schoofi.activitiess.HealthAndAuditUserTaskList">
+        Health And Audit User TaskList
+    </screenName>
+
+    <screenName name="com.schoofi.activitiess.HealthAndAuditUserTaskSubmit">
+        Health And Audit User TaskSubmit
+    </screenName>
+
+    <screenName name="com.schoofi.activitiess.NewAnnouncement">
+        New Announcement
+    </screenName>
+
+    <screenName name="com.schoofi.activitiess.NewAssignmentTeacher">
+        New Assignment Teacher
+    </screenName>
+
+    <screenName name="com.schoofi.activitiess.ParentFees">
+        Parent Fees
+    </screenName>
+
+    <screenName name="com.schoofi.activitiess.ParentStudentFeesHistoryDetails">
+        Parent Student FeesHistoryDetails
+    </screenName>
+
+    <screenName name="com.schoofi.activitiess.ParentStudentUnpaidFeesDetails">
+        Parent Student UnpaidFeesDetails
+    </screenName>
+
+    <screenName name="com.schoofi.activitiess.PasswordReset">
+        Password Reset
+    </screenName>
+
+    <screenName name="com.schoofi.activitiess.PaymentActivitySecondScreen">
+        Payment Activity Second Screen
+    </screenName>
+
+    <screenName name="com.schoofi.activitiess.StudentEventList">
+        Student EventList
+    </screenName>
+
+    <screenName name="com.schoofi.activitiess.StudentEventListDetails">
+        Student EventList Details
+    </screenName>
+
+    <screenName name="com.schoofi.activitiess.TeacherAllFeedbackDetails">
+        Teacher All Feedback Details
+    </screenName>
+
+    <screenName name="com.schoofi.activitiess.TeacherAssignedFeedBackDetails">
+        Teacher Assigned FeedBack Details
+    </screenName>
+
+    <screenName name="com.schoofi.activitiess.TeacherAssignment">
+        Teacher Assignment
+    </screenName>
+
+    <screenName name="com.schoofi.activitiess.TeacherAssignmentHomeWorkDetails">
+        Teacher Assignment HomeWork Details
+    </screenName>
+
+    <screenName name="com.schoofi.activitiess.TeacherEventList">
+        Teacher Event List
+    </screenName>
+
+    <screenName name="com.schoofi.activitiess.TeacherEventListDetails">
+        Teacher EventList Details
+    </screenName>
+
+    <screenName name="com.schoofi.activitiess.TeacherFeedbackDetails">
+        Teacher Feeddback Details
+    </screenName>
+
+
+
+
+    <!-- The following value should be replaced with correct property id. -->
+    <string name="ga_trackingId">UA-71070636-1</string>
+
+</resources>

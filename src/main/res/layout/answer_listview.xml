@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/linear_text"
+        android:weightSum="1"
+        android:layout_margin="@dimen/margin_10dp">
+
+
+        <com.schoofi.utils.CustomTextView
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:id="@+id/text_1"
+            android:layout_weight="0.1"
+            android:textColor="@color/red"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:text="5"
+            android:gravity="center"
+            />
+
+
+
+    <com.schoofi.utils.CustomTextView
+        android:layout_width="0dp"
+        android:layout_height="@dimen/overall_height_40dp"
+        android:id="@+id/text_answer_option"
+        android:background="@drawable/text_field"
+        android:textColor="@color/black"
+        android:gravity="left"
+        android:textSize="@dimen/text_size_15sp"
+        android:layout_weight="0.9" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/img_answer_text"
+            android:layout_gravity="left"
+            android:layout_weight="0.0"/>
+
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/linear_image"
+        android:layout_margin="@dimen/margin_10dp"
+        android:weightSum="1">
+
+        <com.schoofi.utils.CustomTextView
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:id="@+id/text_2"
+            android:layout_weight="0.1"
+            android:textSize="15sp"
+            android:text="5"
+            android:textColor="@color/red"
+            android:textStyle="bold"
+            android:gravity="center"
+            />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="0.9">
+
+
+
+
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/img_answer"
+        android:layout_weight="0.9"
+        android:layout_gravity="left" />
+        </LinearLayout>
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:id="@+id/linear_inside"
+            android:layout_margin="10dp"
+            android:weightSum="1">
+
+            <com.schoofi.utils.CustomTextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/text_3"
+                android:layout_weight="0.1"
+                android:textSize="15sp"
+                android:text="5"
+                android:textColor="@color/red"
+                android:textStyle="bold"
+                android:gravity="center"
+                />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="0.9">
+
+
+
+        <com.schoofi.utils.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/overall_height_40dp"
+            android:id="@+id/text_answer_option_image"
+            android:textColor="@color/black"
+            android:text="oooo"
+            android:textSize="@dimen/text_size_15sp"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/img_answer_img"
+            android:src="@drawable/navevents"
+            android:layout_gravity="left"
+            />
+
+        </LinearLayout>
+        </LinearLayout>
+
+
+
+</LinearLayout>

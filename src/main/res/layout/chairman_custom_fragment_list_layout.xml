@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <com.schoofi.utils.CustomTextView
+        android:id="@+id/text_ch_custom_school_wise"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:background="@drawable/button"
+        android:gravity="center"
+        android:text="Reset"
+        android:textColor="@android:color/black"
+        android:textSize="15sp" />
+
+    <ScrollView
+        android:id="@+id/scroll_ch_attend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_ch_custom_school_wise">
+
+        <LinearLayout
+            android:id="@+id/linear_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1" >
+
+                    <com.schoofi.utils.CustomTextView
+                        android:id="@+id/text_from"
+                        android:layout_width="0dp"
+                        android:layout_height="38dp"
+                        android:layout_weight="0.3"
+                        android:gravity="center"
+                        android:text="From:"
+                        android:textColor="@android:color/black"
+                        android:textSize="15sp" />
+
+                    <com.schoofi.utils.CustomButton
+                        android:id="@+id/btn_from"
+                        android:layout_width="0dp"
+                        android:layout_height="38dp"
+                        android:layout_weight="0.7"
+                        android:background="@drawable/button"
+                        android:drawableRight="@drawable/calandar"
+                        android:gravity="center"
+                        android:padding="10dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:weightSum="1" >
+
+                    <com.schoofi.utils.CustomTextView
+                        android:id="@+id/text_to"
+                        android:layout_width="0dp"
+                        android:layout_height="38dp"
+                        android:layout_weight="0.3"
+                        android:gravity="center"
+                        android:text="To:"
+                        android:textColor="@android:color/black"
+                        android:textSize="15sp" />
+
+                    <com.schoofi.utils.CustomButton
+                        android:id="@+id/btn_to"
+                        android:layout_width="0dp"
+                        android:layout_height="38dp"
+                        android:layout_weight="0.7"
+                        android:background="@drawable/button"
+                        android:drawableRight="@drawable/calandar"
+                        android:gravity="center"
+                        android:padding="10dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+           
+        </LinearLayout>
+    </ScrollView>
+    
+      <ListView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/custom_attendance_listview"
+          android:divider="@drawable/divider"
+          android:dividerHeight="2dp"
+          android:layout_margin="10dp"
+          android:layout_above="@+id/linear"
+          android:layout_below="@+id/scroll_ch_attend">
+
+      </ListView>
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+
+        android:orientation="vertical" >
+
+        <com.schoofi.utils.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textSize="15sp"
+            android:textColor="@android:color/black"
+            android:id="@+id/text_no_of_students"
+            android:gravity="center"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <com.schoofi.utils.CustomTextView
+                android:id="@+id/text_ch_custom_class_wise"
+                android:layout_width="0dp"
+                android:layout_height="38dp"
+                android:layout_weight="0.5"
+                android:layout_margin="10dp"
+                android:background="@drawable/button"
+                android:gravity="center"
+                android:text="Select Class"
+                android:textColor="@android:color/black"
+                android:textSize="15sp" />
+
+            <com.schoofi.utils.CustomTextView
+                android:id="@+id/text_ch_custom_section_wise"
+                android:layout_width="0dp"
+                android:layout_height="38dp"
+                android:layout_weight="0.5"
+                android:background="@drawable/button"
+                android:gravity="center"
+                android:text="Select Section"
+                android:layout_margin="10dp"
+                android:textColor="@android:color/black"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

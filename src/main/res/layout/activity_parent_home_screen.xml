@@ -1,0 +1,66 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.schoofi.activitiess.ParentHomeScreen" >
+
+    <LinearLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#EE4749"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_gone"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <com.schoofi.utils.CustomTextView
+            android:id="@+id/txt_parent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Children"
+            android:textColor="@android:color/white"
+            android:textSize="15sp" />
+
+        <com.schoofi.utils.CustomButton
+            android:id="@+id/btn_parentLogout"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="3dp"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="Logout"
+            android:textColor="@android:color/white"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <com.schoofi.utils.CustomButton
+        android:id="@+id/btn_parent_add_child"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/headerLayout"
+        android:layout_margin="10dp"
+        android:background="@drawable/buttons"
+        android:gravity="center"
+        android:text="ADD"
+        android:textColor="@android:color/white"
+        android:textSize="15sp" />
+
+    <ListView
+        android:id="@+id/parent_home_screen_listView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_parent_add_child"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="10.0sp"
+        android:padding="10dp" >
+    </ListView>
+
+</RelativeLayout>

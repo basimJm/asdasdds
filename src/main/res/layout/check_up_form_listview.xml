@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.schoofi.utils.CustomTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/text_name"
+        android:textColor="#EE4749"
+
+        android:textSize="15sp"
+        android:layout_margin="5dp"/>
+
+    <com.schoofi.utils.CustomEditText
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:background="@drawable/button"
+        android:hint="Remarks"
+        android:id="@+id/edit_remarks"
+
+        android:textColor="@android:color/black"
+        android:imeOptions="actionNext"
+        android:gravity="top"
+
+        android:textSize="15sp"
+        android:layout_margin="10dp"/>
+
+    <com.schoofi.utils.CustomEditText
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:background="@drawable/button"
+        android:hint="Additional Remarks"
+        android:gravity="top"
+        android:id="@+id/edit_additional_remarks"
+        android:textColor="@android:color/black"
+
+        android:textSize="15sp"
+        android:layout_margin="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <com.schoofi.utils.CustomButton
+            android:layout_width="0dp"
+            android:layout_height="38dp"
+            android:id="@+id/btn_save"
+            android:textSize="15sp"
+            android:textColor="@android:color/white"
+            android:textAllCaps="false"
+            android:text="Save"
+            android:layout_weight="0.5"
+            android:layout_gravity="left"
+            android:background="@drawable/buttons"
+            android:layout_margin="5dp"/>
+
+        <com.schoofi.utils.CustomButton
+            android:layout_width="0dp"
+            android:layout_height="38dp"
+            android:id="@+id/btn_edit"
+            android:textSize="15sp"
+            android:textColor="@android:color/white"
+            android:textAllCaps="false"
+            android:text="Edit"
+            android:layout_weight="0.5"
+            android:layout_gravity="right"
+            android:background="@drawable/buttongreen"
+            android:layout_margin="5dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

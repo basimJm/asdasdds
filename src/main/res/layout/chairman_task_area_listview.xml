@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linear_listView_teacherStudentAttendanceDetails"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="horizontal">
+
+
+
+
+
+
+        <com.schoofi.utils.CustomTextView
+            android:id="@+id/txt_studentNameTeacher"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:layout_weight="1.5"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:text="ABC"
+            android:textColor="@android:color/black"
+            android:textSize="15sp" />
+
+
+
+
+    <ImageView
+        android:id="@+id/imageView_studentAttendance"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:layout_weight="0.5"
+        android:padding="20dp"
+        android:src="@drawable/person" />
+
+</LinearLayout>

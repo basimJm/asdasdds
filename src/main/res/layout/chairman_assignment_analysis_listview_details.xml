@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#dfdfdf"
+        android:orientation="vertical">
+    
+    <com.schoofi.utils.CustomTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_label_chairman_assignment_analysis"
+        android:layout_margin="10dp"
+        android:gravity="left|center"
+        android:textSize="15sp"
+        android:textColor="@android:color/black"
+        />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.schoofi.utils.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_label_chairman_asn_count"
+            android:layout_margin="10dp"
+            android:gravity="left|center"
+            android:textSize="15sp"
+            android:textColor="@android:color/black"
+            />
+
+        <com.schoofi.utils.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_label_chairman_home_work_count"
+            android:layout_margin="10dp"
+            android:gravity="left|center"
+            android:textSize="15sp"
+            android:textColor="@android:color/black"
+            />
+
+        <com.schoofi.utils.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_label_chairman_circular_count"
+            android:layout_margin="10dp"
+            android:gravity="left|center"
+            android:textSize="15sp"
+            android:textColor="@android:color/black"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

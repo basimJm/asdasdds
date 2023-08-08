@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="15dp">
+
+    <LinearLayout
+        android:id="@+id/linear_tab"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#e4e4e4"
+        android:orientation="horizontal"
+
+        android:weightSum="1" >
+
+
+
+        <LinearLayout
+            android:id="@+id/linear_left1"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="left"
+            android:layout_weight="0.11"
+            android:gravity="left"
+            android:orientation="horizontal" >
+
+            <com.schoofi.utils.CustomTextView
+                android:id="@+id/text_period"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:text="Period"
+                android:textColor="@android:color/black"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_left"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="left"
+            android:layout_weight="0.45"
+            android:gravity="left"
+            android:orientation="horizontal" >
+
+            <com.schoofi.utils.CustomTextView
+                android:id="@+id/text_date"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:text="Date"
+                android:textColor="@android:color/black"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_right"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="right"
+            android:layout_weight="0.44"
+            android:gravity="right"
+            android:orientation="horizontal" >
+
+            <com.schoofi.utils.CustomTextView
+                android:id="@+id/text_attendance"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:text="Attendance"
+                android:textColor="@android:color/black"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <com.schoofi.utils.CustomTextView
+            android:id="@+id/newView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:text="No Records Found"
+            android:textColor="@android:color/black"
+            android:textSize="15sp" />
+
+        <com.orangegangsters.github.swipyrefreshlayout.library.SwipyRefreshLayout
+            android:id="@+id/swipyrefreshlayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srl_direction="top">
+
+            <ListView
+                android:id="@+id/listView_student_weekly_attendance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:divider="@drawable/divider"
+                android:dividerHeight="2dp">
+            </ListView>
+        </com.orangegangsters.github.swipyrefreshlayout.library.SwipyRefreshLayout>
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,167 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.schoofi.activitiess.StudentAnnouncement" >
+
+    <LinearLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#EE4749"
+        android:orientation="horizontal"
+        android:weightSum="3" >
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:layout_weight="0.3"
+            android:gravity="center"
+            android:src="@drawable/ic_action_back"/>
+
+        <com.schoofi.utils.CustomTextView
+            android:id="@+id/txt_feedBack"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="2.3"
+            android:gravity="center"
+            android:text="Feedback"
+            android:textColor="#D7D7D7"
+            android:textSize="20sp" />
+    </LinearLayout>
+    
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:layout_below="@+id/headerLayout"
+        android:layout_above="@+id/btn_send">
+    
+    <LinearLayout 
+        android:id="@+id/linear_body"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        
+        android:layout_marginTop="15dp"
+        android:padding="10dp">
+        
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+            
+            <com.schoofi.utils.CustomTextView
+                android:id="@+id/text_name"
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:layout_height="match_parent"
+                android:text="Name"
+                android:textSize="15sp"
+                android:textColor="@android:color/black"/>
+            
+             <com.schoofi.utils.CustomTextView
+                android:id="@+id/text_name1"
+                android:layout_width="0dp"
+                android:layout_weight="1.5"
+                android:layout_height="match_parent"
+                android:text="Name"
+                android:textSize="15sp"
+               
+                android:textColor="@android:color/black"
+              />
+            
+        </LinearLayout>
+        
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_marginTop="15dp">
+            
+            <com.schoofi.utils.CustomTextView
+                android:id="@+id/text_email"
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:layout_height="match_parent"
+                android:text="Email"
+                android:textSize="15sp"
+                android:textColor="@android:color/black"/>
+            
+             <com.schoofi.utils.CustomTextView
+                android:id="@+id/text_email1"
+                android:layout_width="0dp"
+                android:layout_weight="1.5"
+                android:layout_height="match_parent"
+                android:text="Email"
+                android:textSize="15sp"
+
+                android:textColor="@android:color/black"
+                />
+            
+        </LinearLayout>
+        
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_marginTop="15dp">
+            
+            <com.schoofi.utils.CustomTextView
+                android:id="@+id/text_type"
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:layout_height="match_parent"
+                android:text="Type"
+                android:textSize="15sp"
+                android:textColor="@android:color/black"/>
+            
+            <Spinner 
+                android:layout_width="0dp"
+                android:id="@+id/spinn_type"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:background="@drawable/arrowdown"
+                
+                
+                />
+            
+            
+            
+        </LinearLayout>
+        
+        <EditText 
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:id="@+id/feed"
+            android:background="@drawable/button"
+            android:hint="Write your Text here"
+           
+            android:textColor="@android:color/black"
+            android:layout_marginTop="15dp"
+            android:gravity="top"
+            android:textSize="15sp"/>
+    </LinearLayout>
+    </ScrollView>
+    
+    <com.schoofi.utils.CustomButton
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:text="Send"
+        android:gravity="center"
+        android:id="@+id/btn_send"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:textAllCaps="false"
+        android:textSize="15sp"
+        android:background="@drawable/buttons"
+        android:layout_alignParentBottom="true"
+        android:textColor="@android:color/white"/>
+
+</RelativeLayout>

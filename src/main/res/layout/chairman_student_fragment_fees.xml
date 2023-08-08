@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/linear_top">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/linearLayout1"
+        android:layout_margin="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <com.schoofi.utils.CustomTextView
+                android:layout_width="0dp"
+                android:layout_height="38dp"
+                android:id="@+id/text_fee_type1"
+                android:layout_weight="1"
+                android:textColor="@android:color/black"
+                android:layout_margin="10dp"
+                android:gravity="left"
+                android:text="FeeType1"
+                android:textSize="12sp"/>
+
+            <com.schoofi.utils.CustomTextView
+                android:layout_width="0dp"
+                android:layout_height="38dp"
+                android:id="@+id/text_fee_type11"
+                android:layout_weight="0.8"
+                android:textColor="@color/gray"
+                android:layout_margin="10dp"
+                android:gravity="right"
+                android:text="Ammount payable"
+                android:textSize="12sp"/>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.2"
+                android:layout_margin="10dp"
+                android:src="@drawable/ic_action_next_item"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"
+            android:layout_margin="5dp"></View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/linearLayout2"
+            android:weightSum="2">
+
+            <com.schoofi.utils.CustomTextView
+                android:layout_width="0dp"
+                android:layout_height="38dp"
+                android:id="@+id/text_fee_type2"
+                android:layout_weight="1"
+                android:textColor="@android:color/black"
+                android:layout_margin="10dp"
+                android:gravity="left"
+                android:text="Fee Type2"
+                android:textSize="12sp"/>
+
+            <com.schoofi.utils.CustomTextView
+                android:layout_width="0dp"
+                android:layout_height="38dp"
+                android:id="@+id/text_fee_type12"
+                android:layout_weight="0.8"
+                android:textColor="@color/gray"
+                android:layout_margin="10dp"
+                android:gravity="right"
+                android:text="Ammount payable"
+                android:textSize="12sp"/>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.2"
+                android:layout_margin="10dp"
+                android:src="@drawable/ic_action_next_item"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"
+            android:layout_margin="5dp"></View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/linearLayout3"
+            android:weightSum="2">
+
+
+
+            <com.schoofi.utils.CustomTextView
+                android:layout_width="0dp"
+                android:layout_height="38dp"
+                android:id="@+id/text_fee_type4"
+                android:layout_weight="1"
+                android:textColor="@android:color/black"
+                android:layout_margin="10dp"
+                android:gravity="left"
+                android:text="Fee Type3"
+                android:textSize="12sp"/>
+
+            <com.schoofi.utils.CustomTextView
+                android:layout_width="0dp"
+                android:layout_height="38dp"
+                android:id="@+id/text_fee_type14"
+                android:layout_weight="0.8"
+                android:textColor="@color/gray"
+                android:layout_margin="10dp"
+                android:gravity="right"
+                android:text="Ammount payable"
+                android:textSize="12sp"/>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.2"
+                android:layout_margin="10dp"
+                android:src="@drawable/ic_action_next_item"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"
+            android:layout_margin="5dp"></View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/linearLayout4"
+            android:weightSum="2">
+
+            <com.schoofi.utils.CustomTextView
+                android:layout_width="0dp"
+                android:layout_height="38dp"
+                android:id="@+id/text_fee_type3"
+                android:layout_weight="1"
+                android:textColor="@android:color/black"
+                android:layout_margin="10dp"
+                android:gravity="left"
+                android:text="Fee Type3"
+                android:textSize="12sp"/>
+
+            <com.schoofi.utils.CustomTextView
+                android:layout_width="0dp"
+                android:layout_height="38dp"
+                android:id="@+id/text_fee_type13"
+                android:layout_weight="0.8"
+                android:textColor="@color/gray"
+                android:layout_margin="10dp"
+                android:gravity="right"
+                android:text="Ammount payable"
+                android:textSize="12sp"/>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.2"
+                android:layout_margin="10dp"
+                android:src="@drawable/ic_action_next_item"/>
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"
+            android:layout_margin="5dp"></View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/linearLayout5"
+            android:weightSum="2">
+
+            <com.schoofi.utils.CustomTextView
+                android:layout_width="0dp"
+                android:layout_height="38dp"
+                android:id="@+id/text_fee_type5"
+                android:layout_weight="1"
+                android:textColor="@android:color/black"
+                android:layout_margin="10dp"
+                android:gravity="left"
+                android:text="Fee Type3"
+                android:textSize="12sp"/>
+
+            <com.schoofi.utils.CustomTextView
+                android:layout_width="0dp"
+                android:layout_height="38dp"
+                android:id="@+id/text_fee_type15"
+                android:layout_weight="0.8"
+                android:textColor="@color/gray"
+                android:layout_margin="10dp"
+                android:gravity="right"
+                android:text="Ammount payable"
+                android:textSize="12sp"/>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.2"
+                android:layout_margin="10dp"
+                android:src="@drawable/ic_action_next_item"/>
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"
+            android:layout_margin="5dp"></View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/linearLayout6"
+            android:weightSum="2">
+
+            <com.schoofi.utils.CustomTextView
+                android:layout_width="0dp"
+                android:layout_height="38dp"
+                android:id="@+id/text_fee_type6"
+                android:layout_weight="1"
+                android:textColor="@android:color/black"
+                android:layout_margin="10dp"
+                android:gravity="left"
+                android:text="Fee Type3"
+                android:textSize="12sp"/>
+
+            <com.schoofi.utils.CustomTextView
+                android:layout_width="0dp"
+                android:layout_height="38dp"
+                android:id="@+id/text_fee_type16"
+                android:layout_weight="0.8"
+                android:textColor="@color/gray"
+                android:layout_margin="10dp"
+                android:gravity="right"
+                android:text="Ammount payable"
+                android:textSize="12sp"/>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.2"
+                android:layout_margin="10dp"
+                android:src="@drawable/ic_action_next_item"/>
+        </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

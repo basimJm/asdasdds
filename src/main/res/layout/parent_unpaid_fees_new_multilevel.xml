@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--<pl.openrnd.multilevellistview.MultiLevelListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:alwaysExtended="true"
+        app:nestType="multiple" />-->
+    <com.schoofi.utils.CustomTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/jjj"
+        android:visibility="gone"
+        android:layout_alignParentTop="true"/>
+
+    <ExpandableListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/expandable_listView"
+
+        android:layout_margin="10dp">
+
+    </ExpandableListView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/hhh"
+
+        android:gravity="right"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <com.schoofi.utils.CustomButton
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:id="@+id/btn_pay_fees"
+            android:background="@drawable/buttons"
+            android:textAllCaps="false"
+            android:text="Pay"
+            android:textSize="15sp"
+            android:textColor="@android:color/white"/>
+    </LinearLayout>
+
+</RelativeLayout>

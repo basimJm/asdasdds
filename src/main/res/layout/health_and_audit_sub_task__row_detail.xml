@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rowdetail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <com.schoofi.utils.CustomEditText
+        android:id="@+id/editDescricao"
+        android:layout_width="0dp"
+        android:textColor="@android:color/black"
+        android:hint="Enter new subtask"
+        android:textSize="15sp"
+        android:layout_margin="10dp"
+        android:layout_height="38dp"
+        android:background="@drawable/button"
+        android:layout_weight="0.8"
+        android:ems="10">
+
+        <requestFocus />
+    </com.schoofi.utils.CustomEditText>
+
+    <ImageButton
+        android:id="@+id/btnRemove"
+        android:layout_width="0dp"
+        android:layout_height="38dp"
+        android:layout_gravity="center"
+        android:background="@null"
+        android:layout_weight="0.2"
+        android:src="@android:drawable/ic_delete" />
+
+</LinearLayout>

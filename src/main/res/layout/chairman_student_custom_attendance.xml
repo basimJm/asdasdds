@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <com.schoofi.utils.CustomTextView
+        android:id="@+id/text_ch_custom_school_wise"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:background="@drawable/button"
+        android:gravity="center"
+        android:text="Reset"
+        android:textColor="@android:color/black"
+        android:textSize="15sp" />
+
+    <ScrollView
+        android:id="@+id/scroll_ch_attend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_ch_custom_school_wise"
+        android:layout_above="@+id/linear">
+
+        <LinearLayout
+            android:id="@+id/linear_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1" >
+
+                    <com.schoofi.utils.CustomTextView
+                        android:id="@+id/text_from"
+                        android:layout_width="0dp"
+                        android:layout_height="38dp"
+                        android:layout_weight="0.3"
+                        android:gravity="center"
+                        android:text="From:"
+                        android:textColor="@android:color/black"
+                        android:textSize="15sp" />
+
+                    <com.schoofi.utils.CustomButton
+                        android:id="@+id/btn_from"
+                        android:layout_width="0dp"
+                        android:layout_height="38dp"
+                        android:layout_weight="0.7"
+                        android:background="@drawable/button"
+                        android:drawableRight="@drawable/calandar"
+                        android:gravity="center"
+                        android:padding="10dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:weightSum="1" >
+
+                    <com.schoofi.utils.CustomTextView
+                        android:id="@+id/text_to"
+                        android:layout_width="0dp"
+                        android:layout_height="38dp"
+                        android:layout_weight="0.3"
+                        android:gravity="center"
+                        android:text="To:"
+                        android:textColor="@android:color/black"
+                        android:textSize="15sp" />
+
+                    <com.schoofi.utils.CustomButton
+                        android:id="@+id/btn_to"
+                        android:layout_width="0dp"
+                        android:layout_height="38dp"
+                        android:layout_weight="0.7"
+                        android:background="@drawable/button"
+                        android:drawableRight="@drawable/calandar"
+                        android:gravity="center"
+                        android:padding="10dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <com.github.mikephil.charting.charts.PieChart
+                android:id="@+id/chart1"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_centerInParent="true" />
+
+            <com.schoofi.utils.CustomTextView
+                android:id="@+id/text_no_of_students_ch_attendance"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:gravity="center"
+                android:text="Number of Students:"
+                android:textColor="@android:color/black"
+                android:textSize="15sp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="3"
+                android:layout_margin="10dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <com.schoofi.utils.CustomTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Total(P): "
+                        android:textSize="15sp"
+                        android:textColor="@android:color/darker_gray"
+                        android:id="@+id/textTotalPresent"
+                        android:gravity="center"/>
+
+                    <com.schoofi.utils.CustomTextView
+                        android:id="@+id/text_no_of_males_ch_attendance"
+                        android:layout_width="match_parent"
+                        android:layout_height="38dp"
+                        android:gravity="center"
+                        android:text="Boys(P):"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="15sp" />
+
+                    <com.schoofi.utils.CustomTextView
+                        android:id="@+id/text_no_of_females_ch_attendance"
+                        android:layout_width="match_parent"
+                        android:layout_height="38dp"
+                        android:gravity="center"
+                        android:text="Girls(P):"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <com.schoofi.utils.CustomTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Total(A): "
+                        android:textSize="15sp"
+                        android:textColor="@android:color/darker_gray"
+                        android:id="@+id/textTotalAbsent"
+                        android:gravity="center"/>
+
+                    <com.schoofi.utils.CustomTextView
+                        android:id="@+id/text_no_of_males_ch_attendance1"
+                        android:layout_width="match_parent"
+                        android:layout_height="38dp"
+                        android:gravity="center"
+                        android:text="Boys(A):"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="15sp" />
+
+                    <com.schoofi.utils.CustomTextView
+                        android:id="@+id/text_no_of_females_ch_attendance1"
+                        android:layout_width="match_parent"
+                        android:layout_height="38dp"
+                        android:gravity="center"
+                        android:text="Girls(A):"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <com.schoofi.utils.CustomTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Total(L): "
+                        android:textSize="15sp"
+                        android:textColor="@android:color/darker_gray"
+                        android:id="@+id/textTotalLeave"
+                        android:gravity="center"/>
+
+                    <com.schoofi.utils.CustomTextView
+                        android:id="@+id/text_no_of_males_ch_attendance2"
+                        android:layout_width="match_parent"
+                        android:layout_height="38dp"
+                        android:gravity="center"
+                        android:text="Boys(L):"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="15sp" />
+
+                    <com.schoofi.utils.CustomTextView
+                        android:id="@+id/text_no_of_females_ch_attendance2"
+                        android:layout_width="match_parent"
+                        android:layout_height="38dp"
+                        android:gravity="center"
+                        android:text="Girls(L):"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="15sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        android:weightSum="1"
+        android:orientation="horizontal" >
+
+        <com.schoofi.utils.CustomTextView
+            android:id="@+id/text_ch_custom_class_wise"
+            android:layout_width="0dp"
+            android:layout_height="38dp"
+            android:layout_weight="0.5"
+            android:layout_margin="10dp"
+            android:background="@drawable/button"
+            android:gravity="center"
+            android:text="Select Class"
+            android:textColor="@android:color/black"
+            android:textSize="15sp" />
+
+        <com.schoofi.utils.CustomTextView
+            android:id="@+id/text_ch_custom_section_wise"
+            android:layout_width="0dp"
+            android:layout_height="38dp"
+            android:layout_weight="0.5"
+            android:background="@drawable/button"
+            android:gravity="center"
+            android:text="Select Section"
+            android:layout_margin="10dp"
+            android:textColor="@android:color/black"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+</RelativeLayout>

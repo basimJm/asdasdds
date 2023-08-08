@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/linear_top">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:weightSum="1"
+        android:orientation="horizontal"
+        android:id="@+id/linear1">
+
+    <com.schoofi.utils.CustomTextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text=""
+        android:layout_weight="0.6"
+        android:textColor="@android:color/black"
+        android:textSize="15sp"
+
+        android:id="@+id/text_payeeName"/>
+
+        <com.schoofi.utils.CustomTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text=""
+            android:layout_weight="0.4"
+            android:textColor="@android:color/black"
+            android:textSize="15sp"
+
+            android:id="@+id/text_payeeName5"/>
+
+    </LinearLayout>
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        android:layout_margin="5dp"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:id="@+id/linear2">
+
+    <com.schoofi.utils.CustomTextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text=""
+        android:layout_weight="0.6"
+        android:textColor="@android:color/black"
+        android:textSize="15sp"
+
+        android:id="@+id/text_payeeName1"/>
+
+        <com.schoofi.utils.CustomTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text=""
+            android:layout_weight="0.4"
+            android:textColor="@android:color/black"
+            android:textSize="15sp"
+
+            android:id="@+id/text_payeeName6"/>
+
+        </LinearLayout>
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        android:layout_margin="5dp"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:id="@+id/linear3">
+
+
+
+
+    <com.schoofi.utils.CustomTextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text=""
+        android:layout_weight="0.6"
+        android:textColor="@android:color/black"
+        android:textSize="15sp"
+
+        android:id="@+id/text_payeeName2"/>
+
+        <com.schoofi.utils.CustomTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text=""
+            android:layout_weight="0.4"
+            android:textColor="@android:color/black"
+            android:textSize="15sp"
+
+            android:id="@+id/text_payeeName7"/>
+
+        </LinearLayout>
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        android:layout_margin="5dp"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:id="@+id/linear4">
+
+    <com.schoofi.utils.CustomTextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text=""
+        android:layout_weight="0.6"
+        android:textColor="@android:color/black"
+        android:textSize="15sp"
+
+        android:id="@+id/text_payeeName3"/>
+
+        <com.schoofi.utils.CustomTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="0.4"
+            android:text=""
+            android:textColor="@android:color/black"
+            android:textSize="15sp"
+
+            android:id="@+id/text_payeeName8"/>
+
+        </LinearLayout>
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        android:layout_margin="5dp"></View>
+
+</LinearLayout>

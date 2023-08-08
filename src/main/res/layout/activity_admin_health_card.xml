@@ -1,0 +1,116 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.schoofi.activitiess.StudentAnnouncement">
+
+    <LinearLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#EE4749"
+        android:orientation="horizontal"
+        android:weightSum="3" >
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:layout_weight="0.3"
+            android:gravity="center"
+            android:src="@drawable/ic_action_back" />
+
+        <com.schoofi.utils.CustomTextView
+            android:id="@+id/txt_teacherAnnouncement"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="2.3"
+            android:gravity="center"
+            android:text="Health Card"
+            android:textColor="#D7D7D7"
+            android:textSize="20sp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_above="@+id/btn_next"
+        android:layout_below="@+id/headerLayout"
+       >
+
+        <smtchahal.materialspinner.MaterialSpinner
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/grey_button"
+            android:id="@+id/spinner_class"
+            app:ms_hint="Select Class"
+            android:gravity="center"
+            app:ms_hintColor="@color/black"
+            app:ms_baseColor="@color/black"
+            app:ms_arrowColor="@color/black"
+            app:ms_enableFloatingLabel="false"
+            android:layout_margin="10dp"
+            app:ms_enableErrorLabel="false"
+            app:ms_arrowSize="10dp"
+            app:ms_multiline="false"
+            android:padding="0dp"
+            app:ms_floatingLabelText=""
+            app:ms_thickness="0dp"
+            ></smtchahal.materialspinner.MaterialSpinner>
+
+
+        <smtchahal.materialspinner.MaterialSpinner
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/grey_button"
+            android:id="@+id/spinner_section"
+            app:ms_hint="Select Section"
+            android:gravity="center"
+            app:ms_hintColor="@color/black"
+            app:ms_baseColor="@color/black"
+            app:ms_arrowColor="@color/black"
+            app:ms_enableFloatingLabel="false"
+            android:layout_margin="10dp"
+            app:ms_enableErrorLabel="false"
+            app:ms_arrowSize="10dp"
+            app:ms_multiline="false"
+            android:padding="0dp"
+            app:ms_floatingLabelText=""
+            app:ms_thickness="0dp"
+            ></smtchahal.materialspinner.MaterialSpinner>
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/listview_student_list"
+            android:divider="@drawable/divider"
+            android:dividerHeight="2dp"
+            android:scrollbars="none"
+            android:layout_margin="10dp"></ListView>
+
+
+
+
+
+    </LinearLayout>
+
+    <com.schoofi.utils.CustomButton
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="10dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/buttons"
+        android:text="Next"
+        android:textSize="15sp"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:id="@+id/btn_next"/>
+
+    </RelativeLayout>

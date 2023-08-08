@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.schoofi.utils.CustomTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/student_name"
+        android:layout_margin="5dp"
+        android:textColor="@android:color/black"
+        android:textSize="15sp"/>
+
+    <com.schoofi.utils.CustomTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/student_school_applied"
+        android:layout_margin="5dp"
+        android:textColor="@android:color/black"
+        android:textSize="15sp"/>
+
+    <com.schoofi.utils.CustomTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/student_admission_status"
+        android:layout_margin="5dp"
+        android:textColor="@android:color/black"
+        android:textSize="15sp"/>
+
+</LinearLayout>

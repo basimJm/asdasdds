@@ -1,0 +1,100 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.schoofi.activities.TeacherHomeScreen" >
+
+    <LinearLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#EE4749"
+        android:orientation="horizontal"
+        android:weightSum="3" >
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:layout_weight="0.3"
+            android:gravity="center"
+            android:src="@drawable/ic_action_back" />
+
+        <com.schoofi.utils.CustomTextView
+            android:id="@+id/txt_class"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="2.3"
+            android:gravity="center"
+            android:text="Enquiry Type"
+            android:textColor="#D7D7D7"
+            android:textSize="20sp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/headerLayout">
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:background="@drawable/arrowdown"
+        android:id="@+id/spinner_enquiry_type"
+        android:layout_margin="10dp">
+
+    </Spinner>
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:background="@drawable/arrowdown"
+        android:id="@+id/spinner_select_school"
+        android:layout_margin="10dp">
+
+    </Spinner>
+
+        <com.schoofi.utils.CustomButton
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:gravity="center"
+            android:layout_gravity="right"
+            android:layout_margin="10dp"
+            android:text="Addmission Rules"
+            android:textColor="@android:color/black"
+            android:textAllCaps="false"
+            android:id="@+id/btn_addmissionRules"
+            android:textSize="15sp"
+            style="?android:attr/buttonBarButtonStyle"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/linear_bottom">
+
+        <com.schoofi.utils.CustomButton
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:gravity="center"
+            android:layout_gravity="right"
+            android:layout_margin="10dp"
+            android:text="Next"
+            android:textColor="@android:color/white"
+            android:textAllCaps="false"
+            android:id="@+id/btn_next"
+            android:textSize="15sp"
+            android:background="@drawable/buttons"/>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

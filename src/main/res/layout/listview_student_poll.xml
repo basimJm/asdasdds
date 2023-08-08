@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <LinearLayout 
+        android:id="@+id/linearLayout_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:padding="10dp">
+        
+      <LinearLayout 
+          android:layout_width="0dp"
+          android:layout_weight="0.6"
+          android:layout_height="wrap_content"
+          android:orientation="vertical"
+         >
+          
+          <com.schoofi.utils.CustomTextView
+              android:id="@+id/text_poll_title"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="yyyyyy"
+              android:textSize="15sp"
+              android:textColor="@android:color/black"/>
+
+          <com.schoofi.utils.CustomTextView
+              android:id="@+id/text_subject"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="yyyyyy"
+              android:textSize="15sp"
+              android:textColor="@color/black"
+              android:layout_marginTop="5dp"/>
+          
+          <com.schoofi.utils.CustomTextView
+              android:id="@+id/text_poll_date"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="yyyyyy"
+              android:textSize="15sp"
+              android:textColor="#EE4749"
+              android:layout_marginTop="5dp"/>
+
+
+      </LinearLayout>
+      
+      <LinearLayout 
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:orientation="vertical"
+          android:layout_weight="0.4">
+          
+          <ImageView 
+              android:id="@+id/img_poll"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:src="@drawable/ic_action_next_item"
+              android:scaleType="fitXY"
+              android:layout_gravity="right"
+              />
+      </LinearLayout>
+    </LinearLayout>
+    
+
+</LinearLayout>

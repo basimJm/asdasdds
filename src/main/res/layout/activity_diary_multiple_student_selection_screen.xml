@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_diary_multiple_student_selection_screen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.schoofi.activitiess.DiaryMultipleStudentSelectionScreen">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/jiu"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/jiu"
+        android:layout_margin="10dp"
+        android:id="@+id/jjjj"
+        android:layout_above="@+id/hhh">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="right"
+            android:gravity="right"
+            android:weightSum="1">
+
+            <com.schoofi.utils.CircularTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mark All"
+                android:textSize="15sp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_margin="10dp"
+                android:textColor="@android:color/black"
+                />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/checkbox"
+                android:checked="false"
+                android:layout_gravity="center"
+                android:gravity="right"/>
+
+        </LinearLayout>
+
+    <ListView
+        android:id="@+id/listViewTeacherStudentAttendanceDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:padding="20dp" >
+    </ListView>
+</LinearLayout>
+
+
+<LinearLayout
+android:layout_width="match_parent"
+android:id="@+id/hhh"
+android:layout_height="wrap_content"
+android:layout_alignParentBottom="true"
+android:background="#d3d3d3"
+android:orientation="vertical"
+android:padding="20dp" >
+
+<com.schoofi.utils.CustomButton
+    android:id="@+id/btn_submitAttendanceList"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:background="@drawable/buttons"
+    android:padding="10dp"
+    android:textAllCaps="true"
+    android:text="Submit"
+    android:textColor="@android:color/white"
+    android:textSize="15sp" />
+</LinearLayout>
+
+</RelativeLayout>

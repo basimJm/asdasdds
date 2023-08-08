@@ -1,0 +1,1135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.schoofi.activitiess"
+    android:installLocation="auto">
+
+    <application
+        android:name="com.schoofi.utils.SchoofiApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/schoofinewiconupdate"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:exported="true" android:name=".DemoActivityForVideo"  />
+        <activity android:exported="true" android:name=".TeacherCheckInCheckOut"   />
+        <activity android:exported="true" android:name=".ResultPdfActivity"   />
+        <activity android:exported="true" android:name=".TeacherStudentProgressUpdate"   />
+        <activity android:exported="true" android:name=".TeacherVideoLectureSubjectList"   />
+        <activity android:exported="true" android:name=".VideoStreaming"   />
+        <activity android:exported="true" android:name=".VideoLectureListScreen"   />
+        <activity android:exported="true" android:name=".VideoLectureHomeScreen"   />
+        <activity android:exported="true" android:name=".DiaryStudentList"   />
+        <activity android:exported="true" android:name=".GalleryActivity"   />
+        <activity android:exported="true" android:name=".DiaryWallScreen"   />
+        <activity android:exported="true" android:name=".TeacherNewAssignmentVersion"   />
+        <activity android:exported="true" android:name=".DiaryNewDesignActivity"   />
+        <activity android:exported="true" android:name=".TeacherNewDiaryUploadScreen"   />
+        <activity android:exported="true" android:name=".TeacherGroupCreationPrimaryScreen"   />
+        <activity android:exported="true" android:name=".TeacherGroupCreateActivity"   />
+        <activity android:exported="true" android:name=".TeacherStudentGroupChatList"   />
+        <activity android:exported="true" android:name=".TeacherDiaryStudentGroupList"   />
+        <activity android:exported="true" android:name=".StudentChatScreen"   />
+        <activity android:exported="true" android:name=".TeacherStudentDiaryScreen"   />
+        <activity android:exported="true" android:name=".XYZ"   />
+        <activity android:exported="true"
+            android:name="com.schoofi.activities.LoginScreen"
+            android:label="@string/app_name"
+
+            android:screenOrientation="portrait" />
+        <activity android:exported="true"
+            android:name="com.schoofi.activities.StudentHomeScreen"
+            android:label="@string/title_activity_student_home_screen"
+
+            android:screenOrientation="portrait" />
+        <!--
+            <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyB_1WTXmxOqh_U2_6u_SKFEDo0Mnd6uED4" />
+        -->
+        <activity android:exported="true"
+            android:name="com.schoofi.activities.TeacherHomeScreen"
+            android:label="@string/title_activity_teacher_home_screen"
+
+            android:screenOrientation="portrait" />
+        <!--
+            <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyAfpy_gG0VYp9hzXVQCt2W5t6En8i03Lg0" />
+        -->
+        <!--
+            <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyA3jloEohH5LvnIv_ZoIjB5kQqv6I2JVCw" />
+        -->
+        <activity android:exported="true"
+            android:name="com.schoofi.activities.SignUpScreen"
+            android:label="@string/title_activity_sign_up_screen"
+
+            android:screenOrientation="portrait" />
+        <activity android:exported="true"
+            android:name="com.schoofi.activities.StudentAttendance"
+            android:label="@string/title_activity_student_attendance"
+
+            android:screenOrientation="portrait" />
+        <activity android:exported="true"
+            android:name=".StudentLeaveRequest"
+            android:label="@string/title_activity_student_leave_request"
+
+            android:screenOrientation="portrait" />
+        <activity android:exported="true"
+            android:name=".StudentSchedule"
+            android:label="@string/title_activity_student_schedule"
+
+            android:screenOrientation="portrait" />
+        <activity android:exported="true"
+            android:name=".TeacherSchedule"
+            android:label="@string/title_activity_student_schedule"
+
+            android:screenOrientation="portrait" />
+        <activity android:exported="true"
+            android:name=".StudentAssignments"
+            android:label="@string/title_activity_student_assignments"
+
+            android:screenOrientation="portrait" />
+        <activity android:exported="true"
+            android:name=".StudentAnnouncement"
+            android:label="@string/title_activity_student_announcement"
+
+            android:screenOrientation="portrait" />
+        <activity android:exported="true"
+            android:name=".TeacherAnnouncementAudioResult"
+            android:label="@string/title_activity_student_announcement"
+
+            android:screenOrientation="portrait" />
+        <activity android:exported="true"
+            android:name=".StudentFeedBack"
+            android:label="@string/title_activity_student_feed_back"
+
+            android:screenOrientation="portrait" />
+        <activity android:exported="true"
+            android:name=".StudentExamSchedule"
+            android:label="@string/title_activity_student_exam_schedule"
+
+            android:screenOrientation="portrait" />
+        <activity android:exported="true"
+            android:name=".StudentResult"
+            android:label="@string/title_activity_student_result"
+
+            android:screenOrientation="portrait" />
+        <activity android:exported="true"
+            android:name=".StudentPoll"
+            android:label="@string/title_activity_student_poll"
+
+            android:screenOrientation="portrait" />
+        <activity android:exported="true"
+            android:name=".StudentSettings"
+            android:label="@string/title_activity_student_settings"
+
+            android:screenOrientation="portrait" />
+        <activity android:exported="true"
+            android:name=".StudentLeaveDetail"
+            android:label="@string/title_activity_student_leave_detail"
+
+            android:screenOrientation="portrait" />
+        <activity android:exported="true"
+            android:name=".ChairmanHomeScreen"
+            android:label="@string/title_activity_chairman_home_screen"
+
+            android:screenOrientation="portrait" />
+        <activity android:exported="true"
+            android:name=".ParentHomeScreen"
+            android:label="@string/title_activity_parent_home_screen"
+
+            android:screenOrientation="portrait" />
+        <activity android:exported="true"
+            android:name=".StudentNewLeave"
+            android:label="@string/title_activity_parent_home_screen"
+
+            android:screenOrientation="portrait" />
+        <activity android:exported="true"
+            android:name=".StudentTimeTableDetails"
+            android:label="@string/title_activity_student_time_table_details"
+
+            android:screenOrientation="portrait" />
+        <activity android:exported="true"
+            android:name=".TeacherTimeTableDetails"
+            android:label="@string/title_activity_student_time_table_details"
+
+            android:screenOrientation="portrait" />
+        <activity android:exported="true"
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity android:exported="true"
+            android:name="com.schoofi.testotpappnew.InitialActivity"
+            android:label="@string/app_name"
+
+            android:screenOrientation="portrait" />
+        <activity android:exported="true"
+            android:name="com.schoofi.testotpappnew.StatusActivity"
+            android:label="@string/app_name"
+
+            android:screenOrientation="portrait" />
+        <activity android:exported="true"
+            android:name="com.schoofi.testotpappnew.WebViewActivity"
+            android:label="@string/app_name"
+
+            android:screenOrientation="portrait" />
+        <activity android:exported="true"
+            android:name=".StudentAnnouncementImageResult"
+            android:label="@string/title_activity_student_announcement_image_result"
+
+            android:screenOrientation="portrait" />
+        <activity android:exported="true"
+            android:name=".TeacherAnnouncementImageResult"
+            android:label="@string/title_activity_student_announcement_image_result"
+
+            android:screenOrientation="portrait" />
+        <activity android:exported="true"
+            android:name=".StudentVideoViewAnnouncement"
+            android:label="@string/title_activity_student_video_view_announcement"
+
+            android:screenOrientation="portrait" />
+        <activity android:exported="true"
+            android:name=".TeacherVideoAnnouncementVideoResult"
+            android:label="@string/title_activity_student_video_view_announcement"
+
+            android:screenOrientation="portrait" />
+        <activity android:exported="true"
+            android:name=".ChairmanStudentAnnouncementVideoResult"
+            android:label="@string/title_activity_student_video_view_announcement"
+
+            android:screenOrientation="portrait" />
+        <activity android:exported="true"
+            android:name=".WebViewActivity"
+            android:label="@string/title_activity_web_view"
+
+            android:screenOrientation="portrait" />
+        <activity android:exported="true"
+            android:name=".StudentAnnouncementAudioResult"
+            android:label="@string/title_activity_student_announcement_audio_result"
+
+            android:screenOrientation="portrait" />
+        <activity android:exported="true"
+            android:name=".ChairmanStudentAnnouncementAudioResult"
+            android:label="@string/title_activity_student_announcement_audio_result"
+
+            android:screenOrientation="portrait" />
+        <activity android:exported="true"
+            android:name=".StudentVideoView"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_student_video_view" />
+        <activity android:exported="true"
+            android:name=".StudentNewFeedback"
+            android:label="@string/title_activity_student_new_feedback"
+
+            android:screenOrientation="portrait" />
+        <activity android:exported="true"
+            android:name=".StudentFeedbackDetails"
+            android:label="@string/title_activity_student_feedback_details"
+
+            android:screenOrientation="portrait" />
+        <activity android:exported="true"
+            android:name=".StudentExamScheduleDetail"
+            android:label="@string/title_activity_student_exam_schedule_detail"
+
+            android:screenOrientation="portrait" />
+        <activity android:exported="true"
+            android:name=".StudentSubmittedPolls"
+            android:label="@string/title_activity_student_submitted_polls"
+
+            android:screenOrientation="portrait" />
+        <activity android:exported="true"
+            android:name=".StudentPollsDetail"
+            android:label="@string/title_activity_student_polls_detail"
+
+            android:screenOrientation="portrait" />
+        <activity android:exported="true"
+            android:name=".UserProfile"
+            android:label="@string/title_activity_user_profile"
+
+            android:screenOrientation="portrait" />
+        <activity android:exported="true"
+            android:name=".AboutUs"
+            android:label="@string/title_activity_about_us"
+
+            android:screenOrientation="portrait" />
+        <activity android:exported="true"
+            android:name=".CredentialsScreen"
+            android:label="@string/title_activity_credentials_screen"
+
+            android:screenOrientation="portrait" />
+        <activity android:exported="true"
+            android:name=".CredentialsScreen1"
+            android:label="@string/title_activity_credentials_screen1"
+
+            android:screenOrientation="portrait" />
+        <activity android:exported="true"
+            android:name=".AddChild"
+            android:label="@string/title_activity_add_child"
+
+            android:screenOrientation="portrait" />
+        <activity android:exported="true"
+            android:name=".TeacherInnerHomeScreen"
+            android:label="@string/title_activity_teacher_inner_home_screen"
+
+            android:screenOrientation="portrait" />
+        <activity android:exported="true"
+            android:name=".TeacherAnnouncement"
+            android:label="@string/title_activity_teacher_announcement"
+
+            android:screenOrientation="portrait" />
+        <activity android:exported="true"
+            android:name=".TeacherStudentLeave"
+            android:label="@string/title_activity_teacher_student_leave"
+
+            android:screenOrientation="portrait" />
+        <activity android:exported="true"
+            android:name=".TeacherLeaveDetails"
+            android:label="@string/title_activity_teacher_leave_details"
+
+            android:screenOrientation="portrait" />
+        <activity android:exported="true"
+            android:name=".AboutSchoolContactUss"
+            android:label="@string/title_activity_teacher_leave_details"
+
+            android:screenOrientation="portrait" />
+        <activity android:exported="true"
+            android:name=".TeacherStudentImageDetails"
+            android:label="@string/title_activity_teacher_student_image_details" />
+        <activity android:exported="true"
+            android:name=".ChairmanStudentAnnouncementImageResult"
+            android:label="@string/title_activity_student_announcement_image_result"
+
+            android:screenOrientation="portrait" />
+        <activity android:exported="true"
+            android:name=".TeacherStudentAttendance"
+            android:label="@string/title_activity_teacher_student_attendance"
+
+            android:screenOrientation="portrait" />
+        <activity android:exported="true"
+            android:name=".TeacherStudentAttendanceDetails"
+            android:label="@string/title_activity_teacher_student_attendance_details"
+
+            android:screenOrientation="portrait" />
+        <activity android:exported="true"
+            android:name=".SplashScreen"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:exported="true"
+            android:name=".TeacherStudentSubmittedAtendanceList"
+            android:label="@string/title_activity_student_assignments"
+
+            android:screenOrientation="portrait" />
+        <activity android:exported="true"
+            android:name=".TeacherStudentResult"
+            android:label="@string/title_activity_teacher_student_result"
+
+            android:screenOrientation="portrait" />
+        <activity android:exported="true"
+            android:name=".TeacherStudentResultDetails"
+            android:label="@string/title_activity_teacher_student_result_details"
+
+            android:screenOrientation="portrait" />
+        <activity android:exported="true"
+            android:name=".ForgotPassword"
+            android:label="@string/title_activity_forgot_password"
+
+            android:screenOrientation="portrait" />
+        <activity android:exported="true"
+            android:name=".PasswordReset"
+            android:label="@string/title_activity_password_reset"
+
+            android:screenOrientation="portrait" />
+        <activity android:exported="true"
+            android:name=".ChairmanSchoolAttendance"
+            android:label="@string/title_activity_chairman_school_attendance"
+
+            android:screenOrientation="portrait" />
+        <activity android:exported="true"
+            android:name=".ChairmanStudentLeaves"
+            android:label="@string/title_activity_chairman_student_leaves"
+
+            android:screenOrientation="portrait" />
+        <activity android:exported="true"
+            android:name=".ChairmanStudentLeaveDetails"
+            android:label="@string/title_activity_chairman_student_leave_details"
+
+            android:screenOrientation="portrait" />
+        <activity android:exported="true"
+            android:name=".ChairmanStudentPoll"
+            android:label="@string/title_activity_chairman_student_poll"
+
+            android:screenOrientation="portrait" />
+        <activity android:exported="true"
+            android:name=".ChairmanStudentPollDetails"
+            android:label="@string/title_activity_chairman_student_poll_details"
+
+            android:screenOrientation="portrait" />
+        <activity android:exported="true"
+            android:name=".ChairmanStudentResult"
+            android:label="@string/title_activity_chairman_student_result"
+
+            android:screenOrientation="portrait" />
+        <activity android:exported="true"
+            android:name=".ChairmanStudentAnnouncement"
+            android:label="@string/title_activity_chairman_student_announcement"
+
+            android:screenOrientation="portrait" />
+        <activity android:exported="true"
+            android:name=".StudentFeedBackDetailss"
+            android:label="@string/title_activity_student_feed_back_detailss"
+
+            android:screenOrientation="portrait" />
+        <activity android:exported="true"
+            android:name=".StudentFeedBackImages"
+            android:label="@string/title_activity_student_feed_back_images"
+
+            android:screenOrientation="portrait" />
+        <activity android:exported="true"
+            android:name=".StudentImageFeedBackSlider"
+            android:label="@string/title_activity_student_image_feed_back_slider"
+
+            android:screenOrientation="portrait" />
+        <activity android:exported="true"
+            android:name=".ChairmanStudentFeedBack"
+            android:label="@string/title_activity_chairman_student_feed_back"
+
+            android:screenOrientation="portrait" />
+        <activity android:exported="true"
+            android:name=".ChairmanStudentFeedBackDetails"
+            android:label="@string/title_activity_chairman_student_feed_back_details"
+
+            android:screenOrientation="portrait" />
+        <activity android:exported="true"
+            android:name=".ChairmanStudentFeedBackAssign"
+            android:label="@string/title_activity_chairman_student_feed_back_assign"
+
+            android:screenOrientation="portrait" />
+        <activity android:exported="true"
+            android:name=".TeacherStudentFeedback"
+            android:label="@string/title_activity_teacher_student_feedback"
+
+            android:screenOrientation="portrait" />
+        <activity android:exported="true"
+            android:name=".TeacherFeedbackDetails"
+            android:label="@string/title_activity_teacher_feedback_details"
+
+            android:screenOrientation="portrait" />
+        <activity android:exported="true"
+            android:name=".Multipart"
+            android:label="@string/title_activity_multipart" />
+        <activity android:exported="true"
+            android:name=".TeacherAssignment"
+            android:label="@string/title_activity_teacher_assignment" />
+        <activity android:exported="true"
+            android:name=".NewAssignmentTeacher"
+            android:label="@string/title_activity_teacher_new_assignment"
+
+            android:screenOrientation="portrait" />
+        <activity android:exported="true"
+
+            android:name=".AssignmentDetails"
+            android:label="@string/title_activity_assignment_details" />
+        <activity android:exported="true"
+
+            android:name="polypicker.ImagePickerActivity"
+            android:configChanges="mcc|mnc|touchscreen|orientation|uiMode|screenSize|keyboardHidden"
+            android:theme="@style/AppTheme" />
+        <activity android:exported="true"
+
+            android:name=".RegisterActivity"
+            android:label="@string/title_activity_register" />
+        <activity android:exported="true"
+
+            android:name="com.schoofi.activities.MainActivity"
+            android:label="@string/title_activity_main" />
+        <activity android:exported="true"
+
+            android:name=".AboutSchool"
+            android:label="@string/title_activity_about_school" />
+        <activity android:exported="true"
+
+            android:name=".AboutSchoolContactUs"
+            android:label="@string/title_activity_about_school_contact_us" />
+        <activity android:exported="true"
+
+            android:name=".FragmentsActivity"
+            android:label="@string/title_activity_fragment" />
+        <activity android:exported="true"
+
+            android:name=".HealthAndAuditHomeScreen"
+            android:label="@string/title_activity_health_and_audit_home_screen" />
+        <activity android:exported="true"
+
+            android:name=".HealthAndAuditManageUser"
+            android:label="@string/title_activity_health_and_audit_manage_user" />
+        <activity android:exported="true"
+
+            android:name=".HealthAndAuditUserAddUser"
+            android:label="@string/title_activity_health_and_audit_user_add_user" />
+        <activity android:exported="true"
+
+            android:name=".HealthAndAuditTaskList"
+            android:label="@string/title_activity_health_and_audit_task_list" />
+        <activity android:exported="true"
+
+            android:name=".HealthAndAuditAddTask"
+            android:label="@string/title_activity_health_and_audit_add_task" />
+        <activity android:exported="true"
+
+            android:name=".HealthAndAuditSubtask"
+            android:label="@string/title_activity_health_and_audit_subtask" />
+        <activity android:exported="true"
+
+            android:name=".HealthAndAuditAddSubtask"
+            android:label="@string/title_activity_health_and_audit_add_subtask" />
+        <activity android:exported="true"
+
+            android:name=".HealthAndAuditAuditsList"
+            android:label="@string/title_activity_health_and_audit_audits_list" />
+        <activity android:exported="true"
+
+            android:name=".HealthAndAuditAuditsForm"
+            android:label="@string/title_activity_health_and_audit_audits_form" />
+        <activity android:exported="true"
+
+            android:name=".StudentSubmitAssignmentAndHomework"
+            android:label="@string/title_activity_student_submit_assignment_and_homework" />
+        <activity android:exported="true"
+
+            android:name=".TeacherAssignedFeedBackDetails"
+            android:label="@string/title_activity_student_feed_back_detailss" />
+        <activity android:exported="true"
+
+            android:name=".TeacherAllFeedbackDetails"
+            android:label="@string/title_activity_teacher_assigned_feed_back_details" />
+        <activity android:exported="true"
+
+            android:name=".AssignmentTeacherDetails"
+            android:label="@string/title_activity_assignment_teacher_details" />
+        <activity android:exported="true"
+
+            android:name=".ContactUs"
+            android:label="@string/title_activity_contact_us" />
+        <activity android:exported="true"
+
+            android:name=".HomeActivity"
+            android:label="@string/title_activity_home" />
+        <activity android:exported="true"
+
+            android:name=".TeacherAssignmentHomeWorkDetails"
+            android:label="@string/title_activity_teacher_assignment_home_work_details" />
+        <activity android:exported="true"
+
+            android:name=".GridImageDetails"
+            android:label="@string/title_activity_grid_image_details" />
+        <activity android:exported="true"
+              android:name=".StudentProfile" />
+        <activity android:exported="true"
+              android:name="com.schoofi.activities.UploadActivity" />
+        <activity android:exported="true"
+
+            android:name=".StockManagementHome"
+            android:label="StockManagementHome" />
+        <activity android:exported="true"
+              android:name=".StudentEventList" />
+        <activity android:exported="true"
+              android:name=".StudentEventListDetails" />
+        <activity android:exported="true"
+              android:name="com.schoofi.activities.PaymentSuccess" />
+        <activity android:exported="true"
+              android:name=".AuditUserHomeScreen" />
+        <activity android:exported="true"
+              android:name=".HealthAndAuditUserTaskList" />
+        <activity android:exported="true"
+              android:name=".HealthAndAuditUserSubtaskList" />
+        <activity android:exported="true"
+              android:name=".HealthAndAuditUserSubTaskListDetails" />
+        <activity android:exported="true"
+              android:name=".HealthAndAuditUserTaskSubmit" />
+        <activity android:exported="true"
+              android:name=".HealthAndAuditReviewForm" />
+        <activity android:exported="true"
+              android:name=".EventAdminUpload" />
+        <activity android:exported="true"
+              android:name=".AdminHomeScreen" />
+        <activity android:exported="true"
+              android:name=".ParentFees" />
+        <activity android:exported="true"
+              android:name=".ParentInnerHomeScreen" />
+        <activity android:exported="true"
+              android:name=".ParentStudentUnpaidFeesDetails" />
+        <activity android:exported="true"
+              android:name=".ParentStudentFeesHistoryDetails" />
+        <activity android:exported="true"
+              android:name=".hairmanStudentAnnouncements" />
+        <activity android:exported="true"
+              android:name=".NewAnnouncement" />
+        <activity android:exported="true"
+              android:name=".AdmissionEnquiry" />
+        <activity android:exported="true"
+              android:name=".AdmissionEnquiryMain" />
+        <activity android:exported="true"
+              android:name=".AdmissionFormPage1" />
+        <activity android:exported="true"
+              android:name=".AdmissionFormPage2" />
+        <activity android:exported="true"
+              android:name=".AdmissionFormPage3" />
+        <activity android:exported="true"
+              android:name=".FinalAdmissionEnquiry" />
+        <activity android:exported="true"
+              android:name=".AdmissionEnquiryStatus" />
+        <activity android:exported="true"
+              android:name=".AdmissionStatusDetailScreen" />
+        <activity android:exported="true"
+              android:name=".AdminBusListScreen" />
+        <activity android:exported="true"
+              android:name=".TeacherEventList" />
+        <activity android:exported="true"
+              android:name=".TeacherEventListDetails" />
+        <activity android:exported="true"
+              android:name=".PaymentActivitySecondScreen" />
+        <activity android:exported="true"
+              android:name=".AdmissionEnquiryFinalScreen" />
+        <activity android:exported="true"
+              android:name=".AddmissionFormPrimaryScreen" />
+        <activity android:exported="true"
+              android:name=".PaymentCharges" />
+        <activity android:exported="true"
+              android:name=".PaymentAdmissionActivityScreen" />
+        <activity android:exported="true"
+              android:name=".AdmissionPaymentCharges" />
+        <activity android:exported="true"
+              android:name=".AdmissionCourierAddress" />
+        <!--
+        <receiver
+            android:name="com.schoofi.utils.GcmBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <category android:name="com.schoofi" />
+            </intent-filter>
+        </receiver>
+        -->
+        <activity android:exported="true"
+              android:name=".PaymentAdmissionSuccess1" />
+        <activity android:exported="true"
+              android:name=".AddEventGallery" />
+        <activity android:exported="true"
+              android:name=".ParentProfile" />
+        <activity android:exported="true"
+              android:name=".AdminAdmissionEnquiryList" />
+        <activity android:exported="true"
+              android:name=".AdminAdmissionEnquiryListDetails" />
+        <activity android:exported="true"
+              android:name=".AdminAdmissionUpdateStatus" />
+        <activity android:exported="true"
+              android:name=".ChangePassword" />
+        <activity android:exported="true"
+              android:name=".TeacherSubjectStudentList" />
+        <activity android:exported="true"
+              android:name=".ParentSingleUnpaidFeesDetailsScreen" />
+        <activity android:exported="true"
+              android:name=".ParentFeesActivityOptionScreen" />
+        <activity android:exported="true"
+              android:name=".ParentFeesPaymentSuccessScreen" />
+        <activity android:exported="true"
+              android:name=".NotificationIntentClass" />
+        <activity android:exported="true"
+              android:name=".ChairmanStudentFees" />
+        <activity android:exported="true"
+              android:name=".HealthAndAuditChairmanSubtaskListDetails" />
+        <activity android:exported="true"
+              android:name=".ChairmanStudentFragmentFeesClass" />
+        <activity android:exported="true"
+              android:name=".ChairmanStudentFragmentFeesSection" />
+        <activity android:exported="true"
+              android:name=".ChairmanStudentFeesStudentList" />
+        <activity android:exported="true"
+              android:name=".ChairmanStudentFragementAgeingAnalysisDetails" />
+        <activity android:exported="true"
+              android:name=".TeacherStudentProfileImageUpload" />
+        <activity android:exported="true"
+              android:name=".StudentResultPart2COScholasticAreas1" />
+        <activity android:exported="true"
+              android:name=".StudentCOScholasticResultAreas2" />
+        <activity android:exported="true"
+              android:name=".StudentCOScholasticResultArea3" />
+        <activity android:exported="true"
+              android:name=".StudentCOScholasticResultArea4" />
+        <activity android:exported="true"
+              android:name=".StudentResultCOScholasticArea5" />
+        <activity android:exported="true"
+              android:name=".StudentHealthStatusResult" />
+        <activity android:exported="true"
+              android:name=".ChairmanAttendenceDetails" />
+        <activity android:exported="true"
+              android:name=".StudentResultDetails" />
+        <activity android:exported="true"
+              android:name=".TeacherProfile" />
+        <activity android:exported="true"
+              android:name=".ChairmanBusListScreen" />
+        <activity android:exported="true"
+              android:name=".AdminClassListScreen" />
+        <activity android:exported="true"
+              android:name=".AdminClassSectionList" />
+        <activity android:exported="true"
+              android:name=".AdminStudentList" />
+        <activity android:exported="true"
+              android:name=".AdminStudentProfile" />
+        <activity android:exported="true"
+              android:name=".ChairmanAttendanceDetailsScreen" />
+        <activity android:exported="true"
+              android:name=".TeacherStudentViewAssignment" />
+        <activity android:exported="true"
+              android:name=".TeacherSchedule1" />
+        <activity android:exported="true"
+              android:name=".TeacherScheduleDetails1" />
+        <activity android:exported="true"
+              android:name=".StudentSubmittedPollDetails" />
+        <activity android:exported="true"
+              android:name=".AdminPoll" />
+        <activity android:exported="true"
+              android:name=".ChairmanAnnouncementTextResult" />
+        <activity android:exported="true"
+              android:name=".TeacherAnnouncementTextResult" />
+        <activity android:exported="true"
+              android:name=".StudentAnnouncementTextResult" />
+        <activity android:exported="true"
+              android:name=".ChairmanStudentEvents" />
+        <activity android:exported="true"
+              android:name=".ChairmanProfile" />
+        <activity android:exported="true"
+              android:name=".ParentStudentFeesUnpaidNewMultilevelDetails" />
+        <activity android:exported="true"
+              android:name=".ChairmanStudentTermExamList" />
+        <activity android:exported="true"
+              android:name=".ChairmanStudentResultClassList" />
+        <activity android:exported="true"
+              android:name=".ChairmanStudentResultSectionList" />
+        <activity android:exported="true"
+              android:name=".ChairmanStudentResultTermWise" />
+        <activity android:exported="true"
+              android:name=".TeacherStudentBusAttendancePrimaryScreen" />
+        <activity android:exported="true"
+              android:name=".TeacherStudentBusAttendanceShiftScreen" />
+        <activity android:exported="true"
+              android:name=".TeacherStudentBusAttendance" />
+        <activity android:exported="true"
+
+            android:name="com.paytm.pgsdk.PaytmPGActivity"
+            android:configChanges="keyboardHidden|orientation|keyboard"
+
+            android:screenOrientation="portrait" />
+        <activity android:exported="true"
+              android:name=".EventSharingScreen" />
+        <activity android:exported="true"
+              android:name=".EventImageSharingScreen" />
+        <activity android:exported="true"
+              android:name=".ChairmanDashboard" />
+        <activity android:exported="true"
+              android:name=".AnnouncementPDFResult" />
+        <activity android:exported="true"
+              android:name=".SchoolDiaryMainScreen" />
+        <activity android:exported="true"
+              android:name=".DiaryFilterScreen" />
+        <activity android:exported="true"
+              android:name=".DiaryUploadActivity" />
+        <activity android:exported="true"
+              android:name=".DiaryUploadSecondActivity" />
+        <activity android:exported="true"
+              android:name=".DiaryReplyScreen" />
+        <activity android:exported="true"
+              android:name=".SchoolDiaryDetailScreen" />
+        <activity android:exported="true"
+              android:name=".AccountLinkingActivity" />
+        <activity android:exported="true"
+              android:name=".DiaryMultipleStudentSelectionScreen" />
+        <activity android:exported="true"
+              android:name=".ParentDiaryUploadScreenFirst" />
+        <activity android:exported="true"
+              android:name=".DiaryImagesScreen" />
+        <activity android:exported="true"
+              android:name=".DiaryImagesDetailsScreen" />
+        <activity android:exported="true"
+
+            android:name=".MarkYourLocation"
+
+            android:screenOrientation="portrait" />
+        <activity android:exported="true"
+              android:name=".DiarySharingScreen" />
+        <activity android:exported="true"
+              android:name=".DiaryImageSharingScreen" />
+        <activity android:exported="true"
+              android:name=".MarkYourLocationFirstScreen" />
+        <activity android:exported="true"
+              android:name=".ParentStudentBusAttendance" />
+        <activity android:exported="true"
+
+            android:name=".SchoolPlannerMakingFirstScreen"
+            android:theme="@style/AppTheme3" />
+        <activity android:exported="true"
+              android:name=".AddPlannerEvent" />
+        <activity android:exported="true"
+              android:name=".SchoolPlannerClassSelectionList" />
+        <activity android:exported="true"
+              android:name=".SchoolPlannerEventDetail" />
+        <activity android:exported="true"
+              android:name=".SchoolPlannerEditScreen" />
+        <activity android:exported="true"
+              android:name=".SchoolPlannerClassSectionListEdit" />
+        <activity android:exported="true"
+              android:name=".BusAdminHomeScreen" />
+        <activity android:exported="true"
+              android:name=".BusAdminBusList" />
+        <activity android:exported="true"
+              android:name=".BusAdminShiftScreen" />
+        <activity android:exported="true"
+              android:name=".AdminBusNotificationSendingScreen" />
+        <activity android:exported="true"
+              android:name=".BusAdminStudentMarkList" />
+        <activity android:exported="true"
+              android:name=".FeeAdminScreen" />
+        <activity android:exported="true"
+              android:name=".FeeAdminActivity" />
+        <activity android:exported="true"
+              android:name=".NewBusTracking" />
+        <activity android:exported="true"
+              android:name=".StudentBusTrackingRouteScreen" />
+        <activity android:exported="true"
+              android:name=".StudentNewBusTracking" />
+        <activity android:exported="true"
+
+            android:name=".ChairmanYearlyPlanner"
+            android:theme="@style/AppTheme3" />
+        <activity android:exported="true"
+              android:name=".ChairmanFeesAnalysis" />
+        <activity android:exported="true"
+              android:name=".ParentNewFeesHistoryDetails" />
+        <activity android:exported="true"
+              android:name=".NotificationSplashScreen" />
+        <activity android:exported="true"
+              android:name=".ParentFeesSuccessScreenCCAvenue" />
+        <activity android:exported="true"
+              android:name=".ChairmanAssignmentAnalysisDetailScreen" />
+        <activity android:exported="true"
+              android:name=".ChairmanAssignmentAnalysisDetailScreen1" />
+        <activity android:exported="true"
+              android:name=".AdminAssignmentAnalysis" />
+        <activity android:exported="true"
+              android:name=".AdminHealthCard" />
+        <activity android:exported="true"
+              android:name=".AdminHealthCardOptionsActivity" />
+        <activity android:exported="true"
+              android:name=".AdminHealthCardCommonListViewActivity" />
+        <activity android:exported="true"
+              android:name=".AdminHealthCardCommonDetailsActivity" />
+        <activity android:exported="true"
+              android:name=".AdminHealhCardDocumentsActivity" />
+        <activity android:exported="true"
+              android:name=".AddVacinationDetails" />
+        <activity android:exported="true"
+              android:name=".AddVaccinationDate" />
+        <activity android:exported="true"
+              android:name=".ParentVaccinationDetailsList" />
+        <activity android:exported="true"
+              android:name=".AddInsuranceDetails" />
+        <activity android:exported="true"
+              android:name=".AddMedicalHistoryDetails" />
+        <activity android:exported="true"
+              android:name=".ChechUPHistory" />
+        <activity android:exported="true"
+              android:name=".CheckUpFormActivity" />
+        <activity android:exported="true"
+              android:name=".HealthEventActivity" />
+        <activity android:exported="true"
+              android:name=".AdminStudentDropForm" />
+        <activity android:exported="true"
+              android:name=".QrCodeGenerator" />
+        <activity android:exported="true"
+              android:name=".QrCodeScanner" />
+        <activity android:exported="true"
+              android:name=".AdminStudentDropPrimaryActivity" />
+        <activity android:exported="true"
+              android:name=".VisitorEntryFrom" />
+        <activity android:exported="true"
+              android:name=".AdminStudentBusBoardingScreen" />
+        <activity android:exported="true"
+              android:name=".MedicalCoordinatorHomeScreen" />
+        <activity android:exported="true"
+              android:name=".VisitorMainScreen" />
+        <activity android:exported="true"
+              android:name=".BusCoordinatorAdminScreen" />
+        <activity android:exported="true"
+              android:name=".AdminVisitorLogs" />
+        <activity android:exported="true"
+              android:name=".AdminVisitorLogsPrimaryDetails" />
+        <activity android:exported="true"
+              android:name=".StudentQrCodeSccanner" />
+        <activity android:exported="true"
+              android:name=".ParentQrCodeScanner" />
+        <activity android:exported="true"
+              android:name=".AdminCommonVisitorDetailsListView" />
+        <activity android:exported="true"
+              android:name=".SecurityAdminScreen" />
+        <activity android:exported="true"
+              android:name=".VisitorQrCodeScanner" />
+        <activity android:exported="true"
+              android:name=".VisitorNewMainScreen" />
+        <activity android:exported="true"
+              android:name=".AllBussesMapActivity" />
+        <activity android:exported="true"
+              android:name=".VisitorQrCodeSecondScreen" />
+        <activity android:exported="true"
+              android:name=".EditProfileActivity" />
+        <activity android:exported="true"
+              android:name=".AdminVisitorLogsDetailsFirstActivity" />
+        <activity android:exported="true"
+              android:name=".AdminVisitorDetailsActivity" />
+        <activity android:exported="true"
+              android:name=".AdminVisitorTypeDetailsActivity" />
+        <activity android:exported="true"
+              android:name=".AdminVisitorAnalysisFirstScreen" />
+        <activity android:exported="true"
+              android:name=".TeacherCoOrdinatorHomeScreen" />
+        <activity android:exported="true"
+              android:name=".TeacherCordinatorAttendanceAnalysisScreen" />
+        <activity android:exported="true"
+              android:name=".TeacherCoordinatorClassWiseAttendanceScreen" />
+        <activity android:exported="true"
+              android:name=".TeacherCoordinatorSectionWiseAttendanceScreen" />
+        <activity android:exported="true"
+              android:name=".TeacherCoordinaterBusAttendanceAnalysisMainScreen" />
+        <activity android:exported="true"
+              android:name=".TeacherCoordinatorBusAttendanceAnalysisRouteAnalysis" />
+        <activity android:exported="true"
+              android:name=".TeacherCoordinatorPendingLeavesAnalysis" />
+        <activity android:exported="true"
+              android:name=".TeacherCoordinatorPendingFeesClassWise" />
+        <activity android:exported="true"
+              android:name=".TeacherCoordinatorPendingFeesSectionWise" />
+        <activity android:exported="true"
+              android:name=".TeacherCoordinaterPendingFeesStudentWise" />
+        <activity android:exported="true"
+              android:name=".TeacherCoordinaterAssignmentAnalysisHomeScreen" />
+        <activity android:exported="true"
+              android:name=".TeacherCoordinatorAssignementClassWiseAnalysis" />
+        <activity android:exported="true"
+              android:name=".TeacherCoordinaterSectionWiseAssignmentAnalysis" />
+        <activity android:exported="true"
+              android:name=".TeacherCoordinatorAssignmentSubjectWiseAnalysis" />
+        <activity android:exported="true"
+              android:name=".TeacherCoordinatorCircularAnalysisClassWise" />
+        <activity android:exported="true"
+              android:name=".TeacherCoordinatorCircularAnalysisSectionWise" />
+        <activity android:exported="true"
+              android:name=".TeacherDirectory" />
+        <activity android:exported="true"
+              android:name=".SecurityVisitorListScreen" />
+        <activity android:exported="true"
+              android:name=".VisitorExitForm" />
+        <activity android:exported="true"
+              android:name=".ProfileImageUpdateScreen" />
+        <activity android:exported="true"
+              android:name=".ChairmanTeacherProfile" />
+        <activity android:exported="true"
+              android:name=".TeacherLeaveApplication" />
+        <activity android:exported="true"
+              android:name=".TeacherSelfLeaveList" />
+        <activity android:exported="true"
+              android:name=".TeacherSelfLeaveListDetails" />
+        <activity android:exported="true"
+              android:name=".AdminEmployeeLeaveList" />
+        <activity android:exported="true"
+              android:name=".AdminEmployeeLeaveListDetails" />
+        <activity android:exported="true"
+              android:name=".TurnstileLogsMainScreen" />
+        <activity android:exported="true"
+              android:name=".UnauthorisedAccessUserScreen" />
+        <activity android:exported="true"
+              android:name=".TurnstileLogsSecondScreen" />
+        <activity android:exported="true"
+              android:name=".AdminStudentDropFormNewActivity" />
+        <activity android:exported="true"
+              android:name=".AdminStudentDropNewSecondActivity" />
+        <activity android:exported="true"
+              android:name=".ChairmanDiscountAnalysisScreen" />
+        <activity android:exported="true"
+              android:name=".ChairmanDiscountClassWise" />
+        <activity android:exported="true"
+              android:name=".ChairmanDiscountSectionWise" />
+        <activity android:exported="true"
+              android:name=".ChairmanDiscountStudentWise" />
+        <activity android:exported="true"
+              android:name=".StudentAnalysis" />
+        <activity android:exported="true"
+              android:name=".TeacherLeaveNewPrimaryScreen" />
+        <activity android:exported="true"
+              android:name=".EmployeeLeaveList" />
+        <activity android:exported="true"
+              android:name=".EmployeeLeaveListDetails" />
+        <activity android:exported="true"
+              android:name=".ChairmanStudentNewLeaves" />
+        <activity android:exported="true"
+              android:name=".ChairmanEmloyeesLeaves" />
+        <activity android:exported="true"
+              android:name=".AdminFeedback" />
+        <activity android:exported="true" android:name=".EmployeeAttendanceScreen" />
+        <activity android:exported="true" android:name=".EmployeeAttendanceMainScreen" />
+        <activity android:exported="true" android:name=".EmployeeList" />
+        <activity android:exported="true" android:name=".ChairmanEmployeeAnalysis" />
+        <activity android:exported="true" android:name=".EmployeeAttendanceOptionScreen" />
+        <activity android:exported="true" android:name=".ChairmanEmployeeAnalysisDetails" />
+        <activity android:exported="true" android:name=".ChairmanEmployeeWithoutGraphAnalysisScreen" />
+        <activity android:exported="true" android:name=".AttendanceNotifyScreen" />
+        <activity android:exported="true" android:name=".ChairmanEmployeeDepartmentWiseCount" />
+        <activity android:exported="true" android:name=".ChairmanEmployeeAttendanceEmployeeWise" />
+        <activity android:exported="true" android:name=".StudentNewAssignemntVerion" />
+        <activity android:exported="true" android:name=".NewAdmissionClassWise" />
+        <activity android:exported="true" android:name=".NewAdmissionSectionWise" />
+        <activity android:exported="true" android:name=".NewAdmissionStudentWiseList" />
+        <activity android:exported="true" android:name=".AdminEmployeeList" />
+        <activity android:exported="true" android:name=".EmployeeDirectoryProfile" />
+        <activity android:exported="true" android:name=".RoyalityAnalysis" />
+        <activity android:exported="true" android:name=".TeacherClassListCollegeAttendance" />
+        <activity android:exported="true" android:name=".TeacherSubjectListCollegeAttendance" />
+        <activity android:exported="true" android:name=".TeacherStudentCollegeAttendance" />
+        <activity android:exported="true" android:name=".StudentCollegeAttendancePrimaryScreen" />
+        <activity android:exported="true" android:name=".StudentCollegeAttendance" />
+        <activity android:exported="true" android:name=".AdminCollegeClassListAttendance" />
+        <activity android:exported="true" android:name=".AdminCollegeSubjectListAttendance" />
+        <activity android:exported="true" android:name=".NewPollActivity" />
+        <activity android:exported="true" android:name=".NewPollQuestionList" />
+        <activity android:exported="true" android:name=".NewSubmittedPollList" />
+        <activity android:exported="true" android:name=".NewSubmittedPollQuestionList" />
+        <activity android:exported="true" android:name=".NewStudentSubmittedPollDetails" />
+        <activity android:exported="true" android:name=".StudentChooseElectiveSubject" />
+        <activity android:exported="true" android:name=".StudentHostelBookingFirstScreen" />
+        <activity android:exported="true" android:name="com.schoofi.adapters.HostelRoomListViewAdapter" />
+        <activity android:exported="true" android:name=".StudentHostelBookingScreenDetails" />
+        <activity android:exported="true" android:name=".StudentHostelReservationDetailsScreen" />
+        <activity android:exported="true" android:name=".StudentSubEvents" />
+        <activity android:exported="true" android:name=".RoleLoginScreen" />
+        <activity android:exported="true" android:name=".EmployeeLeaveLevelUpdates" />
+        <activity android:exported="true" android:name=".AdminAttendanceFirtsScreen" />
+        <activity android:exported="true" android:name=".AdminEmployeeAtttendanceFirstScreen" />
+        <activity android:exported="true" android:name=".StudyPlannerAdminMainScreen" />
+        <activity android:exported="true" android:name=".CreateMainStudyPlannerTask" />
+        <activity android:exported="true" android:name=".NonTeachingHomeScreen" />
+        <activity android:exported="true" android:name=".TeacherCollegeSchedule" />
+        <activity android:exported="true" android:name=".HRHomeScreen" />
+        <activity android:exported="true" android:name=".TeacherSubjectListCollegeAttendanceNew" />
+        <activity android:exported="true" android:name=".TeacherStudentCollegeAttendanceNew" />
+        <activity android:exported="true" android:name=".StudentCollegeAttendancePeriodScreen" />
+        <activity android:exported="true" android:name=".UpdateActivity" />
+        <activity android:exported="true" android:name=".UserIssuedBookList" />
+        <activity android:exported="true" android:name=".CollegeTeacherList" />
+        <activity android:exported="true" android:name=".EmployeeAddressesScreen" />
+        <activity android:exported="true" android:name=".StudyPlannerAddingScreen" />
+        <activity android:exported="true" android:name=".StudyPlannerClassList" />
+        <activity android:exported="true" android:name=".TeacherSubjectListCollegePlannerNew" />
+        <activity android:exported="true" android:name=".StudyPlannerSubjectList" />
+        <activity android:exported="true" android:name=".StudyPlannerClassListScreen" />
+        <activity android:exported="true" android:name=".StudyPlannerDetailScreen" />
+        <activity android:exported="true" android:name=".SchoolPlannerSubjectList" />
+        <activity android:exported="true" android:name=".StudentSubjectList" />
+        <activity android:exported="true" android:name=".StudentAttendancePrimaryOptionScreen" />
+        <activity android:exported="true" android:name=".BiometricAttendanceStudentScreen" />
+        <activity android:exported="true" android:name=".StudentLibraryBookFinder" />
+        <activity android:exported="true" android:name=".UserLibraryHistory" />
+        <activity android:exported="true" android:name=".UserLibraryHomeScreen" />
+        <activity android:exported="true" android:name=".StudentCollegeResults" />
+        <activity android:exported="true" android:name=".AssesmentAllotedScreen" />
+        <activity android:exported="true" android:name=".AssesmentQuestionsScreen" />
+        <activity android:exported="true" android:name=".AssesmentNewQuestionsScreen" />
+        <activity android:exported="true" android:name=".KnowledgeResourseUploadingScreen" />
+        <activity android:exported="true" android:name=".KnowledgeResourceSubjectScreen" />
+        <activity android:exported="true" android:name=".KnowledgeResourseList" />
+        <activity android:exported="true" android:name=".KnowledgeResourseDetails" />
+        <activity android:exported="true" android:name=".KnowledgeResourseClassListScreen" />
+        <activity android:exported="true" android:name=".KnowledgeResourseAdminSubjectList" />
+        <activity android:exported="true" android:name=".AssesmentNewHomeScreen" />
+        <activity android:exported="true" android:name=".HostelAdminHomeScreen" />
+        <activity android:exported="true" android:name=".HostelGatePassHistory" />
+        <activity android:exported="true" android:name=".HostelGatePassHistoryDetails" />
+        <activity android:exported="true" android:name=".HostelAnalysisAdminScreen" />
+        <activity android:exported="true" android:name=".HostelAnalysisAdminCourseScreen" />
+        <activity android:exported="true" android:name=".HostelAnalysisStudentScreen" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyAfpy_gG0VYp9hzXVQCt2W5t6En8i03Lg0" />
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-5071805018249593~5203391882" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="your.package.name.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <service android:exported="true" android:name="com.schoofi.utils.GCMNotificationIntentService" />
+        <service android:exported="true" android:name="com.schoofi.utils.SchoofiFireBaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:exported="true" android:name="com.schoofi.utils.SchoofiFirebaseInstanceIDService">
+            <intent-filter>
+                <action  android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+    </application>
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="true" />
+    <uses-permission
+        android:name="android.permission.ACCESS_WIFI_STATE"
+        android:maxSdkVersion="29" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+
+</manifest>

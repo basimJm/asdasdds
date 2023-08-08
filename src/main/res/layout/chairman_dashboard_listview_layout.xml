@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        android:background="@drawable/text_field">
+
+
+        <com.schoofi.utils.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:id="@+id/examName"
+            android:text="Exams"
+            android:textColor="@color/gray"
+            android:padding="10dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_margin="5dp"
+            android:background="@color/black" />
+
+        <com.schoofi.utils.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_exam_name_count"
+            android:text=""
+            android:textSize="20sp"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:padding="10dp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+
+        <com.schoofi.utils.CustomTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_exam_name_1"
+            android:text=""
+            android:textSize="15sp"
+            android:layout_weight="0.5"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:padding="10dp"
+            />
+
+            <com.schoofi.utils.CustomTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/text_exam_name_1_count"
+                android:text=""
+                android:textSize="15sp"
+                android:layout_weight="0.5"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:padding="10dp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+
+            <com.schoofi.utils.CustomTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/text_exam_name_2"
+                android:text=""
+                android:textSize="15sp"
+                android:layout_weight="0.5"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:padding="10dp"
+                />
+
+            <com.schoofi.utils.CustomTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/text_exam_name_2_count"
+                android:text=""
+                android:textSize="15sp"
+                android:layout_weight="0.5"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:padding="10dp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+
+            <com.schoofi.utils.CustomTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/text_exam_name_3"
+                android:text=""
+                android:textSize="15sp"
+                android:layout_weight="0.5"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:padding="10dp"
+                />
+
+            <com.schoofi.utils.CustomTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/text_exam_name_3_count"
+                android:text=""
+                android:textSize="15sp"
+                android:layout_weight="0.5"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:padding="10dp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+
+            <com.schoofi.utils.CustomTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/text_exam_name_4"
+                android:text=""
+                android:textSize="15sp"
+                android:layout_weight="0.5"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:padding="10dp"
+                />
+
+            <com.schoofi.utils.CustomTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/text_exam_name_4_count"
+                android:text=""
+                android:textSize="15sp"
+                android:layout_weight="0.5"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:padding="10dp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+
+            <com.schoofi.utils.CustomTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/text_exam_name_5"
+                android:text=""
+                android:textSize="15sp"
+                android:layout_weight="0.5"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:padding="10dp"
+                />
+
+            <com.schoofi.utils.CustomTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/text_exam_name_5_count"
+                android:text=""
+                android:textSize="15sp"
+                android:layout_weight="0.5"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:padding="10dp"
+                />
+        </LinearLayout>
+        </LinearLayout>
+
+</LinearLayout>

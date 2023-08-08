@@ -1,0 +1,246 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#EE4749"
+        android:orientation="horizontal"
+        android:weightSum="3" >
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:layout_weight="0.3"
+            android:gravity="center"
+            android:src="@drawable/ic_action_back"/>
+
+        <com.schoofi.utils.CustomTextView
+            android:id="@+id/txt_result"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="2.3"
+            android:gravity="center"
+            android:text="Result"
+            android:textColor="#D7D7D7"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="2"
+        android:layout_below="@+id/headerLayout"
+        android:layout_above="@+id/linear_bottom">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+
+
+        <com.schoofi.utils.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2(B): Work Education"
+            android:textSize="15sp"
+            android:layout_margin="10dp"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:id="@+id/text_title_result1"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#e4e4e4"
+            android:orientation="horizontal"
+            android:weightSum="3" >
+
+            <com.schoofi.utils.CustomTextView
+                android:id="@+id/text_studentSubject"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_gravity="left"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="S.No."
+                android:textColor="@android:color/black"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:background="#DCDBDB"
+                android:layout_weight="0.0045"
+                />
+
+            <com.schoofi.utils.CustomTextView
+                android:id="@+id/text_student_descriptive_indicators"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_gravity="right"
+                android:layout_weight="1.8"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:text="Descriptive Indicators*"
+                android:textSize="15sp" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:background="#DCDBDB"
+                android:layout_weight="0.0045"
+                />
+
+            <com.schoofi.utils.CustomTextView
+                android:id="@+id/text_student_descriptive_indicators_grade"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_gravity="right"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:text="Grade"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/listView_co_scholastic2B"
+            android:layout_marginTop="10dp"
+            android:divider="@drawable/divider"
+            android:dividerHeight="2dp">
+
+        </ListView>
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+
+
+            <com.schoofi.utils.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2(C): Visual And Performing Arts"
+                android:textSize="15sp"
+                android:layout_margin="10dp"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:id="@+id/text_title_result2"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="#e4e4e4"
+                android:orientation="horizontal"
+                android:weightSum="3" >
+
+                <com.schoofi.utils.CustomTextView
+                    android:id="@+id/text_studentSubject1"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="left"
+                    android:layout_weight="0.5"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="S.No."
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:background="#DCDBDB"
+                    android:layout_weight="0.0045"
+                    />
+
+                <com.schoofi.utils.CustomTextView
+                    android:id="@+id/text_student_descriptive_indicators1"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="right"
+                    android:layout_weight="1.8"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/black"
+                    android:text="Descriptive Indicators*"
+                    android:textSize="15sp" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:background="#DCDBDB"
+                    android:layout_weight="0.0045"
+                    />
+
+                <com.schoofi.utils.CustomTextView
+                    android:id="@+id/text_student_descriptive_indicators_grade1"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="right"
+                    android:layout_weight="0.5"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/black"
+                    android:text="Grade"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/listView_co_scholastic2C"
+                android:layout_marginTop="10dp"
+                android:divider="@drawable/divider"
+                android:dividerHeight="2dp">
+
+            </ListView>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="right"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/linear_bottom">
+
+        <com.schoofi.utils.CustomButton
+            android:id="@+id/btn_next"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="right"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Next"
+            android:background="@drawable/buttons"
+            android:textColor="@android:color/white"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,206 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1"
+        android:layout_below="@+id/headerLayout"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:layout_weight="0.34"
+            android:background="@color/white">
+
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:id="@+id/imageView_schoolLogo"
+                android:src="@drawable/schoofisplash"
+                android:layout_margin="10dp"
+                android:layout_centerHorizontal="true" />
+
+
+
+
+            <com.schoofi.utils.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="School Name"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textSize="12sp"
+                android:layout_below="@+id/imageView_school_logo"
+                android:id="@+id/text_school_name"
+                android:textColor="@color/gray"
+                android:layout_margin="5dp"/>
+
+            <View
+                android:layout_width="120dp"
+                android:layout_height="1.2dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_below="@+id/text_view_descrption"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="5dp"
+                android:id="@+id/view1"
+
+                android:background="@color/gray"></View>
+
+            <com.schoofi.utils.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Title"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:layout_below="@+id/imageView_school_logo"
+                android:id="@+id/text_school_title"
+                android:textColor="@color/black"
+                android:layout_margin="5dp"/>
+
+
+
+
+
+
+
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:layout_weight="0.50"
+            android:background="@color/white">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView_schoolLogo1"
+                android:layout_gravity="center"
+                android:src="@drawable/schoofisplash"
+                android:layout_margin="10dp"/>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:layout_weight="0.09"
+            android:background="@color/white">
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="0.9"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:id="@+id/google_play_icon"
+                    android:src="@drawable/googleplaylogo"/>
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="0.7"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:id="@+id/app_store_icon"
+                    android:src="@drawable/applelogo"/>
+
+
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="0.5"></LinearLayout>
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:id="@+id/schoofi_below_layout"
+                    android:src="@drawable/schoofiblaclogo"/>
+
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/headerLayout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="#EE4749"
+            android:layout_weight="0.07"
+            android:orientation="horizontal"
+            android:weightSum="3" >
+
+            <ImageView
+                android:id="@+id/img_back"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:layout_weight="0.3"
+                android:gravity="center"
+                android:src="@drawable/ic_action_back"/>
+
+            <com.schoofi.utils.CustomTextView
+                android:id="@+id/txt_reset"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="2.3"
+                android:gravity="center"
+                android:text=""
+                android:textColor="#D7D7D7"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/img_share"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:layout_weight="0.3"
+                android:gravity="center"
+                android:src="@drawable/uploadicon"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
+

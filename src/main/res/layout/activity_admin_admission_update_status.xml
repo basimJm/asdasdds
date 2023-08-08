@@ -1,0 +1,92 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context="com.schoofi.activities.TeacherHomeScreen" >
+
+<LinearLayout
+    android:id="@+id/headerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="#EE4749"
+    android:orientation="horizontal"
+    android:weightSum="3" >
+
+    <ImageView
+        android:id="@+id/img_back"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:layout_weight="0.3"
+        android:gravity="center"
+        android:src="@drawable/ic_action_back" />
+
+    <com.schoofi.utils.CustomTextView
+        android:id="@+id/txt_class"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="2.3"
+        android:gravity="center"
+        android:text="Enquiry Status"
+        android:textColor="#D7D7D7"
+        android:textSize="20sp" />
+
+
+
+</LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/headerLayout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:background="@drawable/arrowdown"
+                android:id="@+id/spin_status_type"
+                android:layout_margin="10dp">
+
+            </Spinner>
+
+
+            <com.schoofi.utils.CustomEditText
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:hint="Message"
+                android:gravity="top"
+                android:id="@+id/edit_message"
+                android:layout_margin="10dp"
+                android:background="@drawable/button"
+                android:textColor="@android:color/black"
+                android:textSize="15sp"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="10dp"
+        android:layout_alignParentBottom="true">
+
+        <com.schoofi.utils.CustomButton
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:id="@+id/btn_submit"
+            android:background="@drawable/buttons"
+            android:text="Submit"
+            android:textSize="15sp"
+            android:textColor="@android:color/white"/>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,614 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.schoofi.activitiess.StudentAnnouncement" >
+
+    <LinearLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#EE4749"
+        android:orientation="horizontal"
+        android:weightSum="3" >
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:layout_weight="0.3"
+            android:gravity="center"
+            android:src="@drawable/ic_action_back" />
+
+        <com.schoofi.utils.CustomTextView
+            android:id="@+id/txt_profile"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="2.3"
+            android:gravity="center"
+            android:text="Profile"
+            android:textColor="#D7D7D7"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:layout_below="@+id/headerLayout">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.25"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    android:id="@+id/student_profile"
+                    android:src="@drawable/person"
+                    android:scaleType="fitCenter"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="10dp"
+                android:layout_weight="0.7">
+
+                <com.schoofi.utils.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_gravity="center_vertical"
+                    android:text="Name"
+                    android:textSize="12sp"
+                    android:textColor="@android:color/black"
+                    android:id="@+id/text_student_name"/>
+
+                <com.schoofi.utils.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_gravity="center_vertical"
+                    android:text="DOB"
+                    android:textSize="12sp"
+                    android:textColor="@color/gray"
+                    android:id="@+id/text_student_dob"/>
+
+                <com.schoofi.utils.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_gravity="center_vertical"
+                    android:text="Admission No."
+                    android:textSize="12sp"
+                    android:textColor="@color/gray"
+                    android:id="@+id/text_student_admissionNo"/>
+
+                <com.schoofi.utils.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_gravity="center_vertical"
+                    android:text="Date"
+                    android:textSize="12sp"
+                    android:textColor="@color/gray"
+                    android:id="@+id/text_student_date"/>
+
+                <com.schoofi.utils.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_gravity="center_vertical"
+                    android:text="Roll Number"
+                    android:textSize="12sp"
+                    android:textColor="@color/gray"
+                    android:id="@+id/text_student_roll"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="1"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="20dp">
+
+                    <com.schoofi.utils.CustomTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:layout_margin="5dp"
+                        android:layout_gravity="center_vertical"
+                        android:text="Sex"
+                        android:textSize="12sp"
+                        android:textColor="@color/gray"
+                        android:id="@+id/text_student_sex"/>
+
+                    <com.schoofi.utils.CustomTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:layout_margin="5dp"
+                        android:layout_gravity="center_vertical"
+                        android:text="Email"
+                        android:textSize="12sp"
+                        android:textColor="@color/gray"
+                        android:id="@+id/text_student_email"/>
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="1"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="20dp">
+
+                    <com.schoofi.utils.CustomTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:layout_margin="5dp"
+                        android:layout_gravity="center_vertical"
+                        android:text="Class"
+                        android:textSize="12sp"
+                        android:textColor="@color/gray"
+                        android:id="@+id/text_student_class"/>
+
+                    <com.schoofi.utils.CustomTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:layout_margin="5dp"
+                        android:layout_gravity="center_vertical"
+                        android:text="Section"
+                        android:textSize="12sp"
+                        android:textColor="@color/gray"
+                        android:id="@+id/text_student_section"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="1"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="20dp">
+
+                    <com.schoofi.utils.CustomTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:layout_margin="5dp"
+                        android:layout_gravity="center_vertical"
+                        android:text="Stream"
+                        android:textSize="12sp"
+                        android:textColor="@color/gray"
+                        android:id="@+id/text_student_stream"/>
+
+                    <com.schoofi.utils.CustomTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:layout_margin="5dp"
+                        android:layout_gravity="center_vertical"
+                        android:text="Trade"
+                        android:textSize="12sp"
+                        android:textColor="@color/gray"
+                        android:id="@+id/text_student_trade"/>
+
+
+
+                </LinearLayout>
+
+
+
+
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/divider"></View>
+
+        <com.schoofi.utils.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="School Details"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:layout_margin="10dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/divider"></View>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+        <com.schoofi.utils.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="@color/gray"
+            android:text="School Name"
+            android:id="@+id/text_school_name"
+
+            android:layout_margin="5dp"/>
+
+        <com.schoofi.utils.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/gray"
+            android:textSize="12sp"
+            android:text="School Address"
+            android:id="@+id/text_school_address"
+            android:layout_margin="5dp"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/divider"></View>
+
+        <com.schoofi.utils.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="Father Details"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:layout_margin="10dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/divider"></View>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:id="@+id/student_father_profile"
+                android:src="@drawable/person"
+                android:scaleType="fitCenter"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="10dp"
+            android:layout_weight="0.7">
+
+            <com.schoofi.utils.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_gravity="center_vertical"
+                android:text="Father's-Name"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:id="@+id/text_student_father_name"/>
+
+            <com.schoofi.utils.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_gravity="center_vertical"
+                android:text="Father's-DOB"
+                android:textColor="@color/gray"
+                android:textSize="12sp"
+                android:id="@+id/text_student_father_dob"/>
+
+            <com.schoofi.utils.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_gravity="center_vertical"
+                android:text="Father's-Phone"
+                android:textColor="@color/gray"
+                android:textSize="12sp"
+                android:id="@+id/text_student_father_phoneNo"/>
+
+            <com.schoofi.utils.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_gravity="center_vertical"
+                android:text="Father's-Email"
+                android:textColor="@color/gray"
+                android:textSize="12sp"
+                android:id="@+id/text_student_father_email"/>
+
+            </LinearLayout>
+            </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/divider"></View>
+
+        <com.schoofi.utils.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="Mother Details"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:layout_margin="10dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/divider"></View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.25"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    android:id="@+id/student_mother_profile"
+                    android:src="@drawable/person"
+                    android:scaleType="fitCenter"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="10dp"
+                android:layout_weight="0.7">
+
+                <com.schoofi.utils.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_gravity="center_vertical"
+                    android:text="Mother's-Name"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:id="@+id/text_student_mother_name"/>
+
+                <com.schoofi.utils.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_gravity="center_vertical"
+                    android:text="Mother's-DOB"
+                    android:textColor="@color/gray"
+                    android:textSize="12sp"
+                    android:id="@+id/text_student_mother_dob"/>
+
+                <com.schoofi.utils.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_gravity="center_vertical"
+                    android:text="Mother's-Phone"
+                    android:textColor="@color/gray"
+                    android:textSize="12sp"
+                    android:id="@+id/text_student_mother_phoneNo"/>
+
+                <com.schoofi.utils.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_gravity="center_vertical"
+                    android:text="Mother's-Email"
+                    android:textColor="@color/gray"
+                    android:textSize="12sp"
+                    android:id="@+id/text_student_mother_email"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <com.schoofi.utils.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_more_details_title"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:text="More Details"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_margin="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:orientation="horizontal"
+            android:layout_marginLeft="20dp">
+
+        <com.schoofi.utils.CustomTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="0.5"
+            android:layout_gravity="center_vertical"
+            android:text="Religion"
+            android:textColor="@color/gray"
+            android:textSize="12sp"
+            android:gravity="center_vertical"
+            android:id="@+id/text_student_religion"/>
+
+        <com.schoofi.utils.CustomTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="0.5"
+            android:layout_gravity="center_vertical"
+            android:text="EWS"
+            android:gravity="center_vertical"
+            android:textColor="@color/gray"
+            android:textSize="12sp"
+            android:id="@+id/text_student_ews"/>
+
+            </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:orientation="horizontal"
+            android:layout_marginLeft="20dp">
+
+        <com.schoofi.utils.CustomTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="0.5"
+            android:layout_gravity="center_vertical"
+            android:text="Disablity"
+            android:gravity="center_vertical"
+            android:textColor="@color/gray"
+            android:textSize="12sp"
+            android:id="@+id/text_student_disability"/>
+
+
+
+        <com.schoofi.utils.CustomTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_gravity="center_vertical"
+            android:text="Birth Mark"
+            android:layout_weight="0.5"
+            android:textColor="@color/gray"
+            android:textSize="12sp"
+            android:id="@+id/text_student_birth_mark"/>
+
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:orientation="horizontal"
+            android:layout_marginLeft="20dp">
+
+            <com.schoofi.utils.CustomTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:layout_margin="5dp"
+                android:layout_gravity="center_vertical"
+                android:text="Height"
+                android:textSize="12sp"
+                android:textColor="@color/gray"
+                android:id="@+id/text_student_height"/>
+
+            <com.schoofi.utils.CustomTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:layout_margin="5dp"
+                android:layout_gravity="center_vertical"
+                android:text="Weight"
+                android:textSize="12sp"
+                android:textColor="@color/gray"
+                android:id="@+id/text_student_weight"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:orientation="horizontal"
+            android:layout_marginLeft="20dp">
+
+            <com.schoofi.utils.CustomTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:layout_margin="5dp"
+                android:layout_gravity="center_vertical"
+                android:text="Blood Group"
+                android:textSize="12sp"
+                android:textColor="@color/gray"
+                android:id="@+id/text_student_blood_group"/>
+
+            <com.schoofi.utils.CustomTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:layout_margin="5dp"
+                android:layout_gravity="center_vertical"
+                android:text="Alergies"
+                android:textSize="12sp"
+                android:textColor="@color/gray"
+                android:id="@+id/text_student_alergies"/>
+
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

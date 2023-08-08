@@ -1,0 +1,97 @@
+{
+  "project_info": {
+    "project_number": "738232626280",
+    "firebase_url": "https://schoofi-app.firebaseio.com",
+    "project_id": "schoofi-app",
+    "storage_bucket": "schoofi-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:738232626280:android:2c4d2009f5fb56b3",
+        "android_client_info": {
+          "package_name": "com.schoofi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "738232626280-gl9ec9j6l8u1v1cn6sdgmu6rcm9ghm4v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBCv-IxX6CCwleHfs291yPP4XIQT2klTYo"
+        },
+        {
+          "current_key": "AIzaSyAfpy_gG0VYp9hzXVQCt2W5t6En8i03Lg0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "738232626280-gl9ec9j6l8u1v1cn6sdgmu6rcm9ghm4v.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "738232626280-a6bo4g0o7lrq3fkefucbhvvmtb63kmst.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.Schoofi"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:738232626280:android:01ecabe5db90cf01c11fdd",
+        "android_client_info": {
+          "package_name": "com.schoofi.activities"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "738232626280-5m05ffn2mqc52bckcpr7boqje0vhuub2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.schoofi.activities",
+            "certificate_hash": "6549f6001c20f6d087bed4d98767f4d7e85eb695"
+          }
+        },
+        {
+          "client_id": "738232626280-gl9ec9j6l8u1v1cn6sdgmu6rcm9ghm4v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBCv-IxX6CCwleHfs291yPP4XIQT2klTYo"
+        },
+        {
+          "current_key": "AIzaSyAfpy_gG0VYp9hzXVQCt2W5t6En8i03Lg0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "738232626280-gl9ec9j6l8u1v1cn6sdgmu6rcm9ghm4v.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "738232626280-a6bo4g0o7lrq3fkefucbhvvmtb63kmst.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.Schoofi"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

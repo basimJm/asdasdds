@@ -1,0 +1,170 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#EE4749"
+        android:orientation="horizontal"
+        android:weightSum="3" >
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:layout_weight="0.3"
+            android:gravity="center"
+            android:src="@drawable/ic_action_back"/>
+
+        <com.schoofi.utils.CustomTextView
+            android:id="@+id/txt_newLeave"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="2.3"
+            android:gravity="center"
+            android:text="Hostel Booking"
+            android:textColor="#D7D7D7"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/linear_student_leave_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical"
+            android:layout_below="@id/headerLayout"
+            android:padding="10dp" >
+
+
+
+
+
+
+
+            <smtchahal.materialspinner.MaterialSpinner
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/grey_button"
+                android:id="@+id/spinner_hostel"
+                app:ms_hint="Select Hostel"
+                android:gravity="center"
+                app:ms_hintColor="@color/black"
+                app:ms_baseColor="@color/black"
+                app:ms_arrowColor="@color/black"
+                app:ms_enableFloatingLabel="false"
+                android:layout_margin="10dp"
+                app:ms_enableErrorLabel="false"
+                app:ms_arrowSize="10dp"
+                app:ms_multiline="false"
+                android:padding="0dp"
+                app:ms_floatingLabelText=""
+                app:ms_thickness="0dp"
+                ></smtchahal.materialspinner.MaterialSpinner>
+
+
+
+            <smtchahal.materialspinner.MaterialSpinner
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/grey_button"
+                android:id="@+id/spinner_bedding_type"
+                app:ms_hint="Select Bedding"
+                android:gravity="center"
+                app:ms_hintColor="@color/black"
+                app:ms_baseColor="@color/black"
+                app:ms_arrowColor="@color/black"
+                app:ms_enableFloatingLabel="false"
+                android:layout_margin="10dp"
+                app:ms_enableErrorLabel="false"
+                app:ms_arrowSize="10dp"
+                app:ms_multiline="false"
+                android:padding="0dp"
+                app:ms_floatingLabelText=""
+                app:ms_thickness="0dp"
+                ></smtchahal.materialspinner.MaterialSpinner>
+
+            <smtchahal.materialspinner.MaterialSpinner
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/grey_button"
+                android:id="@+id/spinner_room_type"
+                app:ms_hint="Select Room Type"
+                android:gravity="center"
+                app:ms_hintColor="@color/black"
+                app:ms_baseColor="@color/black"
+                app:ms_arrowColor="@color/black"
+                app:ms_enableFloatingLabel="false"
+                android:layout_margin="10dp"
+                app:ms_enableErrorLabel="false"
+                app:ms_arrowSize="10dp"
+                app:ms_multiline="false"
+                android:padding="0dp"
+                app:ms_floatingLabelText=""
+                app:ms_thickness="0dp"
+                ></smtchahal.materialspinner.MaterialSpinner>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </LinearLayout>
+    <com.orangegangsters.github.swipyrefreshlayout.library.SwipyRefreshLayout
+        android:id="@+id/swipyrefreshlayout"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/linear_student_leave_content"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginTop="10dp"
+
+        android:layout_marginBottom="10dp"
+        android:layout_height="wrap_content"
+        app:srl_direction="top">
+
+        <ListView
+            android:id="@+id/listview_student_submitted_polls"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:divider="@drawable/divider"
+            android:dividerHeight="2dp"
+            android:layout_margin="10dp" >
+        </ListView>
+
+    </com.orangegangsters.github.swipyrefreshlayout.library.SwipyRefreshLayout>
+
+</RelativeLayout>
